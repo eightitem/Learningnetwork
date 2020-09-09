@@ -73,32 +73,64 @@ img {
 }
 .top{
     width: 100%;
-    height: 50px;
-    background: #f13232;
     margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+    /*width: 100%;*/
+    /*height: 60px;*/
+    background: #f13232;
+
     box-sizing: border-box;
-    /*line-height: 50px;*/
+
     /*padding: 0 10px;*/
     /*text-align: center;*/
 }
-
+.top p{
+    display: inline-block;
+    /*padding-left: 5px;*/
+    height: 100%;
+    width: 120px;
+    line-height: 60px;
+}
 .top img{
     display: inline-block;
+    margin-left: 30px;
+
+    /*padding-top: 15px;*/
+}
+.top .logo{
+
+    text-align: center;
+    /*padding-top: 5px;*/
+    margin-right: 20px;
+}
+.top .logo:hover{
+    background: #f13232;
 }
 .top a {
-    height: 50px;
-    width: 100px;
     color: white;
-    line-height: 50px;
     display: inline-block;
-    padding: 10px;
+    /*padding: 10px;*/
+    height: 100%;
+    width: 120px;
+    line-height: 65px;
+    text-align: center;
 }
-.apply{
-    background: #f13232;
-    color: white;
+/*.apply{*/
+/*    display: inline-block;*/
+/*    background: #f13232;*/
+/*    color: white;*/
+
+/*}*/
+.top a:hover{
+    background: white;
+    color:#f13232 ;
 
 }
-.apply i{
+/*.iconfont .icon-jiantou{*/
+/*    display: none;*/
+/*}*/
+.top p i{
     display: inline-block;
     position: absolute;
 }
