@@ -68,11 +68,11 @@
               <span class="table">商品分类</span>
             </div>
             <div class="goods" style="margin-left: 80px">
-                <span>全部</span>
-                <span>文具</span>
-                <span>生活用品</span>
-                <span>笔记本</span>
-                <span>玩具</span>
+                <span onclick="showProduct(1)">全部</span>
+                <span onclick="showProduct(2)">文具</span>
+                <span onclick="showProduct(3)">生活用品</span>
+                <span onclick="showProduct(4)">笔记本</span>
+                <span onclick="showProduct(5)">玩具</span>
 
             </div>
         </div>
@@ -87,7 +87,7 @@
     </div>
         <div class="gold-mall">
 
-            <div class="goods-info">
+            <div class="goods-info" >
                 <div class="goods-img">
                     <a href="goodDetail.html"><img src="style/images/yxyellowman.jpg" alt=""></a>
                 </div>
@@ -151,7 +151,7 @@
 
 <script src="style/js/jquery-3.4.1.js"></script>
 <!--鼠标移入移出事件-->
-<script>
+ <script>
     $('.user').mouseover(function () {
         // $('.apply i:first-of-type').style.display="none";
         $('.user i:first-of-type').hide()
@@ -180,6 +180,41 @@
          $('.apply i:last-of-type').hide()
      });
 </script>
+    <script>
+        var gifts = [
+            {
+                id:1,
+                title:'全部',
+                goodstype:[
+                    {id:1,icon:'style/images/yxyellowman.jpg',name:'小黄人拼图',price:'4999',coin:'金币',num:'11套库存'},
+                    {id:2,icon:'style/images/yxyellowman.jpg',name:'小黄人拼图',price:'4999',coin:'金币',num:'11套库存'},
+                    {id:3,icon:'style/images/yxyellowman.jpg',name:'小黄人拼图',price:'4999',coin:'金币',num:'11套库存'},
+                    {id:4,icon:'style/images/yxyellowman.jpg',name:'小黄人拼图',price:'4999',coin:'金币',num:'11套库存'},
+                    {id:5,icon:'style/images/yxyellowman.jpg',name:'小黄人拼图',price:'4999',coin:'金币',num:'11套库存'},
+                    {id:6,icon:'style/images/yxyellowman.jpg',name:'小黄人拼图',price:'4999',coin:'金币',num:'11套库存'},
+                    {id:7,icon:'style/images/yxyellowman.jpg',name:'小黄人拼图',price:'4999',coin:'金币',num:'11套库存'},
+                    {id:8,icon:'style/images/yxyellowman.jpg',name:'小黄人拼图',price:'4999',coin:'金币',num:'11套库存'},
+                ],
+            },
+        ]
+
+
+        function LoadList(ary) {
+            $('.goods-info').empty()
+            $('.content-two').empty()
+
+            $(ary).each(function (i,item) {
+
+
+            })
+
+
+        }
+
+
+
+
+    </script>
 <script>
     function UserClick() {
         // this.active.show(ico)
