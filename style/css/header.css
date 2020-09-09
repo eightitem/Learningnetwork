@@ -78,6 +78,10 @@
   background: dimgray;
   color: white;
 }
+.nav{
+  background: white;
+
+}
 .nav-search .shopping{
   height: 30px;
   line-height: 30px;
