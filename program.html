@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学而思编程 学而思网校-在线学习更有效</title>
+    <link rel="stylesheet" href="style/css/common.css">
+    <link rel="stylesheet" href="lib/swiper6.1.1/swiper-bundle.min.css">
+    <link rel="stylesheet" href="lib/font_2052861_cwgvadmq02/iconfont.css">
+    <link rel="stylesheet" href="style/css/program.css">
+</head>
+<body>
+    <div class="header">
+        <div class="h-left">
+            <img src="style/images/program/wftotal.png" height="48" width="145"/>
+<!--            <a href="#" class="img"></a>-->
+            <a href="#" class="header-left header-left-active">作品展示
+            <span></span></a>
+            <a href="#">编程创作</a>
+            <a href="#">等级考试入口</a>
+        </div>
+        <div class="h-right">
+            <i class="iconfont icon-sousuo"></i>
+            <input type="text" placeholder="输入作品名称或作者姓名">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="banner">
+            <div class="swiper-container swiper-banner" >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner1.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner2.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner3.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner4.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner5.png)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-header">
+            <img class="type-icon" src="style/images/program/wfmid1.png" height="52" width="484"/>
+        </div>
+        <div class="bottom-menu one-list" >
+            <div class="bottom-menu-list">
+                <div class="swiper-container swiper-bottom">
+                    <div class="bottom-header-menu-img">
+                        <img src="style/images/program/wfbook1.png" height="62" width="88"/>
+                        <span >精选作品</span>
+                        <div class="swiper-next"><img src="style/images/program/wfbtn1.png" height="30" width="30"/></div>
+                        <div class="swiper-prev"><img src="style/images/program/wfbtn2.png" height="30" width="30"/></div>
+                    </div>
+                    <div class="swiper-wrapper bottom-swiper-wrapper">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-menu-liste"></div>
+        </div>
+        <div class="bottom-menu two-list"></div>
+        <div class="bottom-menu three-list"></div>
+    </div>
+    <script src="style/js/jquery-3.4.1.js"></script>
+    <script src="lib/swiper6.1.1/swiper-bundle.min.js"></script>
+    <script>
+        var data={
+            spot:[
+                {id:1,url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/1f/7c/1f7ccf475245a98bc2386ccc5b91ab67.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:2,url:'https://rescode.xesimg.com/hufu-code/common/mit/1df32b518a5cb0eabfe10a78764fb0cf.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:3,url:'https://rescode.xesimg.com/hufu-code/common/mit/4735c342ffb5c1e762f016718f4fed18.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:4,url:'https://rescode.xesimg.com/hufu-code/common/mit/919e5f9ea95de1c63d5117101ca94b46.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:5,url:'https://rescode.xesimg.com/hufu-code/common/mit/6882ab5a267515ad39882fc1a7853eff.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:6,url:'https://rescode.xesimg.com/hufu-code/common/mit/1df32b518a5cb0eabfe10a78764fb0cf.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:7,url:'https://rescode.xesimg.com/hufu-code/common/mit/4735c342ffb5c1e762f016718f4fed18.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:8,url:'https://rescode.xesimg.com/hufu-code/common/mit/6882ab5a267515ad39882fc1a7853eff.png',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:9,url:'https://rescode.xesimg.com/hufu-code/common/mit/0abd75c859e02675ff14d56fe01c0aff.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:10,url:'https://livefile.xesimg.com/programme/assets/1cb7fa1c8d389e6e2f59efc8aaaa2c9b.jpg',title:'视觉盛宴',name:'杨逸寒',balance:'1.2w',num:337},
+            ],
+            nospot:[
+
+            ],
+
+        }
+        function loadList(){
+            var ary=data.spot
+            $(ary).each(function (i,item) {
+                $('.bottom .swiper-wrapper').append('' +
+                    '                        <div class="swiper-slide">\n' +
+                    '                            <div class="bottom-swiper-slide">\n' +
+                    '                                <img src="'+item.url+'" height="166" width="215"/>\n' +
+                    '                            </div>\n' +
+                    '                            <div class="bottom-swiper-title">\n' +
+                    '                                <p>'+item.title+'</p>\n' +
+                    '                                <p>'+item.name+'<i class="iconfont icon-yanjing">'+item.balance+'</i><i class="iconfont icon-dianzan">'+item.num+'</i></p>\n' +
+                    '                            </div>\n' +
+                    '                        </div>')
+            })
+        }
+        loadList()
+    </script>
+    <script>
+        var swiper = new Swiper ('.swiper-banner', {
+            effect:'fade',
+            autoplay:true,
+            loop:true,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                slideChange: function () {
+                }
+            },
+        })
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-bottom', {
+            slidesPerView:5,
+            spaceBetween: 30,
+            slidesPerGroup: 5,
+            autoplay: true,
+            // loopFillGroupWithBlank: true,
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+        });
+    </script>
+</body>
+</html>
