@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金币商城-学习中心</title>
+
+    <link rel="stylesheet" href="style/css/centerfooter.css">
+    <link rel="stylesheet" href="lib/iconfont_goldmall/iconfont.css">
+    <link rel="stylesheet" href="style/css/centerheader.css">
+    <link rel="stylesheet" href="style/css/goldmall.css">
+    <link rel="stylesheet" href="style/css/common.css">
+
+
+</head>
+<body>
+<div class="header">
+    <div class="left"></div>
+    <div class="header_bar">
+
+        <li><a href="">网站首页</a><span>|</span></li>
+        <li><a href="">教师资格证公示</a><span>|</span></li>
+        <li><a href="">客户端下载</a><span>|</span></li>
+        <li><a href="">我的订单</a><span>|</span></li>
+        <li><a href="">设置</a><span>|</span></li>
+        <li><a href="" class="user" @click="UserClick">用户
+            <i class="iconfont icon-z-arrowDown"></i>
+            <i class="iconfont icon-z-arrowUp" style="display:none"></i></a>
+        </li>
+    </div>
+
+</div>
+<div class="top">
+
+    <a href=".html" class="logo"><img src="style/images/yxlogocenter.png"  style="color: #f13232" height="38" width="100"/></a>
+
+    <p><a href="">我的课程</a></p>
+    <p>
+        <a href="" class="test">我的试题
+            <i class="iconfont icon-jiantouarrow486"></i>
+            <i class="iconfont icon-jiantou" style="display: none"></i>
+        </a>
+    </p>
+    <p><a href="">我的讲座</a></p>
+    <p class="apply">
+        <a href="" >我的应用
+            <i class="iconfont icon-jiantouarrow486"></i>
+            <i class="iconfont icon-jiantou" style="display: none"></i>
+        </a>
+    </p>
+</div>
+<div class="container">
+    <div class="title">
+        <a href="">我的应用  ></a>
+        <span>金币商城</span>
+        <span></span>
+    </div>
+<!--    <div class="content">-->
+        <div class="tab">
+            <ul><li><a href="">商城礼品</a></li></ul>
+            <ul><li><a href="">金币明细</a></li></ul>
+            <ul><li><a href="">兑换记录</a></li></ul>
+        </div>
+    <div class="content">
+        <div class="content-top">
+
+        <div class="goods-type">
+            <div style="float: left;color:#999999;" >
+              <span class="table">商品分类</span>
+            </div>
+            <div class="goods" style="margin-left: 80px">
+                <span>全部</span>
+                <span>文具</span>
+                <span>生活用品</span>
+                <span>笔记本</span>
+                <span>玩具</span>
+
+            </div>
+        </div>
+            <div style="float: left;color:#999999;"  >
+                <span class="table" >排序方式</span>
+            </div>
+            <div class="goods" style="margin-left: 80px">
+                <span class="active">最新礼品</span>
+                <span class="goods-price">兑换价格</span>
+
+            </div>
+    </div>
+        <div class="good-mall">
+
+            <div class="goods-info">
+                <div class="goods-img">
+                    <img src="" alt="">
+                </div>
+                <div class="goods-name"></div>
+                <div>
+                    <div class="goods-info-price"></div>
+                    <div class="goods-info-num"></div>
+                </div>
+            </div>
+            <div class="goods-info">
+                <div class="goods-img">
+                    <img src="" alt="">
+                </div>
+                <div class="goods-name"></div>
+                <div>
+                    <div class="goods-info-price"></div>
+                    <div class="goods-info-num"></div>
+                </div>
+            </div>
+            <div class="goods-info">
+                <div class="goods-img">
+                    <img src="" alt="">
+                </div>
+                <div class="goods-name"></div>
+                <div>
+                    <div class="goods-info-price"></div>
+                    <div class="goods-info-num"></div>
+                </div>
+            </div>
+            <div class="goods-info">
+                <div class="goods-img">
+                    <img src="" alt="">
+                </div>
+                <div class="goods-name"></div>
+                <div>
+                    <div class="goods-info-price"></div>
+                    <div class="goods-info-num"></div>
+                </div>
+            </div>
+            <div class="goods-info">
+                <div class="goods-img">
+                    <img src="" alt="">
+                </div>
+                <div class="goods-name"></div>
+                <div>
+                    <div class="goods-info-price"></div>
+                    <div class="goods-info-num"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="style/js/jquery-3.4.1.js"></script>
+<!--鼠标移入移出事件-->
+<script>
+    $('.user').mouseover(function () {
+        // $('.apply i:first-of-type').style.display="none";
+        $('.user i:first-of-type').hide()
+        $('.user i:last-of-type').show()
+    }).mouseout(function (){
+        $('.user i:first-of-type').show()
+        $('.user i:last-of-type').hide()
+    });
+
+
+    $('.test').mouseover(function () {
+        // $('.apply i:first-of-type').style.display="none";
+        $('.test i:first-of-type').hide()
+        $('.test i:last-of-type').show()
+    }).mouseout(function (){
+        $('.test i:first-of-type').show()
+        $('.test i:last-of-type').hide()
+    });
+
+     $('.apply').mouseover(function () {
+         // $('.apply i:first-of-type').style.display="none";
+         $('.apply i:first-of-type').hide()
+         $('.apply i:last-of-type').show()
+     }).mouseout(function (){
+         $('.apply i:first-of-type').show()
+         $('.apply i:last-of-type').hide()
+     });
+</script>
+<script>
+    function UserClick() {
+        // this.active.show(ico)
+
+    }
+</script>
+</body>
+</html>
