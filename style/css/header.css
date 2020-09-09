@@ -78,10 +78,6 @@
   background: dimgray;
   color: white;
 }
-.nav{
-  background: white;
-
-}
 .nav-search .shopping{
   height: 30px;
   line-height: 30px;
@@ -94,6 +90,10 @@
   font-size: 13px;
   color: black;
   margin-left: 30px;
+}
+.nav{
+  background: white;
+
 }
 .nav-search .shopping:hover{
   color: red;
