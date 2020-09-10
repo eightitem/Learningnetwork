@@ -60,7 +60,16 @@
                     </div>
                 </div>
             </div>
-            <div class="bottom-menu-liste"></div>
+            <div class="bottom-menu-liste">
+                <div class="bottom-menu-liste-top">
+                    <img src="style/images/program/wfplanet.png" height="62" width="88"/>
+                    <span class="bottom-menu-liste-span">精选作品</span>
+                    <a href="javascript:void(0)" class="bottom-menu-liste-span">课程专区</a>
+                    <a href="javascript:void(0)" class="bottom-menu-liste-span">最新发布</a>
+                    <a href="javascript:void(0)" class="bottom-menu-liste-span">最受欢迎</a>
+                </div>
+
+            </div>
         </div>
         <div class="bottom-menu two-list"></div>
         <div class="bottom-menu three-list"></div>
@@ -130,12 +139,26 @@
             spaceBetween: 30,
             slidesPerGroup: 5,
             autoplay: true,
+            duration:3000,
             // loopFillGroupWithBlank: true,
             navigation: {
-                nextEl: '.swiper-next',
-                prevEl: '.swiper-prev',
+                nextEl: '.swiper-prev',
+                prevEl: '.swiper-next',
             },
         });
+    </script>
+    <script>
+        $(function () {
+            $('.bottom-menu-liste-top a').click(function () {
+                // if ($(this).hasClass('active')) {
+                //     return true;
+                // } else {
+                //     $('.bottom-menu-liste-span').removeClass('active');
+                //     $(this).addClass('active');
+                // }
+                $('.bottom-menu-liste-top a').eq($(this).index()).addClass("active");
+            })
+        })
     </script>
 </body>
 </html>
