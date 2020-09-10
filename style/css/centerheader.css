@@ -116,24 +116,55 @@ img {
     line-height: 65px;
     text-align: center;
 }
-/*.apply{*/
-/*    display: inline-block;*/
-/*    background: #f13232;*/
-/*    color: white;*/
-
-/*}*/
 .top a:hover{
     background: white;
     color:#f13232 ;
 
 }
-/*.iconfont .icon-jiantou{*/
-/*    display: none;*/
-/*}*/
 .top p i{
     display: inline-block;
-    position: absolute;
+    /*position: absolute;*/
 }
+.apply {
+    display: inline-block;
+    /*background: #f13232;*/
+    /*color: white;*/
+    position: relative;
+
+}
+.apply:hover .mall{
+     display: block;
+ }
+.coin-mall{
+    /*position: absolute;*/
+    /*width: 145px;*/
+    /*height:50px;*/
+    margin-left: 604px;
+    margin-top: -2px;
+    /*display: none;*/
+}
+.coin-mall .mall{
+
+    width: 145px;
+    height: 50px;
+    background: white;
+    top: 90px;
+    /*right: 0;*/
+    /*display: none;*/
+    color: black;
+    text-align: center;
+    /*display: inline-block;*/
+}
+.coin-mall a{
+    color: black;
+    /*display: block;*/
+}
+.coin-mall a:hover{
+    color: black;
+    /*display: block;*/
+}
+
+
 
 
 .container{
