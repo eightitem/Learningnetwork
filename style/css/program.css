@@ -296,7 +296,7 @@ body{
     color: #212831;
     font-size: 16px;
 }
-a:active{
+.active{
     /*text-decoration: none;*/
     color:#fb8129 ;
 }

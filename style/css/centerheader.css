@@ -132,39 +132,24 @@ img {
     position: relative;
 
 }
-.apply:hover .mall{
-     display: block;
- }
-.coin-mall{
-    /*position: absolute;*/
-    /*width: 145px;*/
-    /*height:50px;*/
-    margin-left: 604px;
-    margin-top: -2px;
-    /*display: none;*/
-}
-.coin-mall .mall{
 
+
+/*.coin-mall a:hover{*/
+/*    color: black;*/
+/*    !*display: block;*!*/
+/*}*/
+
+.mall-main{
+    position: absolute;
     width: 145px;
     height: 50px;
     background: white;
     top: 90px;
-    /*right: 0;*/
-    /*display: none;*/
-    color: black;
-    text-align: center;
-    /*display: inline-block;*/
-}
-.coin-mall a{
-    color: black;
-    /*display: block;*/
-}
-.coin-mall a:hover{
-    color: black;
-    /*display: block;*/
 }
 
-
+.top p{
+    margin-top: -20px;
+}
 
 
 .container{

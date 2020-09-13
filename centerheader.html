@@ -28,9 +28,9 @@
 
 <div class="top">
 
-    <a href=".html" class="logo"><img src="style/images/yxlogocenter.png"  style="color: #f13232" height="38" width="100"/></a>
+    <a href=".html" class="logo"><img  src="style/images/yxlogocenter.png"  style="color: #f13232;margin-top: 10px" height="38" width="100"/></a>
 
-    <p><a href="">我的课程</a></p>
+    <p><a href="avascript:void(0)">我的课程</a></p>
     <p>
         <a href="javascript:void(0)" class="test">我的试题
         <i class="iconfont icon-jiantouarrow486"></i>
@@ -39,11 +39,14 @@
     </p>
     <p><a href="">我的讲座</a></p>
     <p class="apply">
-        <a href="javascript:void(0)" >我的应用
+        <a href="javascript:void(0)" class="myapply" >我的应用
             <i class="iconfont icon-jiantouarrow486"></i>
             <i class="iconfont icon-jiantou" style="display: none"></i>
         </a>
-        <li class="coin-mall"><a href="" class="mall">金币商城</a></li>
+    <div class="mall-main">
+            <a herf="JavaScript:void(0)" style="color: black">金币商城</a>
+    </div>
+
     </p>
 
 
@@ -94,6 +97,15 @@
         $('.apply i:first-of-type').show()
         $('.apply i:last-of-type').hide()
     });
+
+    //我的应用
+    // $('.myapply').mouseenter(function () {
+    //         $('.mall').show()
+    // })
+    // $('.myapply').mouseleave(function () {
+    //         $('.mall').hide()
+    // })
+
 </script>
 </body>
 </html>
