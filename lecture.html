@@ -87,8 +87,8 @@
             </div>
             <div  class="center-title">
                 <div class="list-tab ">
-                    <a class="list-tab__title " onclick="show(1)">即将开始</a>
-                    <a class="list-tab__title" onclick="show(2)">精彩回放</a>
+                    <a class="list-tab__title active " onclick="show(1)">即将开始</a>
+                    <a class="list-tab__title " onclick="show(2)">精彩回放</a>
                     <a class="list-tab__title" onclick="show(3)">系列讲座</a>
 
 
@@ -1026,6 +1026,15 @@
 </div>
 <script src="javascript/jquery-3.4.1.js"></script>
 <script>
+
+
+
+
+
+
+
+</script>
+<script>
     function show(id) {
         var divs = document.getElementsByName("dv")
             for (var i = 0; i <divs.length; i++) {
@@ -1034,7 +1043,8 @@
                 } else {
                     divs[i].style.display = "none"
                 }
-            }
+            };
+
 
 
     }
