@@ -48,7 +48,7 @@ i, p, h1, h2, h3, h4, h5, h6, b, textarea, button, input, select, figure, figcap
 .container{
     width: 1200px;
     margin: 0 auto;
-    height: 1500px;
+    /*height: 800px;*/
     /*background: #ffffff;*/
 }
 .container .title{
@@ -65,7 +65,7 @@ i, p, h1, h2, h3, h4, h5, h6, b, textarea, button, input, select, figure, figcap
 .container .content{
     width: 1200px;
     /*background: #ffffff;*/
-    height: 980px;
+    /*height: 980px;*/
     display: table;
     content: "";
     /*width: 1200px;*/
@@ -135,8 +135,7 @@ i, p, h1, h2, h3, h4, h5, h6, b, textarea, button, input, select, figure, figcap
     color: #f13232;
 }
 .active{
-    color: #f13232;
-
+    /*color: #f13232;*/
     padding-right: 15px;
 }
 .gold-mall{
