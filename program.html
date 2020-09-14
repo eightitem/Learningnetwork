@@ -7,158 +7,782 @@
     <link rel="stylesheet" href="lib/swiper6.1.1/swiper-bundle.min.css">
     <link rel="stylesheet" href="lib/font_2052861_cwgvadmq02/iconfont.css">
     <link rel="stylesheet" href="style/css/program.css">
+
+
 </head>
 <body>
-    <div class="header">
-        <div class="h-left">
-            <img src="style/images/program/wftotal.png" height="48" width="145"/>
-<!--            <a href="#" class="img"></a>-->
-            <a href="#" class="header-left header-left-active">作品展示
+<div class="header">
+    <div class="h-left">
+        <img src="style/images/program/wftotal.png" height="48" width="145"/>
+        <!--            <a href="#" class="img"></a>-->
+        <a href="#" class="header-left header-left-active">作品展示
             <span></span></a>
-            <a href="#">编程创作</a>
-            <a href="#">等级考试入口</a>
-        </div>
-        <div class="h-right">
-            <i class="iconfont icon-sousuo"></i>
-            <input type="text" placeholder="输入作品名称或作者姓名">
-            <a href="#">登录</a>
-            <a href="#">注册</a>
+        <a href="#" class="header-language">编程创作
+            <div class="language">
+                <p onclick="document.location='https://code.xueersi.com/scratch3/index.html?pid=2&version=3.0&env=community'">图形化编程创作</p>
+                <p onclick="document.location='https://code.xueersi.com/code/ide/code/1'">C++创作</p>
+                <p onclick="document.location='https://code.xueersi.com/code/ide/code/2'">Python创作</p>
+                <p onclick="document.location='https://code.xueersi.com/code/ide/code/3'">Python画画</p>
+                <p onclick="document.location='https://code.xueersi.com/code/ide/code/6'">Python游戏</p>
+                <p class="lan-top" >硬件编程</p>
+            </div>
+        </a>
+        <a href="https://code.xueersi.com/code/gradeexamination">等级考试入口</a>
+    </div>
+    <div class="h-right">
+        <i class="iconfont icon-sousuo"></i>
+        <input type="text" placeholder="输入作品名称或作者姓名">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+    </div>
+</div>
+<div class="menu">
+    <div class="banner">
+        <div class="swiper-container swiper-banner" >
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner1.png)"></div>
+                <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner2.png)"></div>
+                <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner3.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner4.png)"></div>
+                <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner5.png)"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
         </div>
     </div>
-    <div class="menu">
-        <div class="banner">
-            <div class="swiper-container swiper-banner" >
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner1.png)"></div>
-                    <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner2.png)"></div>
-                    <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner3.jpg)"></div>
-                    <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner4.png)"></div>
-                    <div class="swiper-slide" style="background-image:url(style/images/program/wfbanner5.png)"></div>
+</div>
+<div class="bottom-header ">
+    <div class="bottom-header-slide1"></div>
+    <div class="bottom-header-slide2"></div>
+    <div class="bottom-header-slide3"></div>
+</div>
+<div class="bottom one-list">
+    <div class="bottom-menu  " >
+        <div class="bottom-menu-list">
+            <div class="swiper-container swiper-bottom-new">
+                <div class="bottom-header-menu-img">
+                    <img src="style/images/program/wfbook1.png" height="62" width="88"/>
+                    <span >精选作品</span>
+                    <div class="swiper-next"><img src="style/images/program/wfbtn1.png" height="30" width="30"/></div>
+                    <div class="swiper-prev"><img src="style/images/program/wfbtn2.png" height="30" width="30"/></div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination swiper-pagination-white"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-wrapper ">
+                </div>
+            </div>
+        </div>
+        <div class="bottom-menu-liste">
+            <div class="bottom-menu-liste-top">
+                <img src="style/images/program/wfplanet.png" height="62" width="88"/>
+                <span class="bottom-menu-liste-span">全部作品</span>
+                <a  href="javascript:void(0)" class="bottom-menu-liste-span" onclick="loadTopic(2)">课程专区</a>
+                <a  href="javascript:void(0)" class="bottom-menu-liste-span" onclick="loadTopic(1)">最新发布</a>
+                <a  href="javascript:void(0)" class="bottom-menu-liste-span  active" onclick="loadTopic(0)">最受欢迎</a>
+            </div>
+            <div class="bottom-menu-liste-menu " >
             </div>
         </div>
     </div>
-    <div class="bottom">
-        <div class="bottom-header">
-            <img class="type-icon" src="style/images/program/wfmid1.png" height="52" width="484"/>
-        </div>
-        <div class="bottom-menu one-list" >
-            <div class="bottom-menu-list">
-                <div class="swiper-container swiper-bottom">
-                    <div class="bottom-header-menu-img">
-                        <img src="style/images/program/wfbook1.png" height="62" width="88"/>
-                        <span >精选作品</span>
-                        <div class="swiper-next"><img src="style/images/program/wfbtn1.png" height="30" width="30"/></div>
-                        <div class="swiper-prev"><img src="style/images/program/wfbtn2.png" height="30" width="30"/></div>
-                    </div>
-                    <div class="swiper-wrapper bottom-swiper-wrapper">
-                    </div>
+</div>
+<div class="bottom two-list">
+    <div class="bottom-menu  " >
+        <div class="bottom-menu-list">
+            <div class="swiper-container swiper-bottom">
+                <div class="bottom-header-menu-img">
+                    <img src="style/images/program/wfbook1.png" height="62" width="88"/>
+                    <span >精选作品</span>
+                    <div class="swiper-next"><img src="style/images/program/wfbtn1.png" height="30" width="30"/></div>
+                    <div class="swiper-prev"><img src="style/images/program/wfbtn2.png" height="30" width="30"/></div>
+                </div>
+                <div class="swiper-wrapper ">
                 </div>
             </div>
-            <div class="bottom-menu-liste">
-                <div class="bottom-menu-liste-top">
-                    <img src="style/images/program/wfplanet.png" height="62" width="88"/>
-                    <span class="bottom-menu-liste-span">精选作品</span>
-                    <a href="javascript:void(0)" class="bottom-menu-liste-span">课程专区</a>
-                    <a href="javascript:void(0)" class="bottom-menu-liste-span">最新发布</a>
-                    <a href="javascript:void(0)" class="bottom-menu-liste-span">最受欢迎</a>
-                </div>
-
+        </div>
+        <div class="bottom-menu-liste">
+            <div class="bottom-menu-liste-top">
+                <img src="style/images/program/wfplanet.png" height="62" width="88"/>
+                <span class="bottom-menu-liste-span">全部作品</span>
+                <a  href="javascript:void(0)" class="bottom-menu-liste-span" onclick="twoloadTopic(2)">课程专区</a>
+                <a  href="javascript:void(0)" class="bottom-menu-liste-span" onclick="twoloadTopic(1)">最新发布</a>
+                <a  href="javascript:void(0)" class="bottom-menu-liste-span  active" onclick="twoloadTopic(0)">最受欢迎</a>
+            </div>
+            <div class="bottom-menu-liste-menu " >
             </div>
         </div>
-        <div class="bottom-menu two-list"></div>
-        <div class="bottom-menu three-list"></div>
     </div>
-    <script src="style/js/jquery-3.4.1.js"></script>
-    <script src="lib/swiper6.1.1/swiper-bundle.min.js"></script>
-    <script>
-        var data={
-            spot:[
-                {id:1,url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/1f/7c/1f7ccf475245a98bc2386ccc5b91ab67.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
-                {id:2,url:'https://rescode.xesimg.com/hufu-code/common/mit/1df32b518a5cb0eabfe10a78764fb0cf.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
-                {id:3,url:'https://rescode.xesimg.com/hufu-code/common/mit/4735c342ffb5c1e762f016718f4fed18.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
-                {id:4,url:'https://rescode.xesimg.com/hufu-code/common/mit/919e5f9ea95de1c63d5117101ca94b46.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
-                {id:5,url:'https://rescode.xesimg.com/hufu-code/common/mit/6882ab5a267515ad39882fc1a7853eff.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
-                {id:6,url:'https://rescode.xesimg.com/hufu-code/common/mit/1df32b518a5cb0eabfe10a78764fb0cf.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
-                {id:7,url:'https://rescode.xesimg.com/hufu-code/common/mit/4735c342ffb5c1e762f016718f4fed18.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
-                {id:8,url:'https://rescode.xesimg.com/hufu-code/common/mit/6882ab5a267515ad39882fc1a7853eff.png',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
-                {id:9,url:'https://rescode.xesimg.com/hufu-code/common/mit/0abd75c859e02675ff14d56fe01c0aff.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
-                {id:10,url:'https://livefile.xesimg.com/programme/assets/1cb7fa1c8d389e6e2f59efc8aaaa2c9b.jpg',title:'视觉盛宴',name:'杨逸寒',balance:'1.2w',num:337},
-            ],
-            nospot:[
+</div>
+<div class="bottom three-list">
+    <div class="bottom-menu  " >
+        <div class="bottom-menu-list">
+            <div class="swiper-container swiper-bottom-C">
+                <div class="bottom-header-menu-img">
+                    <img src="style/images/program/wfbook1.png" height="62" width="88"/>
+                    <span >精选作品</span>
+                    <div class="swiper-next"><img src="style/images/program/wfbtn1.png" height="30" width="30"/></div>
+                    <div class="swiper-prev"><img src="style/images/program/wfbtn2.png" height="30" width="30"/></div>
+                </div>
+                <div class="swiper-wrapper ">
+                </div>
+            </div>
+        </div>
+        <div class="bottom-menu-liste">
+            <div class="bottom-menu-liste-top">
+                <img src="style/images/program/wfplanet.png" height="62" width="88"/>
+                <span class="bottom-menu-liste-span">全部作品</span>
+                <a  href="javascript:void(0)" class="bottom-menu-liste-span" onclick="twoloadTopic(2)">课程专区</a>
+                <a  href="javascript:void(0)" class="bottom-menu-liste-span" onclick="twoloadTopic(1)">最新发布</a>
+                <a  href="javascript:void(0)" class="bottom-menu-liste-span  active" onclick="twoloadTopic(0)">最受欢迎</a>
+            </div>
+            <div class="bottom-menu-liste-menu " >
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footerr">
+    <p class="bottom-a">
+        <a href="#">网校首页</a>
+        <span>  |  </span>
+        <a href="#">关于我们</a>
+        <span>  |  </span>
+        <a href="#">网校招聘</a>
+        <span>  |  </span>
+        <a href="#">合作专区</a>
+        <span>  |  </span>
+        <a href="#">联系我们</a>
+        <span>  |  </span>
+        <a href="#">AI开放平台</a>
+        <span>  |  </span>
+        <a href="#">意见反馈</a>
+        <span>  |  </span>
+        <a href="#">漏洞提交</a>
+        <span>  |  </span>
+        <a href="#">隐私政策</a>
+        <span>  |  </span>
+        <a href="#">版权声明</a>
+        <span>  |  </span>
+        <a href="#">反盗链生命</a>
+        <span>  |  </span>
+        <a href="#">网上有害信息举报</a>
+        <span>  |  </span>
+        <a href="#">网校备案公示</a>
+    </p>
+    <p class="bottom-p1">
+        客服电话：<span> 8208208820 </span>(免长途话费)&nbsp;&nbsp;Copyright&nbsp; © &nbsp;2009-2020&nbsp;学而思网校&nbsp; www.xueersi.com  &nbsp;北京学而思教育科技有限公司 版权所有
+    </p>
+    <p class="bottom-p2">
+        违法和不良信息举报电话：010-80759388-3 举报邮箱：xeswxjubao@100tal.com 地址：北京市昌平区回龙观东大街龙冠和谐大厦 京ICP证080230号 <i><img
+            src="style/images/program/wfjgwab.png" height="12" width="12"/></i> 京公网安备 11010802020171号
+    </p>
+    <p class="bottom-img">
+        <img src="style/images/foot3.png" width="74" height="23">
+        <img src="style/images/foot1.png" width="74" height="23">
+        <img src="style/images/foot2.png" width="74" height="23">
 
-            ],
+    </p>
+</div>
+<script src="style/js/jquery-3.4.1.js"></script>
+<script src="lib/swiper6.1.1/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper ('.swiper-banner', {
+        effect:'fade',
+        autoplay:true,
+        loop:true,
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+</script>
+<script>
+    var swiper = new Swiper('.swiper-bottom-new', {
+        slidesPerView:5,
+        spaceBetween: 30,
+        slidesPerGroup: 5,
+        autoplay: true,
+        duration:3000,
+        observer:true, //修改swiper自己或子元素时，自动初始化swiper
+        observeParents:true, //修改swiper的父元素时，自动初始化swiper
+        // loopFillGroupWithBlank: true,
+        navigation: {
+            nextEl: '.swiper-prev',
+            prevEl: '.swiper-next',
+        },
+    });
 
-        }
-        function loadList(){
-            var ary=data.spot
-            $(ary).each(function (i,item) {
-                $('.bottom .swiper-wrapper').append('' +
-                    '                        <div class="swiper-slide">\n' +
-                    '                            <div class="bottom-swiper-slide">\n' +
-                    '                                <img src="'+item.url+'" height="166" width="215"/>\n' +
-                    '                            </div>\n' +
-                    '                            <div class="bottom-swiper-title">\n' +
-                    '                                <p>'+item.title+'</p>\n' +
-                    '                                <p>'+item.name+'<i class="iconfont icon-yanjing">'+item.balance+'</i><i class="iconfont icon-dianzan">'+item.num+'</i></p>\n' +
-                    '                            </div>\n' +
-                    '                        </div>')
-            })
-        }
-        loadList()
-    </script>
-    <script>
-        var swiper = new Swiper ('.swiper-banner', {
-            effect:'fade',
-            autoplay:true,
-            loop:true,
-            // 如果需要分页器
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true
-            },
-            // 如果需要前进后退按钮
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            on: {
-                slideChange: function () {
-                }
-            },
+</script>
+<script>
+
+    $(function () {
+        $('.bottom-menu-liste-top a').click(function () {
+            if ($(this).hasClass('active')) {
+                return true;
+            } else {
+                $('.bottom-menu-liste-span').removeClass('active');
+                $(this).addClass('active');
+            }
         })
-    </script>
-    <script>
-        var swiper = new Swiper('.swiper-bottom', {
-            slidesPerView:5,
-            spaceBetween: 30,
-            slidesPerGroup: 5,
-            autoplay: true,
-            duration:3000,
-            // loopFillGroupWithBlank: true,
-            navigation: {
-                nextEl: '.swiper-prev',
-                prevEl: '.swiper-next',
-            },
-        });
-    </script>
-    <script>
-        $(function () {
-            $('.bottom-menu-liste-top a').click(function () {
-                // if ($(this).hasClass('active')) {
-                //     return true;
-                // } else {
-                //     $('.bottom-menu-liste-span').removeClass('active');
-                //     $(this).addClass('active');
-                // }
-                $('.bottom-menu-liste-top a').eq($(this).index()).addClass("active");
-            })
+    })
+</script>
+<script>
+    var data1={
+        spot:[
+            {id:11,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/1f/7c/1f7ccf475245a98bc2386ccc5b91ab67.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+            {id:12,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5280789&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/1df32b518a5cb0eabfe10a78764fb0cf.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+            {id:13,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/4735c342ffb5c1e762f016718f4fed18.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+            {id:14,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/919e5f9ea95de1c63d5117101ca94b46.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+            {id:15,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/6882ab5a267515ad39882fc1a7853eff.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+            {id:16,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/1df32b518a5cb0eabfe10a78764fb0cf.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+            {id:17,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/4735c342ffb5c1e762f016718f4fed18.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+            {id:18,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/6882ab5a267515ad39882fc1a7853eff.png',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+            {id:19,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/0abd75c859e02675ff14d56fe01c0aff.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+            {id:110,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=8393306&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/1cb7fa1c8d389e6e2f59efc8aaaa2c9b.jpg',title:'视觉盛宴',name:'杨逸寒',balance:'1.2w',num:337},
+        ]
+    }
+
+    function loadList(){
+        var ary=data1.spot
+        $(ary).each(function (i,item) {
+            $('.swiper-bottom-new .swiper-wrapper').append('' +
+                '                        <div class="swiper-slide" onclick="document.location=\' '+item.ul+'\';">\n' +
+                '                            <div class="bottom-swiper-slide">\n' +
+                '                                <img src="'+item.url+'" height="166" width="215"/>\n' +
+                '                            </div>\n' +
+                '                            <div class="bottom-swiper-title">\n' +
+                '                                <p>'+item.title+'</p>\n' +
+                '                                <p>'+item.name+'<i class="iconfont icon-yanjing">'+item.balance+'</i><i class="iconfont icon-dianzan">'+item.num+'</i></p>\n' +
+                '                            </div>\n' +
+                '                        </div>')
         })
-    </script>
+
+    }
+    loadList()
+</script>
+<script>
+    var data2={
+        menu:[
+            {id:21,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/python/pythona1.jpg',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+            {id:22,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5280789&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/1df32b518a5cb0eabfe10a78764fb0cf.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+            {id:23,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/4735c342ffb5c1e762f016718f4fed18.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+            {id:24,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/919e5f9ea95de1c63d5117101ca94b46.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+            {id:25,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/6882ab5a267515ad39882fc1a7853eff.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+            {id:26,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/1df32b518a5cb0eabfe10a78764fb0cf.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+            {id:27,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/4735c342ffb5c1e762f016718f4fed18.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+            {id:28,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/6882ab5a267515ad39882fc1a7853eff.png',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+            {id:29,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/0abd75c859e02675ff14d56fe01c0aff.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+            {id:210,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=8393306&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/1cb7fa1c8d389e6e2f59efc8aaaa2c9b.jpg',title:'视觉盛宴',name:'杨逸寒',balance:'1.2w',num:337},
+        ],
+    }
+    function loadListmenu(){
+        var ary2=data2.menu
+        $(ary2).each(function (i,item) {
+            $('.swiper-bottom  .swiper-wrapper').append('' +
+                '                        <div class="swiper-slide" onclick="document.location=\' '+item.ul+'\';">\n' +
+                '                            <div class="bottom-swiper-slide">\n' +
+                '                                <img src="'+item.url+'" height="166" width="215"/>\n' +
+                '                            </div>\n' +
+                '                            <div class="bottom-swiper-title">\n' +
+                '                                <p>'+item.title+'</p>\n' +
+                '                                <p>'+item.name+'<i class="iconfont icon-yanjing">'+item.balance+'</i><i class="iconfont icon-dianzan">'+item.num+'</i></p>\n' +
+                '                            </div>\n' +
+                '                        </div>')
+        })
+
+    }
+    loadListmenu()
+</script>
+<script>
+    var data3={
+        menu:[
+            {id:21,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://xesfile.xesimg.com/programme/assets/f47a4edd9d1734d3091e0e37cc0caa81.jpg',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+            {id:22,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5280789&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/1df32b518a5cb0eabfe10a78764fb0cf.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+            {id:23,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/4735c342ffb5c1e762f016718f4fed18.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+            {id:24,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/919e5f9ea95de1c63d5117101ca94b46.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+            {id:25,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/6882ab5a267515ad39882fc1a7853eff.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+            {id:26,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/1df32b518a5cb0eabfe10a78764fb0cf.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+            {id:27,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/4735c342ffb5c1e762f016718f4fed18.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+            {id:28,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/6882ab5a267515ad39882fc1a7853eff.png',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+            {id:29,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/0abd75c859e02675ff14d56fe01c0aff.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+            {id:210,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=8393306&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/1cb7fa1c8d389e6e2f59efc8aaaa2c9b.jpg',title:'视觉盛宴',name:'杨逸寒',balance:'1.2w',num:337},
+        ],
+    }
+    function loadListmenuC(){
+        var ary2=data3.menu
+        $(ary2).each(function (i,item) {
+            $('.swiper-bottom-C  .swiper-wrapper').append('' +
+                '                        <div class="swiper-slide" onclick="document.location=\' '+item.ul+'\';">\n' +
+                '                            <div class="bottom-swiper-slide">\n' +
+                '                                <img src="'+item.url+'" height="166" width="215"/>\n' +
+                '                            </div>\n' +
+                '                            <div class="bottom-swiper-title">\n' +
+                '                                <p>'+item.title+'</p>\n' +
+                '                                <p>'+item.name+'<i class="iconfont icon-yanjing">'+item.balance+'</i><i class="iconfont icon-dianzan">'+item.num+'</i></p>\n' +
+                '                            </div>\n' +
+                '                        </div>')
+        })
+
+    }
+    loadListmenuC()
+</script>
+<script>
+    var  data=[
+        {   id:1,
+            title: '课程专区',
+            sub:[
+                {id:11,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/79/e6/79e6212c154c737e6147c0d910d55ce5.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:12,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d19e3cb54f18c87eac2ae50a7c5b72d3.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:13,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/73/01/7301ed48eaf35ecb0302fa785e62576e.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:14,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/c09624631028b8b53f784f3401ac66fd.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:15,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d502ea47bde5f0396ffb0a2457015ab5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:16,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/1a/09/1a09a89d72f9f8ddb8b7ad0e49fee121.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:17,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/87/b1/87b11bba0a4a15c00c9dfa398ca34cf9.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:18,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3d03821b9ffef1714404aadb607e789b.jpg',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:19,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/48d95a34f9347c981b19c06bc713da28.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:110,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/93423e447bfc860b409abfeb69608633.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:111,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/e76e45cdf114af10014cd22d478ae6a6.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:112,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/bfb58bf99ddd94d0f2be23c6d8a9aa98.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:113,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/20f70e6db99e1757deb13805106ab00c.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:114,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/aa74c7ee887029d19e7b8a44103cfa45.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:115,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/81/59/8159136c963fcb1bdfcd5e8c3ae0bf7d.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:116,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/6c138b4a807ae35678f2938028336415.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:117,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/df34a636552f1c795c63542e66d60943.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:118,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3578d585d42d16a890253959a6a0d45f.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:119,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/b7397b04f2dd99866f0c0c672ad06041.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:120,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/c4/46/c4469bbf9bac9509b6badf5be4a1fb3b.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:121,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/79/e6/79e6212c154c737e6147c0d910d55ce5.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:122,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d19e3cb54f18c87eac2ae50a7c5b72d3.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:123,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/73/01/7301ed48eaf35ecb0302fa785e62576e.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:124,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/c09624631028b8b53f784f3401ac66fd.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:125,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d502ea47bde5f0396ffb0a2457015ab5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:126,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/1a/09/1a09a89d72f9f8ddb8b7ad0e49fee121.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:127,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/87/b1/87b11bba0a4a15c00c9dfa398ca34cf9.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:128,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3d03821b9ffef1714404aadb607e789b.jpg',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:129,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/48d95a34f9347c981b19c06bc713da28.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:130,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/93423e447bfc860b409abfeb69608633.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:131,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/e76e45cdf114af10014cd22d478ae6a6.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:132,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/bfb58bf99ddd94d0f2be23c6d8a9aa98.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:133,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/20f70e6db99e1757deb13805106ab00c.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:134,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/aa74c7ee887029d19e7b8a44103cfa45.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:135,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/81/59/8159136c963fcb1bdfcd5e8c3ae0bf7d.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:136,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/6c138b4a807ae35678f2938028336415.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:137,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/df34a636552f1c795c63542e66d60943.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:138,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3578d585d42d16a890253959a6a0d45f.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:139,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/b7397b04f2dd99866f0c0c672ad06041.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:140,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/c4/46/c4469bbf9bac9509b6badf5be4a1fb3b.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:141,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/79/e6/79e6212c154c737e6147c0d910d55ce5.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:142,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d19e3cb54f18c87eac2ae50a7c5b72d3.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:143,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/73/01/7301ed48eaf35ecb0302fa785e62576e.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:144,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/c09624631028b8b53f784f3401ac66fd.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:145,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d502ea47bde5f0396ffb0a2457015ab5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:146,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/1a/09/1a09a89d72f9f8ddb8b7ad0e49fee121.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:147,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/87/b1/87b11bba0a4a15c00c9dfa398ca34cf9.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:148,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3d03821b9ffef1714404aadb607e789b.jpg',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:149,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/48d95a34f9347c981b19c06bc713da28.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:150,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/93423e447bfc860b409abfeb69608633.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:151,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/e76e45cdf114af10014cd22d478ae6a6.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:152,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/bfb58bf99ddd94d0f2be23c6d8a9aa98.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:153,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/20f70e6db99e1757deb13805106ab00c.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:154,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/aa74c7ee887029d19e7b8a44103cfa45.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:155,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/81/59/8159136c963fcb1bdfcd5e8c3ae0bf7d.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:156,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/6c138b4a807ae35678f2938028336415.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:157,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/df34a636552f1c795c63542e66d60943.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:158,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3578d585d42d16a890253959a6a0d45f.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:159,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/b7397b04f2dd99866f0c0c672ad06041.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:160,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/c4/46/c4469bbf9bac9509b6badf5be4a1fb3b.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+
+            ]},
+        {   id:2,
+            title: '最新发布',
+            sub:  [
+                {  id:21,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new1.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:22,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5280789&version=3.0&langType=scratch',url:'style/images/program/new2.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:23,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'style/images/program/new3.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:24,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new4.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:25,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:26,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'style/images/program/new6.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:27,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new7.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:28,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new8.png',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:29,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new9.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:210,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=8393306&version=3.0&langType=scratch',url:'style/images/program/new10.png',title:'视觉盛宴',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:211,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu11.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:212,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu12.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:213,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu13.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:214,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu14.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:215,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu15.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:216,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu16.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:217,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu17.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:218,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu18.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:219,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu19.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:220,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu20.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+
+            ]},
+        {   id:3,
+            title: '最受欢迎',
+            sub:  [   {id:31,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu1.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:32,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5280789&version=3.0&langType=scratch',url:'style/images/program/wfmenu2.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:33,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'style/images/program/wfmenu3.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:34,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu4.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:35,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:36,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'style/images/program/wfmenu6.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:37,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu7.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:38,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu8.png',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:39,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu9c.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:310,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=8393306&version=3.0&langType=scratch',url:'style/images/program/wfmenu10.png',title:'视觉盛宴',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:311,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu11.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:312,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu12.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:313,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu13.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:314,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu14.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:315,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu15.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:316,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu16.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:317,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu17.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:318,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu18.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:319,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu19.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:320,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu20.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+
+            ]},
+
+    ]
+    $('.two-list').hide()
+    function loadTopic(idx) {
+        console.log(idx)
+        $('.one-list .bottom-menu-liste-top a').removeClass('hover')
+        // console.log(i)
+        $('.one-list .bottom-menu-liste-top a:eq('+idx+')').addClass('hover')
+        $('.one-list .bottom-menu-liste-menu').empty()
+        var it=data[idx].sub
+        console.log(idx)
+        $(it).each(function (i,item) {
+            $(' .one-list .bottom-menu-liste-menu').append('' +
+                '   <div class="menu " onclick="document.location=\' '+item.ul+'\';">\n' +
+                '                        <img src="'+item.url+'" height="166" width="215"/>\n' +
+                '                        <div class="menu-p">\n' +
+                '                            <p>'+item.title+'</p>\n' +
+                '                            <p>'+item.name+'<i class="iconfont icon-yanjing">'+item.balance+'</i><i class="iconfont icon-dianzan">'+item.num+'</i></p>\n' +
+                '                        </div>\n' +
+                '\n' +
+                '                    </div>\n' +
+                '                   ')
+        })
+    }loadTopic(0)
+</script>
+<script>
+    var  twodata=[
+        {   id:1,
+            title: '课程专区',
+            sub:[
+                {id:11,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/python/oythontop1.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:12,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d19e3cb54f18c87eac2ae50a7c5b72d3.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:13,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/73/01/7301ed48eaf35ecb0302fa785e62576e.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:14,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/c09624631028b8b53f784f3401ac66fd.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:15,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d502ea47bde5f0396ffb0a2457015ab5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:16,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/1a/09/1a09a89d72f9f8ddb8b7ad0e49fee121.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:17,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/87/b1/87b11bba0a4a15c00c9dfa398ca34cf9.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:18,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3d03821b9ffef1714404aadb607e789b.jpg',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:19,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/48d95a34f9347c981b19c06bc713da28.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:110,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/93423e447bfc860b409abfeb69608633.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:111,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/e76e45cdf114af10014cd22d478ae6a6.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:112,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/bfb58bf99ddd94d0f2be23c6d8a9aa98.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:113,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/20f70e6db99e1757deb13805106ab00c.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:114,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/aa74c7ee887029d19e7b8a44103cfa45.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:115,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/81/59/8159136c963fcb1bdfcd5e8c3ae0bf7d.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:116,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/6c138b4a807ae35678f2938028336415.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:117,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/df34a636552f1c795c63542e66d60943.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:118,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3578d585d42d16a890253959a6a0d45f.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:119,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/b7397b04f2dd99866f0c0c672ad06041.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:120,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/c4/46/c4469bbf9bac9509b6badf5be4a1fb3b.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:121,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/79/e6/79e6212c154c737e6147c0d910d55ce5.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:122,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d19e3cb54f18c87eac2ae50a7c5b72d3.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:123,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/73/01/7301ed48eaf35ecb0302fa785e62576e.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:124,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/c09624631028b8b53f784f3401ac66fd.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:125,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d502ea47bde5f0396ffb0a2457015ab5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:126,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/1a/09/1a09a89d72f9f8ddb8b7ad0e49fee121.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:127,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/87/b1/87b11bba0a4a15c00c9dfa398ca34cf9.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:128,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3d03821b9ffef1714404aadb607e789b.jpg',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:129,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/48d95a34f9347c981b19c06bc713da28.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:130,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/93423e447bfc860b409abfeb69608633.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:131,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/e76e45cdf114af10014cd22d478ae6a6.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:132,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/bfb58bf99ddd94d0f2be23c6d8a9aa98.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:133,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/20f70e6db99e1757deb13805106ab00c.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:134,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/aa74c7ee887029d19e7b8a44103cfa45.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:135,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/81/59/8159136c963fcb1bdfcd5e8c3ae0bf7d.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:136,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/6c138b4a807ae35678f2938028336415.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:137,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/df34a636552f1c795c63542e66d60943.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:138,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3578d585d42d16a890253959a6a0d45f.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:139,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/b7397b04f2dd99866f0c0c672ad06041.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:140,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/c4/46/c4469bbf9bac9509b6badf5be4a1fb3b.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:141,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/79/e6/79e6212c154c737e6147c0d910d55ce5.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:142,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d19e3cb54f18c87eac2ae50a7c5b72d3.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:143,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/73/01/7301ed48eaf35ecb0302fa785e62576e.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:144,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/c09624631028b8b53f784f3401ac66fd.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:145,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d502ea47bde5f0396ffb0a2457015ab5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:146,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/1a/09/1a09a89d72f9f8ddb8b7ad0e49fee121.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:147,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/87/b1/87b11bba0a4a15c00c9dfa398ca34cf9.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:148,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3d03821b9ffef1714404aadb607e789b.jpg',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:149,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/48d95a34f9347c981b19c06bc713da28.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:150,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/93423e447bfc860b409abfeb69608633.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:151,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/e76e45cdf114af10014cd22d478ae6a6.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:152,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/bfb58bf99ddd94d0f2be23c6d8a9aa98.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:153,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/20f70e6db99e1757deb13805106ab00c.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:154,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/aa74c7ee887029d19e7b8a44103cfa45.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:155,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/81/59/8159136c963fcb1bdfcd5e8c3ae0bf7d.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:156,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/6c138b4a807ae35678f2938028336415.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:157,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/df34a636552f1c795c63542e66d60943.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:158,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3578d585d42d16a890253959a6a0d45f.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:159,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/b7397b04f2dd99866f0c0c672ad06041.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:160,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/c4/46/c4469bbf9bac9509b6badf5be4a1fb3b.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+
+            ]},
+        {   id:2,
+            title: '最新发布',
+            sub:  [
+                {  id:21,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new1.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:22,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5280789&version=3.0&langType=scratch',url:'style/images/program/new2.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:23,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'style/images/program/new3.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:24,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new4.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:25,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:26,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'style/images/program/new6.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:27,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new7.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:28,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new8.png',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:29,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new9.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:210,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=8393306&version=3.0&langType=scratch',url:'style/images/program/new10.png',title:'视觉盛宴',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:211,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu11.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:212,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu12.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:213,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu13.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:214,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu14.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:215,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu15.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:216,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu16.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:217,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu17.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:218,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu18.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:219,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu19.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:220,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu20.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+
+            ]},
+        {   id:3,
+            title: '最受欢迎',
+            sub:  [   {id:31,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu1.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:32,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5280789&version=3.0&langType=scratch',url:'style/images/program/wfmenu2.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:33,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'style/images/program/wfmenu3.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:34,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu4.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:35,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:36,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'style/images/program/wfmenu6.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:37,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu7.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:38,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu8.png',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:39,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu9c.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:310,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=8393306&version=3.0&langType=scratch',url:'style/images/program/wfmenu10.png',title:'视觉盛宴',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:311,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu11.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:312,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu12.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:313,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu13.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:314,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu14.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:315,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu15.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:316,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu16.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:317,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu17.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:318,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu18.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:319,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu19.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:320,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu20.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+
+            ]},
+
+    ]
+    function twoloadTopic(idx) {
+        // console.log(idx)
+        $('.two-list .bottom-menu-liste-top a').removeClass('hover')
+        // console.log(i)
+        $('.two-list .bottom-menu-liste-top a:eq('+idx+')').addClass('hover')
+        $('.two-list .bottom-menu-liste-menu').empty()
+        var it=twodata[idx].sub
+        // console.log(idx)
+
+        $(it).each(function (i,item) {
+            $(' .two-list .bottom-menu-liste-menu').append('' +
+                '   <div class="menu " onclick="document.location=\' '+item.ul+'\';">\n' +
+                '                        <img src="'+item.url+'" height="166" width="215"/>\n' +
+                '                        <div class="menu-p">\n' +
+                '                            <p>'+item.title+'</p>\n' +
+                '                            <p>'+item.name+'<i class="iconfont icon-yanjing">'+item.balance+'</i><i class="iconfont icon-dianzan">'+item.num+'</i></p>\n' +
+                '                        </div>\n' +
+                '\n' +
+                '                    </div>\n' +
+                '                   ')
+        })
+    }twoloadTopic(0)
+</script>
+<script>
+    var  dataC=[
+        {   id:1,
+            title: '课程专区',
+            sub:[
+                {id:11,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/python/oythontop1.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:12,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d19e3cb54f18c87eac2ae50a7c5b72d3.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:13,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/73/01/7301ed48eaf35ecb0302fa785e62576e.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:14,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/c09624631028b8b53f784f3401ac66fd.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:15,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d502ea47bde5f0396ffb0a2457015ab5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:16,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/1a/09/1a09a89d72f9f8ddb8b7ad0e49fee121.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:17,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/87/b1/87b11bba0a4a15c00c9dfa398ca34cf9.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:18,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3d03821b9ffef1714404aadb607e789b.jpg',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:19,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/48d95a34f9347c981b19c06bc713da28.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:110,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/93423e447bfc860b409abfeb69608633.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:111,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/e76e45cdf114af10014cd22d478ae6a6.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:112,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/bfb58bf99ddd94d0f2be23c6d8a9aa98.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:113,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/20f70e6db99e1757deb13805106ab00c.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:114,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/aa74c7ee887029d19e7b8a44103cfa45.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:115,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/81/59/8159136c963fcb1bdfcd5e8c3ae0bf7d.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:116,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/6c138b4a807ae35678f2938028336415.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:117,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/df34a636552f1c795c63542e66d60943.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:118,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3578d585d42d16a890253959a6a0d45f.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:119,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/b7397b04f2dd99866f0c0c672ad06041.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:120,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/c4/46/c4469bbf9bac9509b6badf5be4a1fb3b.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:121,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/79/e6/79e6212c154c737e6147c0d910d55ce5.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:122,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d19e3cb54f18c87eac2ae50a7c5b72d3.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:123,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/73/01/7301ed48eaf35ecb0302fa785e62576e.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:124,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/c09624631028b8b53f784f3401ac66fd.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:125,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d502ea47bde5f0396ffb0a2457015ab5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:126,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/1a/09/1a09a89d72f9f8ddb8b7ad0e49fee121.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:127,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/87/b1/87b11bba0a4a15c00c9dfa398ca34cf9.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:128,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3d03821b9ffef1714404aadb607e789b.jpg',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:129,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/48d95a34f9347c981b19c06bc713da28.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:130,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/93423e447bfc860b409abfeb69608633.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:131,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/e76e45cdf114af10014cd22d478ae6a6.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:132,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/bfb58bf99ddd94d0f2be23c6d8a9aa98.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:133,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/20f70e6db99e1757deb13805106ab00c.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:134,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/aa74c7ee887029d19e7b8a44103cfa45.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:135,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/81/59/8159136c963fcb1bdfcd5e8c3ae0bf7d.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:136,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/6c138b4a807ae35678f2938028336415.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:137,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/df34a636552f1c795c63542e66d60943.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:138,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3578d585d42d16a890253959a6a0d45f.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:139,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/b7397b04f2dd99866f0c0c672ad06041.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:140,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/c4/46/c4469bbf9bac9509b6badf5be4a1fb3b.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:141,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/79/e6/79e6212c154c737e6147c0d910d55ce5.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:142,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d19e3cb54f18c87eac2ae50a7c5b72d3.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:143,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/73/01/7301ed48eaf35ecb0302fa785e62576e.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:144,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/c09624631028b8b53f784f3401ac66fd.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:145,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/d502ea47bde5f0396ffb0a2457015ab5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:146,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/1a/09/1a09a89d72f9f8ddb8b7ad0e49fee121.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:147,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/87/b1/87b11bba0a4a15c00c9dfa398ca34cf9.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:148,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3d03821b9ffef1714404aadb607e789b.jpg',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:149,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/48d95a34f9347c981b19c06bc713da28.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:150,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/93423e447bfc860b409abfeb69608633.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:151,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/e76e45cdf114af10014cd22d478ae6a6.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:152,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/bfb58bf99ddd94d0f2be23c6d8a9aa98.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:153,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/20f70e6db99e1757deb13805106ab00c.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:154,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/aa74c7ee887029d19e7b8a44103cfa45.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:155,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/81/59/8159136c963fcb1bdfcd5e8c3ae0bf7d.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:156,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/6c138b4a807ae35678f2938028336415.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:157,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/df34a636552f1c795c63542e66d60943.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:158,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/3578d585d42d16a890253959a6a0d45f.jpg',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:159,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/b7397b04f2dd99866f0c0c672ad06041.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:160,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/xes_live/projects/thumbnail/c4/46/c4469bbf9bac9509b6badf5be4a1fb3b.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+
+            ]},
+        {   id:2,
+            title: '最新发布',
+            sub:  [
+                {  id:21,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new1.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:22,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5280789&version=3.0&langType=scratch',url:'style/images/program/new2.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:23,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'style/images/program/new3.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:24,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new4.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:25,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:26,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'style/images/program/new6.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:27,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new7.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:28,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new8.png',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:29,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/new9.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:210,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=8393306&version=3.0&langType=scratch',url:'style/images/program/new10.png',title:'视觉盛宴',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:211,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu11.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:212,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu12.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:213,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu13.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:214,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu14.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:215,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu15.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:216,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu16.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:217,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu17.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:218,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu18.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:219,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu19.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:220,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu20.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+
+            ]},
+        {   id:3,
+            title: '最受欢迎',
+            sub:  [   {id:31,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu1.png',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+                {id:32,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5280789&version=3.0&langType=scratch',url:'style/images/program/wfmenu2.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:33,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'style/images/program/wfmenu3.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:34,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu4.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
+                {id:35,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu5.png',title:'可多请你来改编2：海底大战',name:'张一涵',balance:'1.2w',num:337},
+                {id:36,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'style/images/program/wfmenu6.png',title:'Scratch3.0',name:'郑烁烁',balance:'1.2w',num:337},
+                {id:37,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu7.png',title:'可多请你来改编2：海底大战',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:38,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu8.png',title:'请你来做自我介绍',name:'小星星',balance:'1.2w',num:337},
+                {id:39,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu9c.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:310,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=8393306&version=3.0&langType=scratch',url:'style/images/program/wfmenu10.png',title:'视觉盛宴',name:'杨逸寒',balance:'1.2w',num:337},
+                {id:311,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu11.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:312,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu12.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:313,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu13.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:314,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu14.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:315,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu15.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:316,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu16.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:317,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu17.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:318,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu18.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:319,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu19.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+                {id:320,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/wfmenu20.png',title:'跳一跳',name:'张一涵',balance:'1.2w',num:337},
+
+            ]},
+
+    ]
+    function loadTopicC(idx) {
+        // console.log(idx)
+        $('.three-list .bottom-menu-liste-top a').removeClass('hover')
+        // console.log(i)
+        $('.three-list .bottom-menu-liste-top a:eq('+idx+')').addClass('hover')
+        $('.three-list .bottom-menu-liste-menu').empty()
+        var it=twodata[idx].sub
+        // console.log(idx)
+
+        $(it).each(function (i,item) {
+            $(' .three-list .bottom-menu-liste-menu').append('' +
+                '   <div class="menu " onclick="document.location=\' '+item.ul+'\';">\n' +
+                '                        <img src="'+item.url+'" height="166" width="215"/>\n' +
+                '                        <div class="menu-p">\n' +
+                '                            <p>'+item.title+'</p>\n' +
+                '                            <p>'+item.name+'<i class="iconfont icon-yanjing">'+item.balance+'</i><i class="iconfont icon-dianzan">'+item.num+'</i></p>\n' +
+                '                        </div>\n' +
+                '\n' +
+                '                    </div>\n' +
+                '                   ')
+        })
+    }loadTopicC(0)
+</script>
+<script>
+    $(document).ready(function(){
+        $('.bottom-header').toggle(function(){
+                $('.bottom-header').css("background-image","../images/program/wfmid2.png");},
+            function(){
+                $('.bottom-header').css("background-color","../images/program/wfmid3.png");},
+            function(){
+                $('.bottom-header').css("background-color","../images/program/wfmid1.png");}
+        );
+    });
+    // $('.bottom-header').click(function () {
+    //     var ary = $(this).attr('url').split('/')
+    //     if (document.getElementsByClassName('.bottom-header-slide1')) {
+    //         $(this).attr('url','style/images/program/wfmid2.png')
+    //         $('.two-list').show()
+    //         $('.one-list').hide()
+    //         $('.three-list').hide()
+    //     }if (document.getElementsByClassName('.bottom-header-slide2')) {
+    //         $(this).attr('url','style/images/program/wfmid3.png')
+    //         $('.two-list').hide()
+    //         $('.one-list').hide()
+    //         $('.three-list').show()
+    //     }else if (document.getElementsByClassName('.bottom-header-slide3')){
+    //         $(this).attr('url','style/images/program/wfmid1.png')
+    //         $('.two-list').hide()
+    //         $('.one-list').show()
+    //         $('.three-list').hide()
+    //     }
+    // })
+</script>
 </body>
 </html>
