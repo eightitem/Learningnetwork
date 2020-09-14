@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>产品细节</title>
-    <link rel="stylesheet" href="style/css/common.css">
+<!--    <link rel="stylesheet" href="style/css/common.css">-->
+<!--    <link rel="stylesheet" href="style/css/centerheader.css">-->
+<!--    <link rel="stylesheet" href="style/css/goodDetail.css">-->
+<!--    <link rel="stylesheet" href="lib/iconfont_goldmall/iconfont.css">-->
+
+    <link rel="stylesheet" href="lib/iconfont_goldmall/iconfont.css">
     <link rel="stylesheet" href="style/css/centerheader.css">
     <link rel="stylesheet" href="style/css/goodDetail.css">
+    <link rel="stylesheet" href="style/css/common.css">
 
 
 </head>
@@ -27,8 +33,6 @@
     </div>
 
 </div>
-
-
 <div class="top">
 
     <a href=".html" class="logo"><img src="style/images/yxlogocenter.png"  style="color: #f13232" height="38" width="100"/></a>
@@ -39,34 +43,22 @@
             <i class="iconfont icon-jiantouarrow486"></i>
             <i class="iconfont icon-jiantou" style="display: none"></i>
         </a>
-
         <!--    <div class="test-list">-->
-        <!--        <li><a href="javascript:void(0)">我的试题-->
-        <!--            &lt;!&ndash;        <i class="iconfont icon-jiantouarrow486"></i>&ndash;&gt;-->
-        <!--            <i class="iconfont icon-jiantou"></i>-->
-        <!--        </a>-->
-
-        <!--            <a href="" style="">金币商城</a>-->
-        <!--            <a href="" style="">金币商城</a>-->
+        <!--        <li>-->
+        <!--            <a href="goldmall.html" style="">金币商城</a>-->
         <!--        </li>-->
-
         <!--    </div>-->
     </p>
     <p><a href="">我的讲座</a></p>
     <p class="apply-title">
-        <a href="javascript:void(0)" class="apply-btn">我的应用
+        <a href="javascript:void(0)" class="apply-btn" style="background: white ;color: #f13132">我的应用
             <i class="iconfont icon-jiantouarrow486"></i>
             <i class="iconfont icon-jiantou" style="display: none"></i>
         </a>
     <div class="coin-mall">
-        <li><a href="javascript:void(0)">我的应用
-            <!--        <i class="iconfont icon-jiantouarrow486"></i>-->
-            <i class="iconfont icon-jiantou"></i>
-        </a>
-
+        <li>
             <a href="goldmall.html" style="">金币商城</a>
         </li>
-
     </div>
     </p>
 </div>
@@ -76,37 +68,57 @@
         <a href="goldmall.html">我的应用  ></a>
         <a href="goldmall.html">金币商城  ></a>
 
-<!--        <span>i</span>-->
+        <span></span>
     </div>
 
 <div class="detail">
-    <div class="goods-referral">
-        <div class="goods-img">
-            <img src="style/images/yxyellowman.jpg" alt="">
-        </div>
-        <div class="goods-operate">
-            <div class="goods-name">小黄人拼图</div>
-            <div class="goods-description">小黄人拼图,规格：100片，
-                安全选材、色泽艳丽，
-                铁盒包装，方便收纳整理，
-                附带图纸，拼图更方便</div>
-            <div class="goods-price item">
-                <div class="label">兑换单价</div>
-                <div>
-                    <span class="price">4999</span>
-                    <span class="price-unit">金币</span>
-                </div>
-            </div>
-            <div class="goods-num item">
-                <div class="label">兑换数量：</div>
-                <div class="num">
 
-                </div>
-            </div>
 
-        </div>
+<!--    <div class="goods-referral">-->
+<!--        <div class="goods-img">-->
+<!--            <img src="style/images/yxyellowman.jpg" alt="">-->
+<!--        </div>-->
+<!--        <div class="goods-operate">-->
+<!--            <div class="goods-name">小黄人拼图</div>-->
+<!--            <div class="goods-description">小黄人拼图,规格：100片， 安全选材、色泽艳丽， 铁盒包装，方便收纳整理， 附带图纸，拼图更方便</div>-->
+<!--            <div class="goods-price item">-->
+<!--                <div class="label">兑换单价</div>-->
+<!--                <div>-->
+<!--                    <span class="price">4999</span>-->
+<!--                    <span class="price-unit">金币</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="goods-num item">-->
+<!--                <div class="label">兑换数量：</div>-->
+<!--                <div class="num">-->
+<!--                    <div class="num-dec">-->
+<!--                        <span class="dec">-->
+<!--                            <i> - </i>-->
+<!--                        </span>-->
+<!--                    </div>-->
+<!--&lt;!&ndash;                    <input type="text" class="num-text" placeholder="1">&ndash;&gt;-->
+<!--                    <span class="num-text">1</span>-->
+<!--                    <div class="num-inc">-->
+<!--                        <span class="inc">-->
+<!--                            <i> + </i>-->
+<!--                        </span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="repertory">库存 <span>180</span> 件 </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--            <div class="goods-total-prices">-->
+<!--                <div class="goods-price" style="background: white">-->
+<!--                    <div class="label">兑换总计：</div>-->
+<!--                    <div style="line-height: 40px">-->
+<!--                        <span class="price">2399</span>-->
+<!--                        <span class="price-unit" style="color: #f13132">金币</span>-->
+<!--                    </div>-->
 
-    </div>
+<!--                </div>-->
+
+<!--            </div>-->
 
 </div>
 </div>
@@ -148,6 +160,8 @@
     $('.apply-title').mouseenter(function () {
         $('.apply-title i:first-of-type').hide()
         $('.apply-title i:last-of-type').show()
+        $('.apply-btn').css('background','white')
+        $('.apply-btn').css('color','#f12312')
         $('.coin-mall li ').show();
         $('.coin-mall a').css('color', '#f12312');
     });
@@ -160,28 +174,129 @@
     });
 
 
+    //st移入移出我的应用
+    $('.apply-title').mouseenter(function () {
+        $('.apply-title i:first-of-type').hide()
+        $('.apply-title i:last-of-type').show()
+        $('.apply-btn').css('background','white')
+        $('.apply-btn').css('color','#f12312')
+        $('.coin-mall li ').show();
+        $('.coin-mall a').css('color', '#f12312');
+    });
+    $('.coin-mall li').mouseleave(function () {
+        $('.apply-title i:first-of-type').show()
+        $('.apply-title i:last-of-type').hide()
+        $('.coin-mall li').hide();
+        $('.apply-title').removeClass('active');
+
+    });
+
 </script>
+
+
 <script>
-    var detail =[
-        {
-            id:1,
-            title:'',
-        }
-    ]
+    var detail ={
+        menu: [
+           {id:11,icon:'style/images/yxyellowman.jpg',name:'小黄人拼图',
+                                     desc:'小黄人拼图,规格：100片，\n' +
+                    '                安全选材、色泽艳丽，\n' +
+                    '                铁盒包装，方便收纳整理，\n' +
+                    '                附带图纸，拼图更方便', change:'兑换数量：',price:'4999',coin:'金币',num:'11'},
+            {id:12,icon:'style/images/yxjishuqi.jpg',name:'五行计数器',desc:'小黄人拼图,规格：100片，\n' +
+                    '                安全选材、色泽艳丽，\n' +
+                    '                铁盒包装，方便收纳整理，\n' +
+                    '                附带图纸，拼图更方便', price:'2399',coin:'金币',num:'280套库存'},
 
 
-    function loadDetailPath() {
-        $(detail).each(function (i,item) {
-            $('.goods-name ').append('<span onclick="changeGoods('+i+')">'+item.title+'</span>')
+    ],
+    }
 
-        })
+    function loadDetail() {
+
+        $('.detail').empty()
+            var subAry=detail.menu
+            $(subAry).each(function (i,item) {
+                $('.detail').append('' +
+                    '<div class="goods-referral">\n' +
+                    '        <div class="goods-img">\n' +
+                    '            <img src="'+item.icon+'" alt="">\n' +
+                    '        </div>\n' +
+                    '        <div class="goods-operate">\n' +
+                    '            <div class="goods-name" onclick="changeGoods('+i+')">'+item.name+'</div>\n' +
+                    '            <div class="goods-description">'+item.desc+'</div>\n' +
+                    '            <div class="goods-price item">\n' +
+                    '                <div class="label">兑换单价</div>\n' +
+                    '                <div>\n' +
+                    '                    <span class="price">'+item.price+'</span>\n' +
+                    '                    <span class="price-unit">'+item.coin+'</span>\n' +
+                    '                </div>\n' +
+                    '            </div>\n' +
+                    '            <div class="goods-num item">\n' +
+                    '                <div class="label">兑换数量：</div>\n' +
+                    '                <div class="num">\n' +
+                    '                    <div class="num-dec">\n' +
+                    '                        <span class="dec">\n' +
+                    '                            <i> - </i>\n' +
+                    '                        </span>\n' +
+                    '                    </div>\n' +
+                    '<!--                    <input type="text" class="num-text" placeholder="1">-->\n' +
+                    '                    <span class="num-text">1</span>\n' +
+                    '                    <div class="num-inc">\n' +
+                    '                        <span class="inc">\n' +
+                    '                            <i> + </i>\n' +
+                    '                        </span>\n' +
+                    '                    </div>\n' +
+                    '                </div>\n' +
+                    '                <div class="repertory">库存 <span>'+item.num+'</span> 件 </div>\n' +
+                    '            </div>\n' +
+                    '        </div>\n' +
+                    '    </div>')
+
+            })
+
+    $(detail).each(function (i,item) {
+        $('.d-title ').append('<span >'+item.name+'</span>')
+    })
 
     }
-    loadDetailPath()
+    loadDetail()
+
+
     
     function changeGoods(idx) {
 
+        // //选中分类，选中哪个type
+        // $('.stu-title a').removeClass('active')
+        // $('.stu-title a:eq('+idx+')').addClass('active')
+        //清空容器
+        // $('.goods-referral').empty()
+
+
     }
+</script>
+<script>
+    var count = 0
+    //购买数量-
+    $('.num-dec').click(function () {
+        count--
+        if (count < 1){
+            count++
+            return
+        }
+        $('.num-text').text(count)
+    })
+    //购买数量+
+    $('.num-inc').click(function () {
+        count++
+        if (count < 1){
+            count++
+            return
+        }
+        $('.num-text').text(count)
+
+    })
+
+
 </script>
 
 </body>
