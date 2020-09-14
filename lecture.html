@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="style/css/footer.css">
 
 
-
 </head>
 <body>
 <div class="all">
@@ -88,9 +87,9 @@
             </div>
             <div  class="center-title">
                 <div class="list-tab ">
-                    <a href="javascript:void(0)"  class="list-tab__title active " onclick="show(1)">即将开始</a>
-                    <a href="javascript:void(0)" class="list-tab__title  " onclick="show(2)">精彩回放</a>
-                    <a href="javascript:void(0)" class="list-tab__title " onclick="show(3)">系列讲座</a>
+                    <a class="list-tab__title " onclick="show(1)">即将开始</a>
+                    <a class="list-tab__title" onclick="show(2)">精彩回放</a>
+                    <a class="list-tab__title" onclick="show(3)">系列讲座</a>
 
 
 
@@ -1025,8 +1024,7 @@
     </div>
 
 </div>
-<script src="style/js/jquery-3.4.1.js"></script>
-
+<script src="javascript/jquery-3.4.1.js"></script>
 <script>
     function show(id) {
         var divs = document.getElementsByName("dv")
@@ -1039,26 +1037,7 @@
             }
 
 
-
-
     }
-
-</script>
-<script>
-    $(function () {
-        $('.list-tab__title').click(function () {
-            if ($(this).hasClass('active')) {
-                return true;
-            } else {
-
-                $('.list-tab__title').removeClass('active');
-                $(this).addClass('active');
-            }
-        })
-    })
-
-
-
 
 </script>
 
