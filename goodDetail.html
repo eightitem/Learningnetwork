@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="style/css/common.css">
     <link rel="stylesheet" href="style/css/centerheader.css">
     <link rel="stylesheet" href="style/css/goodDetail.css">
+
+
 </head>
+
 <body>
 <div class="header">
     <div class="left"></div>
@@ -24,31 +27,56 @@
     </div>
 
 </div>
+
+
 <div class="top">
 
     <a href=".html" class="logo"><img src="style/images/yxlogocenter.png"  style="color: #f13232" height="38" width="100"/></a>
 
     <p><a href="">我的课程</a></p>
-    <p>
-        <a href="" class="test">我的试题
+    <p class="test-title">
+        <a href="javascript:void(0)" class="test">我的试题
             <i class="iconfont icon-jiantouarrow486"></i>
             <i class="iconfont icon-jiantou" style="display: none"></i>
         </a>
+
+        <!--    <div class="test-list">-->
+        <!--        <li><a href="javascript:void(0)">我的试题-->
+        <!--            &lt;!&ndash;        <i class="iconfont icon-jiantouarrow486"></i>&ndash;&gt;-->
+        <!--            <i class="iconfont icon-jiantou"></i>-->
+        <!--        </a>-->
+
+        <!--            <a href="" style="">金币商城</a>-->
+        <!--            <a href="" style="">金币商城</a>-->
+        <!--        </li>-->
+
+        <!--    </div>-->
     </p>
     <p><a href="">我的讲座</a></p>
-    <p class="apply">
-        <a href="" >我的应用
+    <p class="apply-title">
+        <a href="javascript:void(0)" class="apply-btn">我的应用
             <i class="iconfont icon-jiantouarrow486"></i>
             <i class="iconfont icon-jiantou" style="display: none"></i>
         </a>
+    <div class="coin-mall">
+        <li><a href="javascript:void(0)">我的应用
+            <!--        <i class="iconfont icon-jiantouarrow486"></i>-->
+            <i class="iconfont icon-jiantou"></i>
+        </a>
+
+            <a href="goldmall.html" style="">金币商城</a>
+        </li>
+
+    </div>
     </p>
 </div>
+
 <div class="container">
-    <div class="title">
-        <a href="">我的应用  ></a>
+    <div class="d-title">
+        <a href="goldmall.html">我的应用  ></a>
         <a href="goldmall.html">金币商城  ></a>
-<!--        <span>   ></span>-->
-        <span>i</span>
+
+<!--        <span>i</span>-->
     </div>
 
 <div class="detail">
@@ -82,5 +110,79 @@
 
 </div>
 </div>
+<script src="style/js/jquery-3.4.1.js"></script>
+<!--鼠标移入移出事件-->
+<script>
+    $('.user').mouseover(function () {
+        // $('.apply i:first-of-type').style.display="none";
+        $('.user i:first-of-type').hide()
+        $('.user i:last-of-type').show()
+    }).mouseout(function (){
+        $('.user i:first-of-type').show()
+        $('.user i:last-of-type').hide()
+    });
+
+
+    $('.test').mouseover(function () {
+        // $('.apply i:first-of-type').style.display="none";
+        $('.test i:first-of-type').hide()
+        $('.test i:last-of-type').show()
+    }).mouseout(function (){
+        $('.test i:first-of-type').show()
+        $('.test i:last-of-type').hide()
+    });
+
+    $('.apply').mouseover(function () {
+        // $('.apply i:first-of-type').style.display="none";
+        $('.apply i:first-of-type').hide()
+        $('.apply i:last-of-type').show()
+        // $('.mall').show()
+    }).mouseout(function (){
+        $('.apply i:first-of-type').show()
+        $('.apply i:last-of-type').hide()
+        // $('.mall').hide()
+    });
+
+
+    //移入移出我的应用
+    $('.apply-title').mouseenter(function () {
+        $('.apply-title i:first-of-type').hide()
+        $('.apply-title i:last-of-type').show()
+        $('.coin-mall li ').show();
+        $('.coin-mall a').css('color', '#f12312');
+    });
+    $('.coin-mall li').mouseleave(function () {
+        $('.apply-title i:first-of-type').show()
+        $('.apply-title i:last-of-type').hide()
+        $('.coin-mall li').hide();
+        $('.apply-title').removeClass('active');
+
+    });
+
+
+</script>
+<script>
+    var detail =[
+        {
+            id:1,
+            title:'',
+        }
+    ]
+
+
+    function loadDetailPath() {
+        $(detail).each(function (i,item) {
+            $('.goods-name ').append('<span onclick="changeGoods('+i+')">'+item.title+'</span>')
+
+        })
+
+    }
+    loadDetailPath()
+    
+    function changeGoods(idx) {
+
+    }
+</script>
+
 </body>
 </html>

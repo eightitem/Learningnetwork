@@ -2,10 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>学习中心头部</title>
+    <title>金币明细</title>
     <link rel="stylesheet" href="style/css/centerheader.css">
     <link rel="stylesheet" href="lib/iconfont_goldmall/iconfont.css">
 
+    <link rel="stylesheet" href="style/css/goldmall.css">
+    <link rel="stylesheet" href="style/css/common.css">
+    <style>
+        .coin-content{
+            border-radius: 2px;
+            background-color: #fff;
+            margin-top: 20px;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .coin-content span {
+            vertical-align: top;
+        }
+        .coin-content span {
+            color: #333;
+            cursor: pointer;
+            /*diplay: none;*/
+            margin-right: 24px;
+        }
+        .coin-content a {
+            float: right;
+            color: #333;
+        }
+
+    </style>
 
 </head>
 <body>
@@ -79,11 +108,29 @@
             <i class="iconfont icon-jiantou"></i>
         </a>
 
-            <a href="" style="">金币商城</a>
+            <a href="goldmall.html" style="">金币商城</a>
         </li>
 
     </div>
     </p>
+</div>
+<div class="container">
+    <div class="title">
+        <a href="">我的应用  ></a>
+        <span>金币商城</span>
+        <span></span>
+    </div>
+    <!--    <div class="content">-->
+    <div class="tab">
+        <ul><li><a href="goldmall.html">商城礼品</a></li></ul>
+        <ul><li><a href="coinDetail.html"  style="border-bottom: #f13132 2px solid;color: #f13132">金币明细</a></li></ul>
+        <!--            <ul><li><a href="">兑换记录</a></li></ul>-->
+    </div>
+    <div class="coin-content">
+        <span>请到【学而思网校】APP客户端-我的-金币查询金币明细</span>
+        <a href="" target="_blank">什么是金币？</a>
+
+    </div>
 </div>
 
 
