@@ -168,9 +168,10 @@ body{
     /*margin: 0 34px;*/
     left: 50%;
     position: relative;
-    width: 490px;
+    width: 485px;
     background-repeat: no-repeat;
-    height: 50px;
+    height: 52px;
+    background-size: auto;
     margin-left: -240px;
     margin-top: 40px;
     background-image: url("../images/program/wfmid1.png");
@@ -180,7 +181,7 @@ body{
 .bottom-header-slide1{
     width: 33%;
     height:50px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     text-align: center;
     box-sizing: border-box;
     padding-top: 15px;
@@ -188,7 +189,7 @@ body{
 .bottom-header-slide2{
     width: 33%;
     height:50px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     text-align: center;
     box-sizing: border-box;
     padding-top: 15px;
@@ -196,7 +197,7 @@ body{
 .bottom-header-slide3{
     width: 33%;
     height:50px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     text-align: center;
     box-sizing: border-box;
     padding-top: 15px;

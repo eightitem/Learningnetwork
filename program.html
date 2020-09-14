@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="lib/swiper6.1.1/swiper-bundle.min.css">
     <link rel="stylesheet" href="lib/font_2052861_cwgvadmq02/iconfont.css">
     <link rel="stylesheet" href="style/css/program.css">
-
-
 </head>
 <body>
 <div class="header">
@@ -131,9 +129,9 @@
             <div class="bottom-menu-liste-top">
                 <img src="style/images/program/wfplanet.png" height="62" width="88"/>
                 <span class="bottom-menu-liste-span">全部作品</span>
-                <a  href="javascript:void(0)" class="bottom-menu-liste-span" onclick="twoloadTopic(2)">课程专区</a>
-                <a  href="javascript:void(0)" class="bottom-menu-liste-span" onclick="twoloadTopic(1)">最新发布</a>
-                <a  href="javascript:void(0)" class="bottom-menu-liste-span  active" onclick="twoloadTopic(0)">最受欢迎</a>
+                <a  href="javascript:void(0)" class="bottom-menu-liste-span" onclick="loadTopicC(2)">课程专区</a>
+                <a  href="javascript:void(0)" class="bottom-menu-liste-span" onclick="loadTopicC(1)">最新发布</a>
+                <a  href="javascript:void(0)" class="bottom-menu-liste-span  active" onclick="loadTopicC(0)">最受欢迎</a>
             </div>
             <div class="bottom-menu-liste-menu " >
             </div>
@@ -202,12 +200,15 @@
     })
 </script>
 <script>
-    var swiper = new Swiper('.swiper-bottom-new', {
+    var swiper = new Swiper('.swiper-bottom-new ', {
         slidesPerView:5,
-        spaceBetween: 30,
+        spaceBetween: 25,
         slidesPerGroup: 5,
-        autoplay: true,
-        duration:3000,
+        autoplay: {
+            delay: 2000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
         observer:true, //修改swiper自己或子元素时，自动初始化swiper
         observeParents:true, //修改swiper的父元素时，自动初始化swiper
         // loopFillGroupWithBlank: true,
@@ -217,9 +218,48 @@
         },
     });
 
+
+
 </script>
 <script>
-
+    var swiper = new Swiper('.swiper-bottom ', {
+    slidesPerView:5,
+    spaceBetween: 25,
+    slidesPerGroup: 5,
+    autoplay: {
+        delay: 2000,
+        stopOnLastSlide: false,
+        disableOnInteraction: true,
+    },
+    observer:true, //修改swiper自己或子元素时，自动初始化swiper
+    observeParents:true, //修改swiper的父元素时，自动初始化swiper
+    // loopFillGroupWithBlank: true,
+    navigation: {
+        nextEl: '.swiper-prev',
+        prevEl: '.swiper-next',
+    },
+});
+</script>
+<script>
+    var swiper = new Swiper('.swiper-bottom-C ', {
+    slidesPerView:5,
+    spaceBetween: 25,
+    slidesPerGroup: 5,
+    autoplay: {
+        delay: 2000,
+        stopOnLastSlide: false,
+        disableOnInteraction: true,
+    },
+    observer:true, //修改swiper自己或子元素时，自动初始化swiper
+    observeParents:true, //修改swiper的父元素时，自动初始化swiper
+    // loopFillGroupWithBlank: true,
+    navigation: {
+        nextEl: '.swiper-prev',
+        prevEl: '.swiper-next',
+    },
+});
+</script>
+<script>
     $(function () {
         $('.bottom-menu-liste-top a').click(function () {
             if ($(this).hasClass('active')) {
@@ -268,7 +308,7 @@
 <script>
     var data2={
         menu:[
-            {id:21,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'style/images/program/python/pythona1.jpg',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
+            {id:21,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://livefile.xesimg.com/programme/assets/bd952a3f1a3bf24acc00bf05c11996fa.jpg',name:'张一涵',title:'跳一跳',balance:'1.2w',num:337},
             {id:22,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5280789&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/1df32b518a5cb0eabfe10a78764fb0cf.png',title:'像素拳皇，一起来打，你咬我呀？',name:'郑烁烁',balance:'1.2w',num:337},
             {id:23,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=5295112&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/4735c342ffb5c1e762f016718f4fed18.png',title:'Scratch3.0',name:'杨逸寒',balance:'1.2w',num:337},
             {id:24,ul:'https://code.xueersi.com/home/project/detail?lang=scratch&pid=2913565&version=3.0&langType=scratch',url:'https://rescode.xesimg.com/hufu-code/common/mit/919e5f9ea95de1c63d5117101ca94b46.png',title:'可多请你来改编1：双人赛车',name:'小星星',balance:'1.2w',num:337},
@@ -450,14 +490,13 @@
 
     ]
     $('.two-list').hide()
+    $('.three-list').hide()
     function loadTopic(idx) {
-        console.log(idx)
         $('.one-list .bottom-menu-liste-top a').removeClass('hover')
         // console.log(i)
         $('.one-list .bottom-menu-liste-top a:eq('+idx+')').addClass('hover')
         $('.one-list .bottom-menu-liste-menu').empty()
         var it=data[idx].sub
-        console.log(idx)
         $(it).each(function (i,item) {
             $(' .one-list .bottom-menu-liste-menu').append('' +
                 '   <div class="menu " onclick="document.location=\' '+item.ul+'\';">\n' +
@@ -732,14 +771,12 @@
 
     ]
     function loadTopicC(idx) {
-        // console.log(idx)
         $('.three-list .bottom-menu-liste-top a').removeClass('hover')
         // console.log(i)
         $('.three-list .bottom-menu-liste-top a:eq('+idx+')').addClass('hover')
         $('.three-list .bottom-menu-liste-menu').empty()
-        var it=twodata[idx].sub
+        var it=dataC[idx].sub
         // console.log(idx)
-
         $(it).each(function (i,item) {
             $(' .three-list .bottom-menu-liste-menu').append('' +
                 '   <div class="menu " onclick="document.location=\' '+item.ul+'\';">\n' +
@@ -755,24 +792,23 @@
     }loadTopicC(0)
 </script>
 <script>
-    $('.bottom-header').click(function () {
-
-        if (document.getElementsByClassName("bottom-header-slide1")) {
-            $(this).attr("background-image","../images/program/wfmid2.png")
-            $('.two-list').show()
-            $('.one-list').hide()
-            $('.three-list').hide()
-        }if (document.getElementsByClassName("bottom-header-slide2")) {
-            $(this).attr("background-image","../images/program/wfmid3.png")
-            $('.two-list').hide()
-            $('.one-list').hide()
-            $('.three-list').show()
-        }else if (document.getElementsByClassName("bottom-header-slide3")){
-            $(this).attr("background-image","../images/program/wfmid1.png")
-            $('.two-list').hide()
-            $('.one-list').show()
-            $('.three-list').hide()
-        }
+    $('.bottom-header-slide1').click(function () {
+                $('.bottom-header').css("background","url('style/images/program/wfmid1.png')")
+                $('.two-list').hide()
+                $('.one-list').show()
+                $('.three-list').hide()
+    })
+    $('.bottom-header-slide2').click(function () {
+                $('.bottom-header').css("background","url('style/images/program/wfmid2.png')")
+                $('.two-list').show()
+                $('.one-list').hide()
+                $('.three-list').hide()
+    })
+    $('.bottom-header-slide3').click(function () {
+                $('.bottom-header').css("background","url('style/images/program/wfmid3.png')")
+                $('.two-list').hide()
+                $('.one-list').hide()
+                $('.three-list').show()
     })
 </script>
 </body>
