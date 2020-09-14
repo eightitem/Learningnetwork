@@ -39,18 +39,11 @@
             <i class="iconfont icon-jiantouarrow486"></i>
             <i class="iconfont icon-jiantou" style="display: none"></i>
         </a>
-
-        <!--    <div class="test-list">-->
-        <!--        <li><a href="javascript:void(0)">我的试题-->
-        <!--            &lt;!&ndash;        <i class="iconfont icon-jiantouarrow486"></i>&ndash;&gt;-->
-        <!--            <i class="iconfont icon-jiantou"></i>-->
-        <!--        </a>-->
-
-        <!--            <a href="" style="">金币商城</a>-->
-        <!--            <a href="" style="">金币商城</a>-->
-        <!--        </li>-->
-
-        <!--    </div>-->
+<!--    <div class="test-list">-->
+<!--        <li>-->
+<!--            <a href="goldmall.html" style="">金币商城</a>-->
+<!--        </li>-->
+<!--    </div>-->
     </p>
     <p><a href="">我的讲座</a></p>
     <p class="apply-title">
@@ -59,14 +52,9 @@
             <i class="iconfont icon-jiantou" style="display: none"></i>
         </a>
     <div class="coin-mall">
-        <li><a href="javascript:void(0)">我的应用
-            <!--        <i class="iconfont icon-jiantouarrow486"></i>-->
-            <i class="iconfont icon-jiantou"></i>
-        </a>
-
+        <li>
             <a href="goldmall.html" style="">金币商城</a>
         </li>
-
     </div>
     </p>
 </div>
@@ -99,14 +87,6 @@
 
             </div>
         </div>
-<!--            <div style="float: left;color:#999999;"  >-->
-<!--                <span class="table" >排序方式</span>-->
-<!--            </div>-->
-<!--            <div class="goods" style="margin-left: 80px">-->
-<!--                <span class="active">最新礼品</span>-->
-<!--                <span class="goods-price">兑换价格</span>-->
-
-<!--            </div>-->
     </div>
         <div class="gold-mall">
 
@@ -210,6 +190,8 @@
      $('.apply-title').mouseenter(function () {
          $('.apply-title i:first-of-type').hide()
          $('.apply-title i:last-of-type').show()
+         $('.apply-btn').css('background','white')
+         $('.apply-btn').css('color','#f12312')
          $('.coin-mall li ').show();
          $('.coin-mall a').css('color', '#f12312');
      });
@@ -221,6 +203,23 @@
 
      });
 
+
+     //st移入移出我的应用
+     $('.apply-title').mouseenter(function () {
+         $('.apply-title i:first-of-type').hide()
+         $('.apply-title i:last-of-type').show()
+         $('.apply-btn').css('background','white')
+         $('.apply-btn').css('color','#f12312')
+         $('.coin-mall li ').show();
+         $('.coin-mall a').css('color', '#f12312');
+     });
+     $('.coin-mall li').mouseleave(function () {
+         $('.apply-title i:first-of-type').show()
+         $('.apply-title i:last-of-type').hide()
+         $('.coin-mall li').hide();
+         $('.apply-title').removeClass('active');
+
+     });
 
  </script>
 
@@ -295,9 +294,9 @@
             var subAry=data[idx].sub
             $(subAry).each(function (i,item) {
                 $('.gold-mall').append(' ' +
-                    '<div class="goods-info" >\n' +
-                    '                <div class="goods-img">\n' +
-                    '                    <a href="goodDetail.html"><img src="'+item.icon+'" alt=""></a>\n' +
+                    '<div class="goods-info" onclick="gotoDetail('+item.id+')">\n' +
+                    '                <div class="goods-img" "onclick="gotoDetail('+item.id+')>\n' +
+                    '                    <a href=" "><img src="'+item.icon+'" alt=""></a>\n' +
                     '                </div>\n' +
                     '                <div class="goods-name">'+item.name+'</div>\n' +
                     '                <div>\n' +
@@ -316,7 +315,12 @@
         }changeTitle(0)
 
 
+            //跳转到详情页面
+        function gotoDetail(id) {
+            //浏览器跳转页面
+            window.location.href = 'goodDetail.html?id='+id
 
+        }
 
 
 
@@ -338,10 +342,7 @@
 
     </script>
 <script>
-    function UserClick() {
-        // this.active.show(ico)
 
-    }
 </script>
 </body>
 </html>
