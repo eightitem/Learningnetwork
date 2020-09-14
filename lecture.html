@@ -86,529 +86,895 @@
 
             </div>
             <div  class="center-title">
-                <div class="list-tab clear">
-                    <div class="list-tab__title avtive">即将开始</div>
-                    <div class="list-tab__title">精彩回放</div>
-                    <div class="list-tab__title">系列讲座</div>
+                <div class="list-tab ">
+                    <a class="list-tab__title " onclick="show(1)">即将开始</a>
+                    <a class="list-tab__title" onclick="show(2)">精彩回放</a>
+                    <a class="list-tab__title" onclick="show(3)">系列讲座</a>
 
 
                 </div>
 
             </div>
-            <div class="center-nc">
-                <img src="style/images/lecture_none_record.png" height="200" width="200"/>
-                <p>所选学部没有直播信息</p>
+
+               <div class="center-nc" id="d1" name="dv">
+                   <img src="style/images/lecture_none_record.png" height="200" width="200"/>
+                   <p>所选学部没有直播信息</p>
+               </div>
+               <div class="course-box" id="d2" name="dv">
+                   <ul class="course-list">
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_wenruochuan.png" />
+                                       </a>
+                                       <p>文若川</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">三年级数学思维能力解读——若川老师</p>
+                                       <p class="free-card-detail-date">09月03日 18：30-18：50</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lectire_zhaoxiaosi.png" />
+                                       </a>
+                                       <p>赵晓思</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">三年级数学思维能力解读——晓思老师</p>
+                                       <p class="free-card-detail-date">09月03日 18：30-18：50</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_liuqi.png" />
+                                       </a>
+                                       <p>刘棋</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">三年级数学思维能力解读——刘棋老师</p>
+                                       <p class="free-card-detail-date">09月03日 18：30-18：50</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_dayangfei.png" />
+                                       </a>
+                                       <p>大杨飞</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">五升六能力培养课（全国S/S+）-2</p>
+                                       <p class="free-card-detail-date">07月12日 19：00-20：00</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                                   <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
+                                   <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item02.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_yangmeng.png" />
+                                       </a>
+                                       <p>杨萌</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">初二物理，如何成为优势学科</p>
+                                       <p class="free-card-detail-date">08月26日 10：30-11：30</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_liuxiaoying.png" />
+                                       </a>
+                                       <p>刘晓颖</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">领跑三年级数学——刘晓颖老师</p>
+                                       <p class="free-card-detail-date">08月21日 19：00-17：20</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_sunzihao.png" />
+                                       </a>
+                                       <p>孙子豪</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">领跑三年级数学——孙子豪老师</p>
+                                       <p class="free-card-detail-date">08月21日 17：00-19：20</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_jinshuran.png" />
+                                       </a>
+                                       <p>金澎然</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">领跑三年级数学——金澎然老师</p>
+                                       <p class="free-card-detail-date">08月09日 19：30-19：20</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_sunzihao.png" />
+                                       </a>
+                                       <p>孙子豪</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">领跑三年级数学——孙子豪老师</p>
+                                       <p class="free-card-detail-date">08月09日 19：00-19：20</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item03.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_sunmoyi.png" />
+                                       </a>
+                                       <p>孙墨漪</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">填对志愿、报好高中—2020北京中考志愿填报指导</p>
+                                       <p class="free-card-detail-date">09月03日 18：30-18：50</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item04.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_sunmoyi.png" />
+                                       </a>
+                                       <p>陈潭飞</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">中考化学 如何抢占先机</p>
+                                       <p class="free-card-detail-date">08月26日 14：00-14：40</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_wangershuai.png" />
+                                       </a>
+                                       <p>王二帅</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">三 招搞定幼小衔接（王二帅）</p>
+                                       <p class="free-card-detail-date">08月09日 19：00-19：40</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_wangershuai.png" />
+                                       </a>
+                                       <p>王二帅</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">三 招搞定幼小衔接（王二帅）</p>
+                                       <p class="free-card-detail-date">08月03日 19：00-20：00</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_qianshengnan.png" />
+                                       </a>
+                                       <p>钱圣男</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">一升二能力培养课（S/S+）(2)</p>
+                                       <p class="free-card-detail-date">07月12日 19：00-19：40</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                                   <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
+                                   <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_dayangfei.png" />
+                                       </a>
+                                       <p>大杨飞</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">五升六能力培养课（全国S/S+）-2</p>
+                                       <p class="free-card-detail-date">07月12日 19：00-20：00</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                                   <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
+                                   <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item03.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_sunmoyi.png" />
+                                       </a>
+                                       <p>孙墨漪</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">填对志愿、报好高中—2020北京中考志愿填报指导</p>
+                                       <p class="free-card-detail-date">09月03日 18：30-18：50</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item04.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_sunmoyi.png" />
+                                       </a>
+                                       <p>陈潭飞</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">中考化学 如何抢占先机</p>
+                                       <p class="free-card-detail-date">08月26日 14：00-14：40</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_wangershuai.png" />
+                                       </a>
+                                       <p>王二帅</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">三 招搞定幼小衔接（王二帅）</p>
+                                       <p class="free-card-detail-date">08月09日 19：00-19：40</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_wangershuai.png" />
+                                       </a>
+                                       <p>王二帅</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">三 招搞定幼小衔接（王二帅）</p>
+                                       <p class="free-card-detail-date">08月03日 19：00-20：00</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                        <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="course-item">
+                           <div class="free-card">
+                               <div class="free-card-top">
+                                   <img src="style/images/lecture_item01.png"  width="100%"/>
+                               </div>
+                               <div class="free-card-center">
+                                   <div class="free-card-avatar">
+                                       <a href="">
+                                           <img src="style/images/lecture_qianshengnan.png" />
+                                       </a>
+                                       <p>钱圣男</p>
+
+                                   </div>
+                                   <div class="free-card-detail">
+                                       <p class="free-card-detail-title">一升二能力培养课（S/S+）(2)</p>
+                                       <p class="free-card-detail-date">07月12日 19：00-19：40</p>
+                                   </div>
+                               </div>
+                               <div class="free-card-bottom">
+                                   <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
+                                   <span>
+                            <a href="" class="just-sign-btn">观看回放</a>
+                        </span>
+                               </div>
+                           </div>
+                       </li>
+
+                   </ul>
+
+               </div>
+            <div class="course-box" id="d3" name="dv">
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item03.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">初一升初二免费预习课</p>
+                                <p class="free-card-detail-date">06月11日-06月18日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
+                            <span>
+                            <a href="" class="just-sign-btn">立即预约</a>
+                        </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item03.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">初一升初二免费预习课</p>
+                                <p class="free-card-detail-date">06月11日-06月18日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
+                            <span>
+                            <a href="" class="just-sign-btn">立即预约</a>
+                        </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item03.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">初一升初二免费预习课</p>
+                                <p class="free-card-detail-date">06月11日-06月18日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
+                            <span>
+                            <a href="" class="just-sign-btn">立即预约</a>
+                        </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item03.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">初一升初二免费预习课</p>
+                                <p class="free-card-detail-date">06月11日-06月18日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
+                            <span>
+                            <a href="" class="just-sign-btn">立即预约</a>
+                        </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item03.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">初一升初二免费预习课</p>
+                                <p class="free-card-detail-date">06月11日-06月18日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
+                            <span>
+                            <a href="" class="just-sign-btn">立即预约</a>
+                        </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item03.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">初一升初二免费预习课</p>
+                                <p class="free-card-detail-date">06月11日-06月18日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
+                            <span>
+                            <a href="" class="just-sign-btn">立即预约</a>
+                        </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item05.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">赢在高考志愿填报讲座</p>
+                                <p class="free-card-detail-date">07月13日-07月25日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
+                            <span>
+                            <a href="" class="just-sign-btn">立即预约</a>
+                        </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item03.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">初一升初二免费预习课</p>
+                                <p class="free-card-detail-date">06月11日-06月18日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
+                            <span>
+                            <a href="" class="just-sign-btn">立即预约</a>
+                        </span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item03.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">一升二年级免费预习课</p>
+                                <p class="free-card-detail-date">05月16日-05月31日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">全部系列讲座</a></span>
+                            <span>
+                            <a href="" class="just-sign-btn">立即预约</a>
+                        </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item01.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">别人家的孩子系列学习指导讲座</p>
+                                <p class="free-card-detail-date">05月16日-05月31日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">全部系列讲座</a></span>
+                            <span>
+                            <a href="" class="just-sign-btn">立即预约</a>
+                        </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item01.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">升年级数学能力培养课（新5,6年</p>
+                                <p class="free-card-detail-date">07月12日 19：00-20：00</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">全部系列讲座</a></span>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item01.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">升年级数学能力培养课（新5,6年</p>
+                                <p class="free-card-detail-date">07月12日 19：00-20：00</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">全部系列讲座</a></span>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item01.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">升年级数学能力培养课（新5,6年</p>
+                                <p class="free-card-detail-date">07月12日 19：00-20：00</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">全部系列讲座</a></span>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item01.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">升年级数学能力培养课（新5,6年</p>
+                                <p class="free-card-detail-date">07月12日 19：00-20：00</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">全部系列讲座</a></span>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item01.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">升年级数学能力培养课（新5,6年</p>
+                                <p class="free-card-detail-date">07月12日 19：00-20：00</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">全部系列讲座</a></span>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item01.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">升年级数学能力培养课（新5,6年</p>
+                                <p class="free-card-detail-date">07月12日 19：00-20：00</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">全部系列讲座</a></span>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item04.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">初三 化学备战系列科</p>
+                                <p class="free-card-detail-date">05月16日-05月31日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">全部系列讲座</a></span>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item02.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">初二物理优势特训营</p>
+                                <p class="free-card-detail-date">05月17日-05月31日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">全部系列讲座</a></span>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item01.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">升年级数学能力培养课（新5,6年</p>
+                                <p class="free-card-detail-date">05月16日-05月31日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">全部系列讲座</a></span>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="course-item">
+                    <div class="free-card">
+                        <div class="free-card-top">
+                            <img src="style/images/lecture_item01.png"  width="100%"/>
+                        </div>
+                        <div class="free-card-center">
+                            <div class="free-card-detail">
+                                <p class="free-card-detail-title">升年级数学能力培养课（新5,6年</p>
+                                <p class="free-card-detail-date">05月16日-05月31日</p>
+                            </div>
+                        </div>
+                        <div class="free-card-bottom">
+                            <span><a href="" class="just-sign-btn ck-series">全部系列讲座</a></span>
+
+                        </div>
+                    </div>
+                </li>
+
             </div>
-            <div class="course-box">
-                <ul class="course-list">
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_wenruochuan.png" />
-                                    </a>
-                                    <p>文若川</p>
 
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">三年级数学思维能力解读——若川老师</p>
-                                    <p class="free-card-detail-date">09月03日 18：30-18：50</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lectire_zhaoxiaosi.png" />
-                                    </a>
-                                    <p>赵晓思</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">三年级数学思维能力解读——晓思老师</p>
-                                    <p class="free-card-detail-date">09月03日 18：30-18：50</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_liuqi.png" />
-                                    </a>
-                                    <p>刘棋</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">三年级数学思维能力解读——刘棋老师</p>
-                                    <p class="free-card-detail-date">09月03日 18：30-18：50</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_dayangfei.png" />
-                                    </a>
-                                    <p>大杨飞</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">五升六能力培养课（全国S/S+）-2</p>
-                                    <p class="free-card-detail-date">07月12日 19：00-20：00</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                                <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
-                                <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item02.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_yangmeng.png" />
-                                    </a>
-                                    <p>杨萌</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">初二物理，如何成为优势学科</p>
-                                    <p class="free-card-detail-date">08月26日 10：30-11：30</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_liuxiaoying.png" />
-                                    </a>
-                                    <p>刘晓颖</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">领跑三年级数学——刘晓颖老师</p>
-                                    <p class="free-card-detail-date">08月21日 19：00-17：20</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_sunzihao.png" />
-                                    </a>
-                                    <p>孙子豪</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">领跑三年级数学——孙子豪老师</p>
-                                    <p class="free-card-detail-date">08月21日 17：00-19：20</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_jinshuran.png" />
-                                    </a>
-                                    <p>金澎然</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">领跑三年级数学——金澎然老师</p>
-                                    <p class="free-card-detail-date">08月09日 19：30-19：20</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_sunzihao.png" />
-                                    </a>
-                                    <p>孙子豪</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">领跑三年级数学——孙子豪老师</p>
-                                    <p class="free-card-detail-date">08月09日 19：00-19：20</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item03.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_sunmoyi.png" />
-                                    </a>
-                                    <p>孙墨漪</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">填对志愿、报好高中—2020北京中考志愿填报指导</p>
-                                    <p class="free-card-detail-date">09月03日 18：30-18：50</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item04.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_sunmoyi.png" />
-                                    </a>
-                                    <p>陈潭飞</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">中考化学 如何抢占先机</p>
-                                    <p class="free-card-detail-date">08月26日 14：00-14：40</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_wangershuai.png" />
-                                    </a>
-                                    <p>王二帅</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">三 招搞定幼小衔接（王二帅）</p>
-                                    <p class="free-card-detail-date">08月09日 19：00-19：40</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_wangershuai.png" />
-                                    </a>
-                                    <p>王二帅</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">三 招搞定幼小衔接（王二帅）</p>
-                                    <p class="free-card-detail-date">08月03日 19：00-20：00</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_qianshengnan.png" />
-                                    </a>
-                                    <p>钱圣男</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">一升二能力培养课（S/S+）(2)</p>
-                                    <p class="free-card-detail-date">07月12日 19：00-19：40</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                                <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
-                                <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_dayangfei.png" />
-                                    </a>
-                                    <p>大杨飞</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">五升六能力培养课（全国S/S+）-2</p>
-                                    <p class="free-card-detail-date">07月12日 19：00-20：00</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                                <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
-                                <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item03.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_sunmoyi.png" />
-                                    </a>
-                                    <p>孙墨漪</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">填对志愿、报好高中—2020北京中考志愿填报指导</p>
-                                    <p class="free-card-detail-date">09月03日 18：30-18：50</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item04.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_sunmoyi.png" />
-                                    </a>
-                                    <p>陈潭飞</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">中考化学 如何抢占先机</p>
-                                    <p class="free-card-detail-date">08月26日 14：00-14：40</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_wangershuai.png" />
-                                    </a>
-                                    <p>王二帅</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">三 招搞定幼小衔接（王二帅）</p>
-                                    <p class="free-card-detail-date">08月09日 19：00-19：40</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_wangershuai.png" />
-                                    </a>
-                                    <p>王二帅</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">三 招搞定幼小衔接（王二帅）</p>
-                                    <p class="free-card-detail-date">08月03日 19：00-20：00</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                        <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="course-item">
-                        <div class="free-card">
-                            <div class="free-card-top">
-                                <img src="style/images/lecture_item01.png"  width="100%"/>
-                            </div>
-                            <div class="free-card-center">
-                                <div class="free-card-avatar">
-                                    <a href="">
-                                        <img src="style/images/lecture_qianshengnan.png" />
-                                    </a>
-                                    <p>钱圣男</p>
-
-                                </div>
-                                <div class="free-card-detail">
-                                    <p class="free-card-detail-title">一升二能力培养课（S/S+）(2)</p>
-                                    <p class="free-card-detail-date">07月12日 19：00-19：40</p>
-                                </div>
-                            </div>
-                            <div class="free-card-bottom">
-                                <span><a href="" class="just-sign-btn ck-series">查看系列讲座</a></span>
-                                <span>
-                            <a href="" class="just-sign-btn">观看回放</a>
-                        </span>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-
-            </div>
         </div>
 
 
@@ -657,7 +1023,22 @@
     </div>
 
 </div>
+<script src="javascript/jquery-3.4.1.js"></script>
+<script>
+    function show(id) {
+        var divs = document.getElementsByName("dv")
+            for (var i = 0; i <divs.length; i++) {
+                if (divs[i].id == "d" + id) {
+                    divs[i].style.display = "block"
+                } else {
+                    divs[i].style.display = "none"
+                }
+            }
 
+
+    }
+
+</script>
 
 
 
