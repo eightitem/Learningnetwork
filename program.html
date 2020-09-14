@@ -156,8 +156,7 @@
                 //     $('.bottom-menu-liste-span').removeClass('active');
                 //     $(this).addClass('active');
                 // }
-                $(this).addClass("active");
-                $('bottom-menu-liste-top a').removeClass("active")
+                $('.bottom-menu-liste-top a').eq($(this).index()).addClass("active");
             })
         })
     </script>
