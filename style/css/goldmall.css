@@ -50,6 +50,7 @@ i, p, h1, h2, h3, h4, h5, h6, b, textarea, button, input, select, figure, figcap
     margin: 0 auto;
     /*height: 800px;*/
     /*background: #ffffff;*/
+    /*z-index: 5;*/
 }
 .container .title{
     color: #f5f5f5;
