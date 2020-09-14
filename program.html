@@ -755,34 +755,25 @@
     }loadTopicC(0)
 </script>
 <script>
-    $(document).ready(function(){
-        $('.bottom-header').toggle(function(){
-                $('.bottom-header').css("background-image","../images/program/wfmid2.png");},
-            function(){
-                $('.bottom-header').css("background-color","../images/program/wfmid3.png");},
-            function(){
-                $('.bottom-header').css("background-color","../images/program/wfmid1.png");}
-        );
-    });
-    // $('.bottom-header').click(function () {
-    //     var ary = $(this).attr('url').split('/')
-    //     if (document.getElementsByClassName('.bottom-header-slide1')) {
-    //         $(this).attr('url','style/images/program/wfmid2.png')
-    //         $('.two-list').show()
-    //         $('.one-list').hide()
-    //         $('.three-list').hide()
-    //     }if (document.getElementsByClassName('.bottom-header-slide2')) {
-    //         $(this).attr('url','style/images/program/wfmid3.png')
-    //         $('.two-list').hide()
-    //         $('.one-list').hide()
-    //         $('.three-list').show()
-    //     }else if (document.getElementsByClassName('.bottom-header-slide3')){
-    //         $(this).attr('url','style/images/program/wfmid1.png')
-    //         $('.two-list').hide()
-    //         $('.one-list').show()
-    //         $('.three-list').hide()
-    //     }
-    // })
+    $('.bottom-header').click(function () {
+        // var ary = $(this).attr('url').split('/')
+        if (document.getElementsByClassName("bottom-header-slide1")) {
+            $(this).attr("background-image","../images/program/wfmid2.png")
+            $('.two-list').show()
+            $('.one-list').hide()
+            $('.three-list').hide()
+        }if (document.getElementsByClassName("bottom-header-slide2")) {
+            $(this).attr("background-image","../images/program/wfmid3.png")
+            $('.two-list').hide()
+            $('.one-list').hide()
+            $('.three-list').show()
+        }else if (document.getElementsByClassName("bottom-header-slide3")){
+            $(this).attr("background-image","../images/program/wfmid1.png")
+            $('.two-list').hide()
+            $('.one-list').show()
+            $('.three-list').hide()
+        }
+    })
 </script>
 </body>
 </html>
