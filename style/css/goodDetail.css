@@ -1,7 +1,7 @@
 .container{
     width: 1200px;
     margin: 0 auto;
-    height: 1500px;
+    height: 800px;
     /*background: #ffffff;*/
 }
 .container .d-title{
@@ -101,20 +101,79 @@
 .goods-operate .goods-num>.num {
     margin-right: 20px;
 }
-.goods-operate .goods-num>div {
+.num{
+    border: 1px #eee solid;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    /*margin-right: 20px;*/
+}
+.num .num-dec{
+    height: 100%;
+    width: 24%;
+    background: #f5f7fa;
+    text-align: center;
+    display: inline-block;
+}
+.num-text{
+    display: inline-block;
+    height: 100%;
+    width: 60px;
+    flex: 1;
+    text-align: center;
+    outline: 0;
+    border: none;
+
+}
+.num .num-inc{
+    height: 100%;
+    width: 24%;
+    background: #f5f7fa;
+    text-align: center;
+    float: right;
+    display: inline-block;
+}
+.goods-operate .goods-total-prices {
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 60px;
+    display: flex;
+}
+.goods-total-prices div {
     float: left;
 }
-.el-input-number--mini {
-    width: 130px;
-    line-height: 26px;
+.goods-operate .item {
+    padding: 0 20px;
+    color: #666;
 }
-.el-input-number {
-    position: relative;
-    display: inline-block;
-    width: 180px;
-    line-height: 38px;
-}
-.el-input-number--mini .el-input-number__decrease, .el-input-number--mini .el-input-number__increase {
-    width: 28px;
-    font-size: 12px;
-}
+/*.goods-prices .item >.label {*/
+/*    margin-top: 20px;*/
+/*    margin-right: 12px;*/
+/*    color: #666;*/
+/*    font-size: 14px;*/
+/*    flex: 1;;*/
+/*    background: white;*/
+/*}*/
+/*.price {*/
+/*    font-size: 20px;*/
+/*    color: #F13232;*/
+/*}*/
+
+/*.el-input-number--mini {*/
+/*    width: 130px;*/
+/*    line-height: 26px;*/
+/*}*/
+/*.el-input-number {*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    width: 180px;*/
+/*    line-height: 38px;*/
+/*}*/
+/*.el-input-number--mini .el-input-number__decrease, .el-input-number--mini .el-input-number__increase {*/
+/*    width: 28px;*/
+/*    font-size: 12px;*/
+/*}*/
+/*.el-input-number__decrease.is-disabled, .el-input-number__increase.is-disabled {*/
+/*    color: #C0C4CC;*/
+/*    cursor: not-allowed;*/
+/*}*/
