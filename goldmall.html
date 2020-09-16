@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>金币商城</title>
+    <title>金币商城杨璇</title>
 
 
     <link rel="stylesheet" href="lib/iconfont_goldmall/iconfont.css">
@@ -296,7 +296,7 @@
                 $('.gold-mall').append(' ' +
                     '<div class="goods-info" onclick="gotoDetail('+item.id+')">\n' +
                     '                <div class="goods-img" "onclick="gotoDetail('+item.id+')>\n' +
-                    '                    <a href=" "><img src="'+item.icon+'" alt=""></a>\n' +
+                    '                    <a href="'+item.id+' "><img src="'+item.icon+'" alt=""></a>\n' +
                     '                </div>\n' +
                     '                <div class="goods-name">'+item.name+'</div>\n' +
                     '                <div>\n' +
@@ -312,28 +312,79 @@
 
             })
 
+
+
+
         }changeTitle(0)
 
-
+        // console.log(name)
             //跳转到详情页面
         function gotoDetail(id) {
             //浏览器跳转页面
-            window.location.href = 'goodDetail.html?id='+id
+            if (id==11||id==51){
+                window.location.href = 'goodDetail.html?id='+ id+''
+                // window.location.href = 'goodDetail.html?&name='+ escape(name)
+            }
+            if (id==12) {
+                window.location.href = 'goodDetail2.html?id='+ id+''
+            }
+            if (id==13) {
+                window.location.href = 'goodDetail3.html?id='+ id+''
+            }
+            if (id==14) {
+                window.location.href = 'goodDetail4.html?id='+ id+''
+            }
+            if (id==15) {
+                window.location.href = 'goodDetail5.html?id='+ id+''
+            }
+            if (id==16) {
+                window.location.href = 'goodDetail6.html?id='+ id+''
+            }
+            if (id==17) {
+                window.location.href = 'goodDetail7.html?id='+ id+''
+            }
+            if (id==18) {
+                window.location.href = 'goodDetail8.html?id='+ id+''
+            }
 
         }
 
 
-        // function LoadList(ary) {
-        //     $('.goods-info').empty()
-        //     $('.content-two').empty()
-        //
-        //     $(ary).each(function (i,item) {
-        //
-        //
-        //     })
+        // for (var i=0,l=data.length;i<l;i++){
+        //     for (var key in data[i]){
+        //         // alert(key+':'+data[i][key]);
+        //         console(data[i][key]);
         //
         //
+        //     }
         // }
+
+
+
+
+
+
+        // //**
+        // //请求json数据拼接字符串，并在URL传参数id跳转
+        // $(function(){
+        //     $.ajax({
+        //         type:"get",
+        //         url:"data/data.json",
+        //         dataType:"json",
+        //         success:function(res){
+        //             var str = "<ul class='con_ul'>";
+        //             $.each(res.books, function(idx,val) {
+        //                 str +="<li class=\"sec_li\"><a href='goodsDetail.html?booksId="+val.id+"' class='lp_li_a'><div class='lp_li_imgWrap'><img src='"+val.imgUrl+"'/></div><p class='lp_li_name'>"
+        //                     +val.title+"</p><p class='lp_li_price'>"
+        //                     +'￥'+val.price+"</p></a><li>";
+        //             });
+        //             str += "</ul>";
+        //             $('.content').append(str);
+        //         },error:function(){
+        //             alert(error)
+        //         }
+        //     });
+        // })
 
 
 

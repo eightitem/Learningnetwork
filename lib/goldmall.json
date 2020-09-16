@@ -1,0 +1,52 @@
+{
+  "data" :
+  {
+    "id":1,
+    "title":"全部",
+    "sub":[
+      {"id":11,"icon":'style/images/yxyellowman.jpg',name:'小黄人拼图',price:'4999',coin:'金币',num:'11套库存'},
+      {"id":12,"icon":'style/images/yxjishuqi.jpg',name:'五行计数器',price:'2399',coin:'金币',num:'180套库存'},
+      {"id":13,"icon":'style/images/yxyellowduckbag.jpg',name:'小黄鸭帆布包',price:'6000',coin:'金币',num:'113套库存'},
+      {"id":14,"icon":'style/images/yxnotebook.jpg',name:'精灵本子',price:'3599',coin:'金币',num:'1913套库存'},
+      {"id":15,"icon":'style/images/yxchinesebook.png',name:'大语文笔记本',price:'3599',coin:'金币',num:'204套库存'},
+      {"id":16,"icon":'style/images/yxpencilgift.jpg',name:'文具套装（铅笔)',price:'2499',coin:'金币',num:'656套库存'},
+      {"id":17,"icon":'style/images/yxbookgift.jpg',name:'高中大礼包',price:'7999',coin:'金币',num:'293套库存'},
+      {"id":18,"icon":'style/images/yxbookgift2.jpg',name:'初中大礼包',price:'7999',coin:'金币',num:'99套库存'},
+    ],
+
+
+
+    id:2,
+    title:'文具',
+    sub:[
+      {id:12,icon:'style/images/yxjishuqi.jpg',name:'五行计数器',price:'2399',coin:'金币',num:'180套库存'},
+      {id:16,icon:'style/images/yxpencilgift.jpg',name:'文具套装（铅笔)',price:'2499',coin:'金币',num:'656套库存'},
+      {id:17,icon:'style/images/yxbookgift.jpg',name:'高中大礼包',price:'7999',coin:'金币',num:'293套库存'},
+      {id:18,icon:'style/images/yxbookgift2.jpg',name:'初中大礼包',price:'7999',coin:'金币',num:'99套库存'},
+    ]
+  },
+  {
+    id:3,
+    title:'生活用品',
+    sub:[
+      {id:13,icon:'style/images/yxyellowduckbag.jpg',name:'小黄鸭帆布包',price:'6000',coin:'金币',num:'113套库存'},
+    ]
+  },
+  {
+    id:4,
+    title:'笔记本',
+    sub:[
+      {id:14,icon:'style/images/yxnotebook.jpg',name:'精灵本子',price:'3599',coin:'金币',num:'1913套库存'},
+      {id:15,icon:'style/images/yxchinesebook.png',name:'大语文笔记本',price:'3599',coin:'金币',num:'204套库存'},
+    ]
+  },
+  {
+    id:5,
+    title:'玩具',
+    sub:[
+      {id:51,icon:'style/images/yxyellowman.jpg',name:'小黄人拼图',price:'4999',coin:'金币',num:'11套库存'},
+
+    ]
+  },
+
+}

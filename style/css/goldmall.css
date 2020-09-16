@@ -135,6 +135,7 @@ i, p, h1, h2, h3, h4, h5, h6, b, textarea, button, input, select, figure, figcap
 }
 .gold-mall .goods-info:hover{
     border-top: #f13232 2px solid;
+
 }
 .goods-img img{
     width: 253px;
