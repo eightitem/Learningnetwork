@@ -82,8 +82,8 @@
 .nav .nav-list{
     margin-top: 60px;
     flex: 2;
-    margin-left: -70px;
-    min-width: 500px;
+    margin-left: -50px;
+    /*min-width: 500px;*/
 }
 .nav-list a{
     text-decoration: none;
