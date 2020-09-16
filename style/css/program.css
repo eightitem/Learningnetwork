@@ -11,7 +11,7 @@ div:after{
 }
 .language{
     position: absolute;
-    left: 325px;
+    margin-left: -50px;
     top:80px;
     z-index: 20;
     width: 170px;
@@ -73,7 +73,6 @@ div:after{
     cursor: pointer;
     flex: 1;
     height: 80px;
-    /*border: 1px solid red;*/
     align-items: center;
     display: flex;
 
@@ -129,9 +128,8 @@ div:after{
 }
 .h-right a{
     display: inline-block;
-    width: 40px;
     margin-top: 10px;
-    position: relative;
+    /*position: relative;*/
 }
 .h-right input{
     width: 255px;
@@ -262,7 +260,7 @@ div:after{
     margin-top: 20px;
 }
 .swiper-next{
-    position: absolute;
+    /*position: absolute;*/
     width: 50px;
     z-index: 10;
     height: 50px;
@@ -270,12 +268,12 @@ div:after{
     margin-top: -40px;
 }
 .swiper-prev{
-    position: absolute;
+    /*position: absolute;*/
     width: 50px;
     z-index: 10;
     height: 50px;
     margin-left: 635px;
-    margin-top: -40px;
+    margin-top: -50px;
 }
 .bottom{
     position: relative;
@@ -284,6 +282,13 @@ div:after{
 .bottom-menu-list{
    width: 100%;
     height:380px;
+}
+.bottom .swiper-wrapper{
+    width: 95%;
+    box-sizing: border-box;
+    /*position: relative;*/
+    /*border: 1px solid red;*/
+    margin-left: 30px;
 }
 .bottom-menu-list .swiper-container {
     width:100%;
@@ -294,7 +299,7 @@ div:after{
     background: #fff;
     font-size: 15px;
     margin-top:20px;
-    width: 215px;
+    width: 18%;
     margin-right: 6px;
     /*position: relative;*/
     display: -webkit-box;
@@ -314,7 +319,7 @@ div:after{
 .bottom-swiper-slide{
 
     position: absolute;
-    width:215px;
+    width: 100%;
     height: 166px;
     /*margin-right: 30px;*/
     margin-top: -90px;
@@ -328,7 +333,7 @@ div:after{
 }
 .bottom-swiper-title{
     position: absolute;
-    width: 215px;
+    width: 100%;
     height: 88px;
     /*margin-left: -10px;*/
     box-sizing: border-box;
@@ -368,12 +373,9 @@ div:after{
     float: right;
     margin-right: 15px;
 }
-.bottom .swiper-wrapper{
-    box-sizing: border-box;
-    position: relative;
-    margin-left: 30px;
-}
+
 .bottom-menu-liste-menu{
+    width: 100%;
     display: none;
 }
 .bottom-menu-liste-top{
@@ -416,10 +418,8 @@ div:after{
 
 }
 .bottom-menu-liste-menu .menu{
-    /*padding: 8px;*/
-    /*position: absolute;*/
     margin-left: 31px;
-    width: 215px;
+    width: 17%;
     height: 260px;
     /*margin-right: 10px;*/
     float: left;
