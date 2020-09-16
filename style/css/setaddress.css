@@ -1,0 +1,231 @@
+.el-form-item label {
+    font-size: 16px;
+}
+
+.el-input input {
+    height: 35px;
+    line-height: 35px;
+    width: 260px;
+    padding-left: 15px;
+    color: #666;
+    border-color: #666;
+}
+
+.el-input input:hover {
+    border-color: #0C0C0C;
+}
+
+p .img-s {
+    display: block;
+    float: right;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.el-form-item__label {
+    padding-right: 20px;
+}
+.addrList {
+    cursor: pointer;
+    margin-top: 10px;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.addrList ul li {
+    padding: 10px;
+    height: 60px;
+    line-height: 40px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    position: relative;
+}
+.addrList ul li:first-child  span:nth-child(1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.addrList ul li  .Consignee {
+    float: left;
+    display: block;
+    width: 100px;
+    text-align: left;
+    box-sizing: border-box;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.addrList ul li  .addressInfos{
+    width: 300px;
+    height: 38px;
+    line-height: 38px;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.addrList ul li  .hidePhone {
+    float: left;
+    display: block;
+    width: 100px;
+    text-align: left;
+    box-sizing: border-box;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 20px;
+}
+.addrList ul li .operate{
+    float: right;
+    margin-top: -12px;
+    color: #999;
+    margin-left: 17px;
+}
+.addrList ul li .operate li{
+    float: left;
+    font-size: 12px;
+}
+.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfix{zoom:1}
+ul,li{
+    list-style:none;
+}
+.qrm-input{
+    outline: none;
+    border:none;
+    height: 35px;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    padding: 0 10px;
+}
+.qrm-input-border{
+    position: relative;
+}
+.qrm-pinming{
+    height: 35px;
+    line-height: 35px;
+    border:1px solid #dddddd;
+    border-radius: 4px;
+    position: relative;
+    width: 260px;
+    margin-left: 88px;
+    background-image: url("../images/qrm-arrow-down.png");
+    background-repeat: no-repeat;
+    background-position: 230px;
+}
+.qrm-pinming:hover{
+    cursor: pointer;
+}
+.qrm-pinming input:hover{
+    cursor: pointer;
+}
+.qrm-pinming-panel{
+    position: absolute;
+    top: 52px;
+    left: -1px;
+    z-index: 99999;
+    width: 350px;
+    height: 210px;
+    /*border: 1px solid #409EFF;*/
+    background: #ffffff;
+}
+.qrm-border1{
+    float: left;
+    width: 180px;
+    height: 208px;
+    border: 1px solid #e4e7ed;
+    box-shadow: 0 0px 5px #e4e7ed;
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+    background-color: #fff;
+    /*margin-left: 5px;*/
+}
+.qrm-border2{
+    float: left;
+    width: 180px;
+    height: 208px;
+    /*overflow-y: scroll;*/
+    border: 1px solid #e4e7ed;
+    box-shadow: 0 0px 5px #e4e7ed;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    z-index: 10;
+    background-color: #fff;
+    /*margin-left: 5px;*/
+}
+.qrm-border3{
+    float: left;
+    width: 180px;
+    height: 208px;
+    /*overflow-y: scroll;*/
+    border: 1px solid #e4e7ed;
+    box-shadow: 0 0px 5px #e4e7ed;
+    position: absolute;
+    top: 50px;
+    left: 360px;
+    z-index: 10;
+    background-color: #fff;
+    /*margin-left: 5px;*/
+}
+.qrm-lev{
+    float: left;
+    width: 96.5%;
+    margin:0;
+    padding:0;
+    font-size: 12px;
+}
+.qrm-lev>li{
+    width: 98%;
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+}
+.qrm-lev>li:hover{
+    background: #F5F7FA;
+    /*color: #409EFF;*/
+}
+
+.qrm-arrow-right{
+    display: inline-block;
+    width: 4px;
+    height: 7px;
+    background: url("../images/qrm-arrow-right.png") no-repeat;
+    position: absolute;
+    right: 7px;
+    top: 14px;
+}
+
+.qrm-lev-1>li.active{
+    background: #F5F7FA;
+    color: #409EFF;
+
+}
+.qrm-lev-2>li.active{
+    background: #F5F7FA;
+    color: #409EFF;
+
+}
+.qrm-lev-3>li.active{
+    background: #F5F7FA;
+    color: #409EFF;
+
+}
+.qrm-lev-4>li.active{
+    background: #F5F7FA;
+    color: #409EFF;
+}
+.box{
+    margin-bottom: 30px;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改手机号 梁彩凤</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../style/css/install.css">
+    <link rel="stylesheet" href="../style/css/slider.css">
+    <script src="../style/js/jquery-3.4.1.js"></script>
+    <style>
+        .disabled {
+            background-color: #ddd;
+            border-color: #ddd;
+            cursor: not-allowed;
+            width: 120px;
+            height: 40px;
+            border-radius: 3px;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+<iframe src="nav.html" frameborder="no" border="0" width="100%" scrolling="no" height="180px" style="z-index: 10"></iframe>
+
+<div class="con">
+    <div class="pull_left">
+        <ul class="nav">
+            <li class="title">账户中心</li>
+            <li class="">
+                <a href="install.html">我的资料</a>
+            </li>
+            <li class="">
+                <a href="install-pwd.html">修改密码</a>
+            </li>
+            <li class="active">
+                <a href="#">修改手机号</a>
+            </li>
+            <li class="">
+                <a href="install-setAddress.html">收货地址</a>
+            </li>
+            <li class="">
+                <a href="install-third.html">第三方账户绑定</a>
+            </li>
+            <li class="title">用户中心</li>
+            <li class="">
+                <a href="#">续报中心</a>
+            </li>
+            <li class="">
+                <a href="#">跨版本难度换课</a>
+            </li>
+            <li class="title">订单中心</li>
+            <li class="">
+                <a href="install-order.html">我的订单</a>
+            </li>
+            <li class="">
+                <a href="install-invoice.html">我的发票</a>
+            </li>
+            <li class="title">资产中心</li>
+            <li class="">
+                <a href="#">我的余额</a>
+            </li>
+            <li class="">
+                <a href="#">优惠券</a>
+            </li>
+            <li class="">
+                <a href="#">学习卡</a>
+            </li>
+        </ul>
+    </div>
+    <div class="pull_right_a">
+        <div class="pwd-top">
+            <h3>修改手机号</h3>
+        </div>
+        <div class="pwd-content" style="width: 420px">
+            <form class="el-form demo-ruleForm">
+                <div style="margin-bottom: 30px;padding-left: 13px;">
+                    <label style="font-size: 15px">当前手机号</label>&nbsp;
+                    <strong style="font-size: 17px">177****3336</strong>
+                </div>
+                <div class="el-form-item" style="margin-bottom: 30px">
+                    <label class="el-form-item__label" style="width: 100px;">手机号码</label>
+                    <div class="el-form-item__content" style="margin-left: 100px;">
+                        <div class="phoneNumber el-input"><!---->
+                            <input type="text" id="tel" autocomplete="off" maxlength="11" placeholder="请输入手机号" class="el-input__inner">
+                        </div>
+                        <div class="error1 e3" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+                <div class="el-form-item" style="margin-bottom: 30px">
+                    <label class="el-form-item__label" style="width: 100px;">滑块验证</label>
+                    <div class="el-form-item__content" style="margin-left: 100px;">
+                        <div id="drag"></div>
+                    </div>
+                </div>
+                <div class="el-form-item" style="position: relative;margin-bottom: 30px">
+                    <label class="el-form-item__label" style="width: 100px;">短信验证码</label>
+                    <div class="el-form-item__content" style="margin-left: 100px;">
+                        <div class="smsCode el-input" style="width: 160px;"><!---->
+                            <input type="text" id="xx" autocomplete="off" placeholder="请输入短信验证码" maxlength="6" class="el-input__inner"><!----><!----><!----><!---->
+                        </div>
+                        <span class="disabled" style="position: absolute; top: 0px; right: 0px;">
+                          获取短信验证码
+                        </span>
+                        <div class="error1 e4" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+                <div class="el-form-item" style="margin-bottom: 30px">
+                    <label class="el-form-item__label" style="width: 100px;">当前密码</label>
+                    <div class="el-form-item__content" style="margin-left: 100px;">
+                        <div class="passWord el-input"><!---->
+                            <input type="password" id="pwd" autocomplete="off" placeholder="请输入当前网页密码" maxlength="18" class="el-input__inner">
+                        </div>
+                        <div class="error1 e5" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+                <div class="base-box" style="padding: 10px 0">
+                    <button class="el-button" lay-filter="edit3" lay-submit="">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="../style/js/slider.js"></script>
+<script src="../layui/layui.js"></script>
+<script>
+
+    layui.use(['form', 'layer'], function () {
+        $ = layui.jquery;
+        var form = layui.form
+            , layer = layui.layer
+            , element = layui.element;
+
+
+        //修改密码
+        form.on('submit(edit3)', function (data) {
+            var tel = $("#tel").val();
+            var xx = $("#xx").val();
+            var pwd = $("#pwd").val();
+            if (tel == "") {
+                $(".e3").html("请输入手机号");
+                $(".e3").show();
+            } else {
+                if (tel.length < 11) {
+                    $(".e3").html("手机号由11位数字组成");
+                    $(".e3").show();
+                } else {
+                    $(".e3").hide();
+                }
+            }
+            if (xx == "") {
+                $(".e4").html("短信验证码不能为空");
+                $(".e4").show();
+            } else {
+                if (xx.length < 6) {
+                    $(".e4").html("短信验证码不正确");
+                    $(".e4").show();
+                } else {
+                    $(".e4").hide();
+                }
+            }
+            if (pwd == "") {
+                $(".e5").html("请输入当前密码");
+                $(".e5").show();
+            } else {
+                if (pwd.length < 6) {
+                    $(".e5").html("密码不能少于6位字符");
+                    $(".e5").show();
+                } else {
+                    $(".e5").hide();
+                }
+
+            }
+            if (tel != "" && xx != "" && pwd != "" && pwd.length > 5 && xx.length > 5 && tel.length >10) {
+                layer.alert("修改成功", {icon: 6}, function () {
+                    parent.location.reload();//刷新
+                })
+            }
+
+
+            return false;
+        });
+    })
+</script>
+<script type="text/javascript">
+    $('#drag').drag();
+</script>
+</html>
