@@ -199,15 +199,14 @@ div,table{margin:2px;padding:2px;}
     /*margin: 0 34px;*/
     left: 50%;
     position: relative;
-    width: 485px;
+    width: 480px;
     background-repeat: no-repeat;
-    height: 52px;
+    height:48px;
     background-size: auto;
     margin-left: -240px;
     margin-top: 40px;
     background-image: url("../images/program/wfmid1.png");
     display: flex;
-    position: relative;
 }
 .bottom-header-slide1{
     width: 33%;
