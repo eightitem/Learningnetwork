@@ -2,14 +2,13 @@
     width: 100%;
      padding-bottom: 20px;
 }
-.container-box{
+
+.container-box {
     min-width: 1300px;
     min-height: calc(100vh - 330px);
-   padding-bottom: 20px;
-    height: 2400px;
-
-
 }
+
+
 .container-center{
     padding-bottom: 30px;
     margin: 0 auto;
@@ -118,6 +117,7 @@
     margin-left: -5px;
     margin-right: -5px;
     display:none;
+    height: 2000px;
 }
 .course-box-type{
     margin-left: -5px;
