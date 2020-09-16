@@ -2,26 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>学而思网校，每天进步一点点</title>
+  <title>李饰倩-学而思网校，每天进步一点点</title>
   <link rel="stylesheet" href="./style/css/common.css">
-  <link rel="stylesheet" href="style/css/index.css">
-  <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./style/css/index.css">
+  <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="./style/css/header.css">
   <link rel="stylesheet" href="./lib/iconfont/iconfont.css">
-  <link rel="stylesheet" href="style/css/dingwei.css">
+  <link rel="stylesheet" href="./style/css/dingwei.css">
 </head>
 <body>
 <div class="header">
   <div class="top">
     <a href="#" class="area"><i class="iconfont icon-dituzuobiaodingwei"></i>全国^[为您推荐该地区的课程]
       <div class="area-list">
-        <p>是安抚掉分会丢返回
-          <!--          <a href="#">全国</a>-->
-          <!--          <a href="#">安徽</a>-->
-          <!--          <a href="#">澳门</a>-->
-          <!--          <a href="#">北京</a>-->
-          <!--          <a href="#">重庆</a>-->
-        </p>
+        <div class="lists-item">
+          <a href="#"><span>全国</span></a>
+          <a href="#">安徽</a>
+          <a href="#">澳门</a>
+          <a href="#">北京</a>
+          <a href="#">重庆</a>
+          <a href="#">安徽</a>
+          <a href="#">福建</a>
+          <a href="#">甘肃</a>
+          <a href="#">广东</a>
+          <a href="#">广西</a>
+          <a href="#">贵州</a>
+          <a href="#">海南</a>
+          <a href="#">河北</a>
+          <a href="#">黑龙江</a>
+          <a href="#">河南</a>
+          <a href="#">湖北</a>
+          <a href="#">湖南</a>
+          <a href="#">江苏</a>
+          <a href="#">江西</a>
+          <a href="#">吉林</a>
+          <a href="#">辽宁</a>
+          <a href="#">宁夏</a>
+          <a href="#">青海</a>
+          <a href="#">山东</a>
+          <a href="#">上海</a>
+          <a href="#">山西</a>
+          <a href="#">陕西</a>
+          <a href="#">内蒙古</a>
+          <a href="#">四川</a>
+          <a href="#">台湾</a>
+          <a href="#">天津</a>
+          <a href="#">香港</a>
+          <a href="#">新疆</a>
+          <a href="#">西藏</a>
+          <a href="#">云南</a>
+          <a href="#">浙江</a>
+        </div>
+
       </div>
     </a>
     <div class="top-r">
@@ -54,7 +86,7 @@
         <i class="iconfont icon-sousuo"></i>
       </div>
       <a href="#" class="shopping"><i class="iconfont icon-gouwuche"></i>  购物车</a>
-      <a href="#" class="login">立即登录</a>
+      <a href="#" class="login" style="position: absolute">立即登录</a>
 
     </div>
   </div>
@@ -500,12 +532,13 @@
     }
   });
 </script>
-
+<!--点击放大切换-->
 <script>
   $("body").on("click",".banner-item>p",function(){
     $(this).addClass("active").siblings("p").removeClass("active")
   })
 </script>
+<!--搜索框-->
 <script>
   //搜索框获取或失去焦点事件
   $('.nav-search input').focus(function () {
@@ -518,6 +551,15 @@
   })
 </script>
 
+<!--地区定位显示-->
+<script>
+  $(document).ready(function(){
+    $(".area").click(function(){
+      $(".area-list").toggle();
+    });
+  });
+</script>
+
 <script>
   var data = [
     {
@@ -526,7 +568,7 @@
       sub: [
         {id: 11,url: 'images/teacher1.png',subTitle: '微信小程序从0基础到精通',desc: '一站式掌握小程序生态，打造站内零基础精通小程序的最佳路径',step: '4步骤 · 5门课  22348人收藏'},
         {id: 12,url: 'image/teacher2.png',subTitle: 'Vue.js 从入门到精通',desc: '路线专为想学Vue却无从下手的人群设计，以实际项目为例，逐层深入，学透Vue。',step: '4步骤 · 5门课  22348人收藏'},
-        {id: 13,url: 'image/teacher3.png',subTitle: 'Go语言从入门到达人之路',desc: '零基础入门Go语言，在掌握基础语法后向并发提升，并用Go去构建微服务、上手区块链项目。',step: '4步骤 · 5门课  22348人收藏'}
+        {id: 13,url: 'mage/teacher3.png',subTitle: 'Go语言从入门到达人之路',desc: '零基础入门Go语言，在掌握基础语法后向并发提升，并用Go去构建微服务、上手区块链项目。',step: '4步骤 · 5门课  22348人收藏'}
       ]
     },
     {
