@@ -1,6 +1,4 @@
-*{
-  /*overflow: hidden;*/
-}
+
 .top{
   min-width: 1000px;
   overflow: hidden;
@@ -33,6 +31,7 @@
   width: 100%;
   display: flex;
   overflow: hidden;
+  background: white;
 }
 .nav .nav-img{
   margin:30px 80px;
@@ -131,6 +130,7 @@
 .nav-search .login:hover{
   border-shadow: #f6c243 3px;
 }
+
 
 
 

@@ -4,6 +4,7 @@
     color: white;
     font-size: 13px;
     font-weight: 200;
+    min-width: 1000px;
 }
 .top .aa{
     float: left;
@@ -26,6 +27,7 @@
     width: 100%;
     display: flex;
 
+
 }
 
 
@@ -40,6 +42,7 @@
 .nav .nav-list{
     margin-top: 50px;
     flex:1;
+    min-width: 500px;
 
 
 }
@@ -60,6 +63,9 @@
     margin-top: 40px;
     width: 580px;
     position: relative;
+    overflow: hidden;
+    min-width: 400px;
+
 
 
 }
@@ -126,6 +132,8 @@
     text-align: center;
     color: #F13232;
     background: #f6c243;
+ position: absolute;
+
 }
 .nav-search .login:hover{
     border-shadow: #f6c243 3px;
@@ -138,11 +146,11 @@
 
 /*底部*/
 .bottom{
-
     background: #333333;
     height: 200px;
     width: 100%;
     text-align: center;
+
 
 
 
