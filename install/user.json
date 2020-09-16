@@ -1,0 +1,16 @@
+{
+  "res": "true",
+  "data":
+  {
+    "id":"1",
+    "nickname": "学员123",
+    "realkname": "学生甲",
+    "en_name": "tom",
+    "sex": "0",
+    "local": "山东省日照市",
+    "birthday": "1998-03-04",
+    "grade": "2",
+    "school": "济宁学院"
+  }
+
+}

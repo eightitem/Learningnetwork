@@ -34,7 +34,7 @@
     <div class="h-right">
         <i class="iconfont icon-sousuo"></i>
         <input type="text" placeholder="输入作品名称或作者姓名">
-        <a href="#">登录</a>
+        <a href="login.html">登录</a>
         <a href="#">注册</a>
     </div>
 </div>
@@ -72,6 +72,7 @@
                     <div class="swiper-prev"><img src="style/images/program/wfbtn2.png" height="30" width="30"/></div>
                 </div>
                 <div class="swiper-wrapper ">
+
                 </div>
             </div>
         </div>
@@ -211,8 +212,8 @@
 </script>
 <script>
     var swiper = new Swiper('.swiper-bottom-new ', {
-        slidesPerView:5,
-        spaceBetween: 25,
+        slidesPerView:'auto',
+        spaceBetween: 32,
         slidesPerGroup: 5,
         autoplay: {
             delay: 2000,
@@ -221,7 +222,6 @@
         },
         observer:true, //修改swiper自己或子元素时，自动初始化swiper
         observeParents:true, //修改swiper的父元素时，自动初始化swiper
-        // loopFillGroupWithBlank: true,
         navigation: {
             nextEl: '.swiper-prev',
             prevEl: '.swiper-next',
@@ -233,10 +233,10 @@
 </script>
 <script>
     var swiper = new Swiper('.swiper-bottom ', {
-    slidesPerView:5,
-    spaceBetween: 25,
-    slidesPerGroup: 5,
-    autoplay: {
+        slidesPerView : 'auto',
+        spaceBetween: 32,
+        slidesPerGroup: 5,
+        autoplay: {
         delay: 2000,
         stopOnLastSlide: false,
         disableOnInteraction: true,
@@ -252,8 +252,8 @@
 </script>
 <script>
     var swiper = new Swiper('.swiper-bottom-C ', {
-    slidesPerView:5,
-    spaceBetween: 25,
+    slidesPerView:'auto',
+    spaceBetween: 32,
     slidesPerGroup: 5,
     autoplay: {
         delay: 2000,
@@ -289,7 +289,7 @@
         var ary=data1.spot
         $(ary).each(function (i,item) {
             $('.swiper-bottom-new .swiper-wrapper').append('' +
-                '                        <div class="swiper-slide" onclick="document.location=\' '+item.ul+'\';">\n' +
+                '                        <div  class="swiper-slide" onclick="document.location=\' '+item.ul+'\';">\n' +
                 '                            <div class="bottom-swiper-slide">\n' +
                 '                                <img src="'+item.url+'" height="166" width="215"/>\n' +
                 '                            </div>\n' +

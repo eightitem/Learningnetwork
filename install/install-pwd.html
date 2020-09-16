@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账号中心 梁彩凤</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../style/css/install.css">
+    <script src="../style/js/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+</body>
+<iframe src="nev.html" frameborder="no" border="0" width="100%" scrolling="no" height="180px" style="z-index: 10"></iframe>
+
+<div class="con">
+    <div class="pull_left">
+        <ul class="nav">
+            <li class="title">账户中心</li>
+            <li class="">
+                <a href="install.html">我的资料</a>
+            </li>
+            <li class="active">
+                <a href="#">修改密码</a>
+            </li>
+            <li class="">
+                <a href="install-phone.html">修改手机号</a>
+            </li>
+            <li class="">
+                <a href="install-setAddress.html">收货地址</a>
+            </li>
+            <li class="">
+                <a href="install-third.html">第三方账户绑定</a>
+            </li>
+            <li class="title">用户中心</li>
+            <li class="">
+                <a href="#">续报中心</a>
+            </li>
+            <li class="">
+                <a href="#">跨版本难度换课</a>
+            </li>
+            <li class="title">订单中心</li>
+            <li class="">
+                <a href="install-order.html">我的订单</a>
+            </li>
+            <li class="">
+                <a href="install-invoice.html">我的发票</a>
+            </li>
+            <li class="title">资产中心</li>
+            <li class="">
+                <a href="#">我的余额</a>
+            </li>
+            <li class="">
+                <a href="#">优惠券</a>
+            </li>
+            <li class="">
+                <a href="#">学习卡</a>
+            </li>
+        </ul>
+    </div>
+    <div class="pull_right_a">
+        <div class="pwd-top">
+            <h3>修改密码</h3>
+        </div>
+        <div class="pwd-content">
+            <form class="el-form demo-ruleForm">
+                <div class="el-form-item el-form-item--feedback" style="margin-bottom: 30px;">
+                    <label class="el-form-item__label" style="width: 100px;">新密码:</label>
+                    <div class="el-form-item__content" style="margin-left: 100px;">
+                        <div class="el-input">
+                            <input type="password"
+                                   autocomplete="off"
+                                   placeholder="请设置密码"
+                                   maxlength="16"
+                                   class="el-input__inner"
+                                   id="pwd">
+                        </div>
+                        <div class="error1 e1" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+                <div class="password-type" style="display: none;"><span class="security">安全强度</span>
+                    <strong class="strong-1"></strong>
+                </div>
+                <div class="el-form-item el-form-item--feedback">
+                    <label class="el-form-item__label" style="width: 100px;">确认密码:</label>
+                    <div class="el-form-item__content" style="margin-left: 100px;">
+                        <div class="el-input">
+                            <input type="password"
+                                   autocomplete="off"
+                                   placeholder="请输入确认密码"
+                                   maxlength="16"
+                                   class="el-input__inner"
+                                   id="npwd">
+                        </div>
+                        <div class="error1 e2" style="display: none;">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="base-box" style="padding: 10px 0">
+                    <button class="el-button" lay-filter="edit3" lay-submit="">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../layui/layui.js"></script>
+<script>
+
+    layui.use(['form', 'layer'], function () {
+        $ = layui.jquery;
+        var form = layui.form
+            , layer = layui.layer
+            ,element = layui.element;
+
+
+        //修改密码
+        form.on('submit(edit3)', function(data){
+            var pwd=$("#pwd").val();
+
+            var npwd=$("#npwd").val();
+            if(pwd == ""){
+                $(".e1").html("请输入新密码");
+                $(".e1").show();
+                $("#pwd").css("border-color","#f56c6c")
+            }else {
+                if(pwd.length < 8){
+                    $(".e1").html("密码不能少于8位字符");
+                    $(".e1").show();
+                    $("#pwd").css("border-color","#f56c6c")
+                }else {
+
+                    $(".e1").hide();
+                    $("#pwd").css("border-color","")
+                }
+            }
+            if (npwd == ""){
+                $(".e2").html("请再次输入密码");
+                $(".e2").show();
+                $("#npwd").css("border-color","#f56c6c")
+            }else {
+                if(npwd != pwd){
+                    $(".e2").html("两次输入密码不一致!");
+                    $(".e2").show();
+                    $("#npwd").css("border-color","#f56c6c")
+                }else {
+                    $("#npwd").css("border-color","")
+                    $(".e2").hide();
+                }
+            }
+
+            if(npwd != "" && pwd != "" && pwd.length > 7 && npwd == pwd){
+                layer.alert("修改成功", {icon: 6},function () {
+                    parent.location.reload();//刷新
+                })
+            }
+            return false;
+        });
+    });
+
+</script>
+
+</html>

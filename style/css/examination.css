@@ -1,12 +1,12 @@
+*{margin:0;padding:0;}
 body{
     position: relative;
     box-sizing: border-box;
     background: #fdfdff;
-
 }
 .language{
     position: absolute;
-    left: 325px;
+    margin-left: -50px;
     top:80px;
     z-index: 100;
     width: 170px;
@@ -105,9 +105,9 @@ body{
 }
 .h-right a{
     display: inline-block;
-    width: 40px;
+    /*width: 40px;*/
     margin-top: 10px;
-    position: relative;
+    /*position: relative;*/
 }
 .h-right input{
     width: 255px;
@@ -128,8 +128,7 @@ body{
 .h-right i{
     position: absolute;
     z-index: 10;
-    left: 35%;
-    margin-left: 21px;
+    margin-left: 245px;
     top:36px;
     color: #212831;
 }

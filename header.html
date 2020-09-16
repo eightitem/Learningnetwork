@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./style/css/header.css">
   <link rel="stylesheet" href="./lib/iconfont/iconfont.css">
   <link rel="stylesheet" href="lib/iconfont/dingwei.css">
+
 </head>
 <body>
   <div class="top">
@@ -41,9 +42,22 @@
         <i class="iconfont icon-sousuo"></i>
       </div>
         <a href="#" class="shopping"><i class="iconfont icon-gouwuchezhengpin"></i>  购物车</a>
-        <a href="#" class="login">立即登录</a>
+        <a href="#" class="login" style="position: absolute">立即登录</a>
 
     </div>
   </div>
 </body>
+<script src="style/js/jquery-3.4.1.js"></script>
+<script>
+  //搜索框获取或失去焦点事件
+  $('.nav-search input').focus(function () {
+    $('.search-key a').hide()
+  }).blur(function () {
+    //失去焦点且文本框内容清除则显示
+    if ($.trim($(this).val()).length == 0){
+      $('.search-key a').show()
+    }
+  })
+</script>
+
 </html>

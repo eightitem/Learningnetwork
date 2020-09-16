@@ -17,7 +17,10 @@ i, p, h1, h2, h3, h4, h5, h6, b, textarea, button, input, select, figure, figcap
 /*     outline: none;*/
 /* }: ;*/
 }
-
+.header{
+    min-width: 1000px;
+    overflow: hidden;
+}
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -135,6 +138,8 @@ i, p, h1, h2, h3, h4, h5, h6, b, textarea, button, input, select, figure, figcap
 }
 .gold-mall .goods-info:hover{
     border-top: #f13232 2px solid;
+    position: relative;
+    bottom: 8px;
 
 }
 .goods-img img{
