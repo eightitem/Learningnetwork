@@ -1,0 +1,85 @@
+
+@font-face {font-family: "iconfont";
+  src: url("1599902319-a2b81b45d723dcfbb49467c7b3cf8692.eot"); 
+  src: url("1599902319-19c8c505e6db13d5e126c654ab23dc1f.eot") format('embedded-opentype'), 
+  url("1599902319-753dc5c4e79223f5ddf4151ae35d1f8d") format('woff'),
+  url("1599902319-ca9b85af54c65a5babcc2303ad193f9b.ttf") format('truetype'), 
+  url("1599902319-4a0088416ba3a4f98b8cc8a885fe8cbc.svg") format('svg'); 
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fuxi:before { content: "\e605"; }
+
+.icon-yuxi:before { content: "\e606"; }
+
+.icon-baogao:before { content: "\e607"; }
+
+.icon-zhibo:before { content: "\e608"; }
+
+.icon-ziliao:before { content: "\e609"; }
+
+.icon-ziliaoxiazai:before { content: "\e60a"; }
+
+.icon-rili:before { content: "\e60b"; }
+
+.icon-xiangji:before { content: "\e60c"; }
+
+.icon-xuexiao:before { content: "\e60d"; }
+
+.icon-biaoqian:before { content: "\e60e"; }
+
+.icon-lishi:before { content: "\e60f"; }
+
+.icon-zhuanzhu:before { content: "\e610"; }
+
+.icon-xiazaiAPP:before { content: "\e611"; }
+
+.icon-xuankezixun:before { content: "\e612"; }
+
+.icon-guanyuliaojie:before { content: "\e613"; }
+
+.icon-fanhuidingbu:before { content: "\e614"; }
+
+.icon-yijianfankui:before { content: "\e615"; }
+
+.icon-wenhao:before { content: "\e616"; }
+
+.icon-jingtanhao:before { content: "\e617"; }
+
+.icon-fangdajing:before { content: "\e618"; }
+
+.icon-shezhi:before { content: "\e619"; }
+
+.icon-tuichu:before { content: "\e61a"; }
+
+.icon-qiajihuo:before { content: "\e61b"; }
+
+.icon-guanbi:before { content: "\e61c"; }
+
+.icon-man:before { content: "\e61d"; }
+
+.icon-woman:before { content: "\e61e"; }
+
+.icon-bofang:before { content: "\e61f"; }
+
+.icon-shouqi:before { content: "\e620"; }
+
+.icon-shoucang:before { content: "\e621"; }
+
+.icon-zhangwo:before { content: "\e622"; }
+
+.icon-zhankai:before { content: "\e623"; }
+
+.icon-shanchu:before { content: "\e624"; }
+
+.icon-zuotiben:before { content: "\e625"; }
+
+.icon-shengyin:before { content: "\e626"; }
+
