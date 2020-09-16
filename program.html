@@ -211,8 +211,8 @@
 </script>
 <script>
     var swiper = new Swiper('.swiper-bottom-new ', {
-        slidesPerView:5,
-        spaceBetween: 25,
+        slidesPerView:'auto',
+        spaceBetween: 32,
         slidesPerGroup: 5,
         autoplay: {
             delay: 2000,
@@ -233,10 +233,10 @@
 </script>
 <script>
     var swiper = new Swiper('.swiper-bottom ', {
-    slidesPerView:5,
-    spaceBetween: 25,
-    slidesPerGroup: 5,
-    autoplay: {
+        slidesPerView : 'auto',
+        spaceBetween: 32,
+        slidesPerGroup: 5,
+        autoplay: {
         delay: 2000,
         stopOnLastSlide: false,
         disableOnInteraction: true,
@@ -252,8 +252,8 @@
 </script>
 <script>
     var swiper = new Swiper('.swiper-bottom-C ', {
-    slidesPerView:5,
-    spaceBetween: 25,
+    slidesPerView:'auto',
+    spaceBetween: 32,
     slidesPerGroup: 5,
     autoplay: {
         delay: 2000,
@@ -289,7 +289,7 @@
         var ary=data1.spot
         $(ary).each(function (i,item) {
             $('.swiper-bottom-new .swiper-wrapper').append('' +
-                '                        <div class="swiper-slide" onclick="document.location=\' '+item.ul+'\';">\n' +
+                '                        <div  class="swiper-slide" onclick="document.location=\' '+item.ul+'\';">\n' +
                 '                            <div class="bottom-swiper-slide">\n' +
                 '                                <img src="'+item.url+'" height="166" width="215"/>\n' +
                 '                            </div>\n' +

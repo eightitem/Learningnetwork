@@ -128,8 +128,7 @@ body{
 .h-right i{
     position: absolute;
     z-index: 10;
-    left: 35%;
-    margin-left: 21px;
+    margin-left: 245px;
     top:36px;
     color: #212831;
 }
