@@ -1,6 +1,7 @@
 body{
     background: #fdfdff;
-    position: relative;
+    /*position: relative;*/
+    box-sizing: border-box;
 }
 div:after{
     content:"";
@@ -8,7 +9,7 @@ div:after{
     clear:both;
 }
 ul,li,body{margin:0px;padding:0px;}
-div,table{margin:2px;padding:2px;}
+div,table{margin:0px;padding:0px;}
 .language{
     position: absolute;
     left: 325px;
@@ -200,6 +201,7 @@ div,table{margin:2px;padding:2px;}
     left: 50%;
     position: relative;
     width: 480px;
+    box-sizing: border-box;
     background-repeat: no-repeat;
     height:48px;
     background-size: auto;
@@ -289,7 +291,7 @@ div,table{margin:2px;padding:2px;}
     height:100%;
 }
 .bottom-menu-list .swiper-slide {
-    width: 244px;
+    width: 254px;
     height: 260px;
     background: #fff;
     font-size: 15px;
