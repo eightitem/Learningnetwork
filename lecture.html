@@ -62,23 +62,23 @@
                 <div class="select-row">
                     <div class="row__label">学部</div>
                     <div class="row__content">
-                        <a href="" class="select-btn active">全部</a>
-                        <a class="select-btn">小低</a>
-                        <a class="select-btn">小高</a>
-                        <a class="select-btn">初中</a>
-                        <a class="select-btn">高中</a>
+                        <a href="" class="select-btn1 active" onclick="select(0)">全部</a>
+                        <a class="select-btn1" onclick="select(1)">小低</a>
+                        <a class="select-btn1" onclick="select(2)">小高</a>
+                        <a class="select-btn1" onclick="select(3)">初中</a>
+                        <a class="select-btn1"onclick="select(4)">高中</a>
                     </div>
                 </div>
                 <div class="select-row">
                     <div class="row__label">学科</div>
                     <div class="row__content">
-                        <a href="" class="select-btn active">全部</a>
-                        <a class="select-btn">语文</a>
-                        <a class="select-btn">数学</a>
-                        <a class="select-btn">英语</a>
-                        <a class="select-btn">趣味</a>
-                        <a class="select-btn">编程</a>
-                        <a class="select-btn">素养课</a>
+                        <a href="" class="select-btn active" onclick="select(5)">全部</a>
+                        <a class="select-btn"onclick="select(6)">语文</a>
+                        <a class="select-btn" onclick="select(7)">数学</a>
+                        <a class="select-btn"onclick="select(8)">英语</a>
+                        <a class="select-btn"onclick="select(9)">趣味</a>
+                        <a class="select-btn"onclick="select(10)">编程</a>
+                        <a class="select-btn"onclick="select(11)">素养课</a>
                     </div>
                 </div>
 
@@ -1047,6 +1047,38 @@
                 return true;
             } else {
                 $('.list-tab__title').removeClass('active');
+                $(this).addClass('active');
+            }
+        })
+    })
+
+
+
+
+</script>
+<script>
+    $(function () {
+        $('.select-btn1').click(function () {
+            if ($(this).hasClass('active')) {
+                return true;
+            } else {
+                $('.select-btn1').removeClass('active');
+                $(this).addClass('active');
+            }
+        })
+    })
+
+
+
+
+</script>
+<script>
+    $(function () {
+        $('.select-btn').click(function () {
+            if ($(this).hasClass('active')) {
+                return true;
+            } else {
+                $('.select-btn').removeClass('active');
                 $(this).addClass('active');
             }
         })

@@ -38,7 +38,7 @@
 .nav .nav-img{
   margin-top: 30px;
     margin-left: 160px;
-    margin-right: 20px;
+    margin-right: 40px;
 
 
 }
@@ -203,6 +203,15 @@
     max-width: 950px;
     vertical-align: top;
 }
+.select-btn1.active{
+    padding: 2px 6px;
+    border-radius:2px;
+    color: #fff;
+    background: #f13232;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.05);
+
+}
+
 .select-btn.active{
     padding: 2px 6px;
     border-radius:2px;
@@ -211,7 +220,7 @@
     box-shadow: 2px 2px 5px rgba(0,0,0,.05);
 
 }
-.select-btn{
+.select-btn1{
     padding: 0 6px;
     margin: 0 5px;
     line-height: 22px;
@@ -221,6 +230,15 @@
     position: relative;
 }
 
+.select-btn{
+    padding: 0 6px;
+    margin: 0 5px;
+    line-height: 22px;
+    display: inline-block;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+}
 .center-title{
     margin: 0;
     padding: 0;
