@@ -67,6 +67,57 @@
       visibility: hidden;
       clear: both;
     }
+
+
+
+
+    .footer{
+      margin-top: 0px;
+    }
+    .bottom{
+      background: #333333;
+      height: 200px;
+      width: 100%;
+      position: relative;
+    }
+    .bottom .bottom-a{
+      position: absolute;
+      top: 40px;
+      text-align: center;
+      padding: 10px 175px;
+      color: white;
+      font-size: 13px;
+    }
+    .bottom-a a{
+      color: white;
+      text-decoration: none;
+    }
+    .bottom .bottom-p1{
+      padding-top: 75px;
+      text-align: center;
+      font-size: 13px;
+      color: white;
+    }
+    .bottom-p1 span{
+      color: red;
+    }
+    .bottom .bottom-p2{
+      margin-top: 12px;
+      text-align: center;
+      font-size: 13px;
+      color: white;
+    }
+    .bottom .bottom-img{
+      margin-top: 12px;
+      margin-left: 520px;
+    }
+    .search-key i{
+      position: absolute;
+      left: 200px;
+    }
+
+
+
   </style>
 </head>
 <body>
@@ -101,8 +152,8 @@
         <a href="#">数学</a>
         <i class="iconfont icon-sousuo"></i>
       </div>
-        <a href="#" class="shopping"><i class="iconfont icon-gouwuchezhengpin"></i>  购物车</a>
-        <a href="#" class="login">立即登录</a>
+        <a href="#" class="shopping" style=""><i class="iconfont icon-gouwuchezhengpin"></i>  购物车</a>
+        <a href="#" class="login" style="position: absolute">立即登录</a>
 
     </div>
   </div>
@@ -301,6 +352,22 @@
       <img src="style/images/foot3.png" width="64" height="20">
     </p>
   </div>
+
+
+
+
+  <script src="style/js/jquery-3.4.1.js"></script>
+  <script>
+    //搜索框获取或失去焦点事件
+    $('.nav-search input').focus(function () {
+      $('.search-key a').hide()
+    }).blur(function () {
+      //失去焦点且文本框内容清除则显示
+      if ($.trim($(this).val()).length == 0){
+        $('.search-key a').show()
+      }
+    })
+  </script>
 
 </body>
 </html>

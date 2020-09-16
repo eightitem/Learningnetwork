@@ -36,3 +36,48 @@
 /*  margin-left: 520px;*/
 /*}*/
 
+
+
+.footer{
+    margin-top: 0px;
+}
+.bottom{
+    background: #333333;
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+.bottom .bottom-a{
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    padding: 10px 175px;
+    color: white;
+    font-size: 13px;
+}
+.bottom-a a{
+    color: white;
+    text-decoration: none;
+}
+.bottom .bottom-p1{
+    padding-top: 75px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+.bottom-p1 span{
+    color: red;
+}
+.bottom .bottom-p2{
+    margin-top: 12px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+.bottom .bottom-img{
+    margin-top: 12px;
+    margin-left: 520px;
+}
+
+
+
