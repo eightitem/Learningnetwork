@@ -1,3 +1,4 @@
+*{margin:0;padding:0;}
 body{
     background: #fdfdff;
     /*position: relative;*/
@@ -8,8 +9,6 @@ div:after{
     display:block;
     clear:both;
 }
-ul,li,body{margin:0px;padding:0px;}
-div,table{margin:0px;padding:0px;}
 .language{
     position: absolute;
     left: 325px;
@@ -200,10 +199,10 @@ div,table{margin:0px;padding:0px;}
     /*margin: 0 34px;*/
     left: 50%;
     position: relative;
-    width: 480px;
+    width: 485px;
     box-sizing: border-box;
     background-repeat: no-repeat;
-    height:48px;
+    height:52px;
     background-size: auto;
     margin-left: -240px;
     margin-top: 40px;
