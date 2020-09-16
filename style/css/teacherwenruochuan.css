@@ -1,3 +1,157 @@
+/*头部*/
+.top{
+    height: 35px;
+    background: #333333;
+    color: white;
+    font-size: 13px;
+    font-weight: 200;
+    min-width: 1000px;
+}
+.top .aa{
+    float: left;
+    margin-top: 8px;
+    margin-left: 90px;
+    color: white;
+    text-decoration: none;
+}
+.top .top-r{
+    float: right;
+    margin: 12px 90px;
+}
+.top-r a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav{
+    height: 130px;
+    width: 100%;
+    display: flex;
+
+
+}
+
+
+
+.nav .nav-img{
+    margin-top: 30px;
+    margin-left: 160px;
+    margin-right: 40px;
+
+
+}
+.nav .nav-list{
+    margin-top: 50px;
+    flex:1;
+    min-width: 500px;
+
+
+}
+.nav-list a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    height: 30px;
+    margin: 0 17px;
+    font-size: 16px;
+
+}
+.nav-list a:hover{
+    color: red;
+    border-bottom: 2px solid red;
+}
+.nav .nav-search{
+    margin-top: 40px;
+    width: 580px;
+    position: relative;
+    overflow: hidden;
+    min-width: 400px;
+
+
+
+}
+.nav-search input{
+    width: 270px;
+    height: 35px;
+    line-height: 35px;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 13px;
+    box-sizing: border-box;
+
+}
+.nav-search .search-key{
+    position: absolute;
+    left: 40px;
+    top: 8px;
+    font-size: 14px;
+}
+.search-key a{
+    padding: 0 10px;
+    color: gray;
+    text-decoration: none;
+    background: #F5F5F5;
+    border: none;
+    border-radius: 10px;
+}
+.search-key a:hover{
+    background: dimgray;
+    color: white;
+}
+.nav-search .shopping{
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    width: 65px;
+    padding: 0 8px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    margin-left: 30px;
+}
+.nav{
+    background: white;
+
+}
+.nav-search .shopping:hover{
+    color: red;
+    border:1px solid red ;
+}
+.nav-search .login{
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    width: 75px;
+    padding: 0 8px;
+    border: none;
+    border-radius: 13px;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #F13232;
+    background: #f6c243;
+    position: absolute;
+
+}
+.nav-search .login:hover{
+    border-shadow: #f6c243 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*中间*/
 .large{
     width: 100%;
     height: 100%;
@@ -19,6 +173,8 @@
     border-radius: 4px;
     z-index: 2;
 }
+
+
 .fixed{
     position: fixed;
     top: 0;
@@ -326,5 +482,63 @@ li {
     font-size: 14px;
     color: #999;
 }
+
+
+
+
+
+/*底部*/
+.bottom{
+    margin-top: 100px;
+    background: #333333;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+
+
+
+
+}
+.bottom .bottom-a{
+    margin-top: 50px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 175px;
+    color: white;
+    font-size: 12px;
+}
+.bottom-a a{
+    color: white;
+    text-decoration: none;
+}
+.bottom .bottom-p1{
+
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+.bottom-p1 span{
+    color: red;
+}
+.bottom .bottom-p2{
+
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.bottom .bottom-img{
+
+}
+
+
+
+
+
+
 
 

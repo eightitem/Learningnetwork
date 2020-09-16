@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账号中心 梁彩凤</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../style/css/install.css">
+    <script src="../style/js/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+<iframe src="nev.html" frameborder="no" border="0" width="100%" scrolling="no" height="180px" style="z-index: 99"></iframe>
+
+<div class="con">
+    <div class="pull_left">
+        <ul class="nav">
+            <li class="title">账户中心</li>
+            <li class="active">
+                <a href="#">我的资料</a>
+            </li>
+            <li class="">
+                <a href="install-pwd.html">修改密码</a>
+            </li>
+            <li class="">
+                <a href="install-phone.html">修改手机号</a>
+            </li>
+            <li class="">
+                <a href="install-setAddress.html">收货地址</a>
+            </li>
+            <li class="">
+                <a href="install-third.html">第三方账户绑定</a>
+            </li>
+            <li class="title">用户中心</li>
+            <li class="">
+                <a href="#">续报中心</a>
+            </li>
+            <li class="">
+                <a href="#">跨版本难度换课</a>
+            </li>
+            <li class="title">订单中心</li>
+            <li class="">
+                <a href="install-order.html">我的订单</a>
+            </li>
+            <li class="">
+                <a href="install-invoice.html">我的发票</a>
+            </li>
+            <li class="title">资产中心</li>
+            <li class="">
+                <a href="#">我的余额</a>
+            </li>
+            <li class="">
+                <a href="#">优惠券</a>
+            </li>
+            <li class="">
+                <a href="#">学习卡</a>
+            </li>
+        </ul>
+    </div>
+    <div class="pull_right">
+        <div class="layui-tab layui-tab-brief layui-show" lay-filter="docDemoTabBrief">
+            <ul class="layui-tab-title a">
+                <li class="layui-this">基础资料</li>
+                <li>头像设置</li>
+            </ul>
+            <div class="layui-tab-content">
+                <div class="base-box layui-tab-item layui-show">
+                    <form class="el-form base-content">
+                        <div class="el-form-item base-title">
+                            <label class="el-form-item__label" style="width: 100px;">账户信息</label>
+                            <div class="el-form-item__content" style="margin-left: 100px;"><!---->
+                            </div>
+                        </div>
+                        <div class="el-form-item">
+                            <label class="el-form-item__label" style="width: 100px;">用户昵称:</label>
+                            <div class="el-form-item__content" style="margin-left: 100px;">
+                                <div class="el-input"><!---->
+                                    <input type="text" id="nickname" autocomplete="off" maxlength="18" class="el-input__inner">
+                                    <!----><!----><!----><!---->
+                                </div>
+                                <div class="nick-name-tip" style="display: none;">请输入不超过6个汉字、18个字母或18个数字</div>
+                                <!---->
+                            </div>
+                        </div>
+                        <div class="el-form-item" style="width: 103%; height: 1px; border-bottom: 1px solid rgb(241, 241, 241);"><!---->
+                            <div class="el-form-item__content" style="margin-left: 100px;"><!----></div>
+                        </div>
+                        <div class="el-form-item base-title">
+                            <label class="el-form-item__label" style="width: 100px;">学员信息</label>
+                            <div class="el-form-item__content" style="margin-left: 100px;"><!----></div>
+                        </div>
+                        <div class="el-form-item">
+                            <label  class="el-form-item__label" style="width: 100px;">学员姓名:</label>
+                            <div class="el-form-item__content" style="margin-left: 100px;">
+                                <div class="el-input"><!---->
+                                    <input type="text" id="realkname" autocomplete="off" maxlength="18" class="el-input__inner" style="margin-left: -13px;border: none">
+                                </div>
+                                <div class="real-name-tip-changed">
+                                    修改学员姓名，请联系辅导老师或在线客服
+                                    <a href="###"
+                                       class="zhiCustomBtn">点击咨询</a>
+                                </div><!---->
+                            </div>
+                        </div>
+                        <div class="el-form-item">
+                            <label class="el-form-item__label" style="width: 100px;">英文名:</label>
+                            <div class="el-form-item__content" style="margin-left: 100px;">
+                                <div class="el-input"><!---->
+                                    <input type="text" id="en_name" autocomplete="off" maxlength="12" class="el-input__inner">
+                                    <!----><!----><!----><!---->
+                                </div>
+                                <div class="nick-name-tip" style="display: none;">请输入不超过12个字母</div><!---->
+                            </div>
+                        </div>
+                        <div class="el-form-item">
+                            <label class="el-form-item__label" style="width: 100px;">性别:</label>
+                            <div class="el-form-item__content" style="margin-left: 100px;">
+                                <input type="radio" name="sex" value="1" title="男" checked="">
+                                <div class="layui-unselect layui-form-radio layui-form-radioed">
+                                    <div style="height: 36px;color: #606266">男</div>
+                                </div>
+                                <input type="radio" name="sex" value="0" title="女">
+                                <div class="layui-unselect layui-form-radio">
+                                    <div style="height: 36px;color: #606266">女</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="el-form-item">
+                            <label  class="el-form-item__label" style="width: 100px;">所在地:</label>
+                            <div class="el-form-item__content" style="margin-left: 100px;">
+                                <div class="el-input">
+                                    <input type="text" id="local" autocomplete="off" maxlength="30" class="el-input__inner" style="margin-left: -13px;border: none">
+                                    <!----><!----><!---->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="el-form-item birthday">
+                            <label class="el-form-item__label" style="width: 100px;">生日:</label>
+                            <div class="el-form-item__content" style="margin-left: 100px;">
+                                <div class="el-date-editor el-input el-input--prefix el-input--suffix el-date-editor--date">
+                                    <!---->
+                                    <input type="text" class="layui-input" placeholder="请选择日期" id="birthday" style="padding-left: 30px">
+                                    <span class="el-input__prefix">
+                                        <img src="../style/images/icon-data.png">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form el-form-item">
+                            <label for="grade" class="el-form-item__label" style="width: 100px;">年级:</label>
+                            <div class="el-form-item__content" style="margin-left: 100px;">
+                                <div class="el-select el-input">
+                                    <select name="grade" id="grade">
+                                        <option value="0">一年级</option>
+                                        <option value="1">二年级</option>
+                                        <option value="2">三年级</option>
+                                        <option value="3">四年级</option>
+                                    </select>
+                                </div>
+                                <div class="grade-tips">学而思网校会在每年7月1日自动为你更新年级</div><!---->
+                            </div>
+                        </div>
+
+                        <div class="el-form-item">
+                            <label  class="el-form-item__label"  style="width: 100px;">学校:</label>
+                            <div class="el-form-item__content" style="margin-left: 100px;">
+                                <div class="el-input">
+                                    <input type="text" id="school" autocomplete="off" maxlength="30" class="el-input__inner">
+                                    <!----><!----><!---->
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="el-button el-button el-button--primary" id="send" lay-filter="edit1" lay-submit=""><!---->
+                            <!----><span>保存</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="layui-tab-item">
+                    <div class="img-c">
+                        <div class="base-box img-left">
+                            <div class="img-left-c">
+                                <div class="img-k">
+                                    <div class="img-b">
+                                        <button type="button" class="layui-btn b" id="test1">
+                                            <i class="layui-icon">&#xe67c;</i>上传头像
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tishi">仅支持JPG、GIF、PNG且文件小于2M，照片尺寸请大于200×200</div>
+
+                                <button type="button" class="el-button el-button--primary" id="sed" lay-filter="edit1" lay-submit="" style="margin: 20px 0 "><!---->
+                                    <span>保存</span>
+                                </button>
+                            </div>
+
+
+                        </div>
+
+                        <div class="img-right">
+                            <p class="preview-title">预览</p>
+                            <p>您选定的头像会生成3种尺寸，请注意各尺寸的头像是否清晰</p>
+                            <div>
+                                <img src="../style/images/yxdenglu.png" height="40" width="40">
+                                <div class="size">40×40像素</div>
+                            </div>
+
+                            <div>
+                                <img src="../style/images/yxdenglu.png" height="60" width="60">
+                                <div class="size">60×60像素</div>
+                            </div>
+
+                            <div>
+                                <img src="../style/images/yxdenglu.png" height="100" width="100">
+                                <div class="size">100×100像素</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="../layui/layui.js"></script>
+<script>
+
+    layui.use(['form','layer','element','laydate','upload'], function(){
+        $ = layui.jquery;
+        var form = layui.form
+            ,layer = layui.layer
+            ,laydate = layui.laydate
+            ,element = layui.element
+            ,upload = layui.upload;
+
+        laydate.render({
+            elem: '#birthday'
+        });
+
+        //监听Tab切换
+        element.on('tab(demo)', function(data){
+        });
+
+        //修改角色信息
+        form.on('submit(edit1)', function(data){
+
+            layer.alert("修改成功", {icon: 6},function () {
+                parent.location.reload();//刷新
+            });
+
+        });
+
+        //执行实例
+        var uploadInst = upload.render({
+            elem: '#test1' //绑定元素
+            ,url: '/upload/' //上传接口
+            ,done: function(res){
+                //上传完毕回调
+            }
+            ,error: function(){
+                //请求异常回调
+            }
+        });
+    });
+
+
+    $(document).ready(function() {
+        $.ajax({
+            url : "user.json",
+            type : "POST",
+            async : true,
+            dataType : "json",
+            success : function(res) {
+
+                console.log(res.data.en_name)
+                var sex = res.data.sex;
+
+                console.log(sex);
+                $("[name='sex'][value='"+sex+"']").prop("checked", "checked");
+                $('#nickname').val(res.data.nickname);
+                $('#realkname').val(res.data.realkname);
+                $("#en_name").val(res.data.en_name);
+                $('#local').val(res.data.local);
+                $("#birthday").val(res.data.birthday);
+                $('#grade').val(res.data.grade);
+                // var grade = res.data.grade;
+                // console.log(grade)
+                // $("#grade").find("option[value='"+grade+"']").attr("selected",true);
+                $('#school').val(res.data.school);
+            },
+            error : function(xhr) {
+                alert("错误提示： " + xhr.status + " " + xhr.statusText);
+            }
+        });
+    });
+
+
+</script>
+</body>
+</html>
