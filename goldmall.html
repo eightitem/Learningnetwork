@@ -5,59 +5,106 @@
     <title>杨璇-金币商城</title>
 
 
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
+    <script src="layui/layui.js"></script>
     <link rel="stylesheet" href="lib/iconfont_goldmall/iconfont.css">
-    <link rel="stylesheet" href="style/css/centerheader.css">
+<!--    <link rel="stylesheet" href="style/css/centerheader.css">-->
     <link rel="stylesheet" href="style/css/goldmall.css">
     <link rel="stylesheet" href="style/css/common.css">
+    <link rel="stylesheet" href="style/css/nev.css">
 
 
 </head>
 <body>
-<div class="header">
-    <div class="left"></div>
-    <div class="header_bar">
+<!--<div class="header">-->
+<!--    <div class="left"></div>-->
+<!--    <div class="header_bar">-->
 
-        <li><a href="index.html">网站首页</a><span>|</span></li>
-        <li><a href="">教师资格证公示</a><span>|</span></li>
-        <li><a href="">客户端下载</a><span>|</span></li>
-        <li><a href="">我的订单</a><span>|</span></li>
-        <li><a href="">设置</a><span>|</span></li>
-        <li><a href="login.html" class="user" @click="UserClick">用户
-            <i class="iconfont icon-z-arrowDown"></i>
-            <i class="iconfont icon-z-arrowUp" style="display:none"></i></a>
-        </li>
+<!--        <li><a href="index.html">网站首页</a><span>|</span></li>-->
+<!--        <li><a href="">教师资格证公示</a><span>|</span></li>-->
+<!--        <li><a href="">客户端下载</a><span>|</span></li>-->
+<!--        <li><a href="">我的订单</a><span>|</span></li>-->
+<!--        <li><a href="">设置</a><span>|</span></li>-->
+<!--        <li><a href="login.html" class="user" @click="UserClick">用户-->
+<!--            <i class="iconfont icon-z-arrowDown"></i>-->
+<!--            <i class="iconfont icon-z-arrowUp" style="display:none"></i></a>-->
+<!--        </li>-->
+<!--    </div>-->
+
+<!--</div>-->
+<div class="hear" style="height: 90px">
+    <div class="top" style="height: 30px;background-color: #333">
+        <div style="width: 1200px;margin: 0 auto">
+            <div class="con">
+                 <span class="layui-breadcrumb" lay-separator="|">
+                    <a href="index.html">网校首页</a>
+                    <a href="teacher.html">教师资格证公示</a>
+                    <a href="xiazai.html">客户端下载</a>
+                    <a href="">我的订单</a>
+                    <a href="install/install.html">设置</a>
+                    <a href="login.html">用户</a>
+                </span>
+            </div>
+        </div>
     </div>
+    <div class="nev" style="height: 60px;background-color: #f13232">
+        <div style="width: 1200px;margin: 0 auto">
+            <a href=".html" class="logo"><img src="style/images/logo.svg" style="vertical-align: middle;"/></a>
 
+            <ul class="layui-nav" style="background-color: #f13232;margin-left: 132px;margin-top: -61px;">
+                <li class="layui-nav-item" style="width: 112px">
+                    <a href="kecheng.html">我的课程</a>
+                </li>
+                <li class="layui-nav-item" style="width: 133px">
+                    <a href="javascript:void(0);">我的试题</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="cuotiben.html">错题本</a></dd>
+                        <dd><a href="shijuan.html">试卷集</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item" style="width: 112px">
+                    <a href="jiangzuo.html">我的讲座</a>
+                </li>
+                <li class="layui-nav-item layui-this" style="width: 133px">
+                    <a href="javascript:;">我的应用</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="goldmall.html">金币商城</a></dd>
+                    </dl>
+                </li>
+            </ul>
+
+        </div>
+    </div>
 </div>
-<div class="top">
+<!--<div class="top">-->
 
-    <a href="index.html" class="logo"><img src="style/images/yxlogocenter.png"  style="color: #f13232" height="38" width="100"/></a>
+<!--    <a href="index.html" class="logo"><img src="style/images/yxlogocenter.png"  style="color: #f13232" height="38" width="100"/></a>-->
 
-    <p><a href="kecheng.html">我的课程</a></p>
-    <p class="test-title">
-        <a href="javascript:void(0)" class="test">我的试题
-            <i class="iconfont icon-jiantouarrow486"></i>
-            <i class="iconfont icon-jiantou" style="display: none"></i>
-        </a>
-<!--    <div class="test-list">-->
+<!--    <p><a href="kecheng.html">我的课程</a></p>-->
+<!--    <p class="test-title">-->
+<!--        <a href="javascript:void(0)" class="test">我的试题-->
+<!--            <i class="iconfont icon-jiantouarrow486"></i>-->
+<!--            <i class="iconfont icon-jiantou" style="display: none"></i>-->
+<!--        </a>-->
+<!--&lt;!&ndash;    <div class="test-list">&ndash;&gt;-->
+<!--&lt;!&ndash;        <li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <a href="goldmall.html" style="">金币商城</a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--    </p>-->
+<!--    <p><a href="jiangzuo.html">我的讲座</a></p>-->
+<!--    <p class="apply-title">-->
+<!--        <a href="javascript:void(0)" class="apply-btn" style="background: white ;color: #f13132">我的应用-->
+<!--            <i class="iconfont icon-jiantouarrow486"></i>-->
+<!--            <i class="iconfont icon-jiantou" style="display: none"></i>-->
+<!--        </a>-->
+<!--    <div class="coin-mall">-->
 <!--        <li>-->
 <!--            <a href="goldmall.html" style="">金币商城</a>-->
 <!--        </li>-->
 <!--    </div>-->
-    </p>
-    <p><a href="jiangzuo.html">我的讲座</a></p>
-    <p class="apply-title">
-        <a href="javascript:void(0)" class="apply-btn" style="background: white ;color: #f13132">我的应用
-            <i class="iconfont icon-jiantouarrow486"></i>
-            <i class="iconfont icon-jiantou" style="display: none"></i>
-        </a>
-    <div class="coin-mall">
-        <li>
-            <a href="goldmall.html" style="">金币商城</a>
-        </li>
-    </div>
-    </p>
-</div>
+<!--    </p>-->
+<!--</div>-->
 
 <div class="container">
     <div class="title">
@@ -155,6 +202,16 @@
 <script src="style/js/jquery-3.4.1.js"></script>
 <!--鼠标移入移出事件-->
  <script>
+     layui.use('element', function(){
+         var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+         //监听导航点击
+         // element.on('nav(demo)', function(elem){
+         //     //console.log(elem)
+         //     layer.msg(elem.text());
+         // });
+     });
+
      $('.user').mouseover(function () {
          // $('.apply i:first-of-type').style.display="none";
          $('.user i:first-of-type').hide()

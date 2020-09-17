@@ -1,283 +1,354 @@
+﻿
 .top{
-    height: 35px;
-    background: #333333;
-    color: white;
-    font-size: 13px;
-    font-weight: 200;
-    min-width: 1000px;
+  height: 35px;
+  background: #333333;
+  color: white;
+  font-size: 13px;
+  font-weight: 200;
 }
 .top .area{
-    float: left;
-    margin-top: 7px;
-    margin-left: 90px;
-    color: white;
-    text-decoration: none;
-    position: relative;
+  float: left;
+  margin-top: 7px;
+  margin-left: 90px;
+  color: white;
+  text-decoration: none;
+  position: relative;
 }
 .area:hover .area-list{
-    display: block;
+  display: block;
 }
 .top .area-list{
-    position: absolute;
-    left: 50px;
-    top: 33px;
-    width: 280px;
-    height: 280px;
-    background: white;
-    border: 1px solid #dddddd;
-    z-index: 10;
-    display: none;
-    box-sizing: border-box;
-    padding: 10px;
+  position: absolute;
+  left: 50px;
+  top: 33px;
+  width: 280px;
+  height: 280px;
+  background: white;
+  border: 1px solid #dddddd;
+  z-index: 10;
+  display: none;
+  box-sizing: border-box;
+  padding: 10px;
 }
 .area-list .lists-item{
-    margin-top: -5px;
-    margin-left: 5px;
-    height: 100px;
-    width: 280px;
-    position: relative;
+  margin-top: -5px;
+  margin-left: 5px;
+  height: 100px;
+  width: 280px;
+  position: relative;
 }
 .area-list span{
-    background: red;
-    color: white;
+  background: red;
+  color: white;
 }
 .area-list a{
-    font-size: 13px;
-    padding: 5px 5px;
-    display: inline-block;
-    height: 18px;
-    width: 55px;
-    font-weight: 500;
-    line-height: 18px;
-    color: black;
+  font-size: 13px;
+  padding: 5px 5px;
+  display: inline-block;
+  height: 18px;
+  width: 55px;
+  font-weight: 500;
+  line-height: 18px;
+  color: black;
 }
 .area-list a:first-of-type{
-    position: absolute;
-    left: 5px;
-    top: 4px;
+  position: absolute;
+  left: 5px;
+  top: 4px;
 
 }
 .area-list a:hover{
-    color: red;
+  color: red;
 }
 
 .top .top-r{
-    float: right;
-    margin: 12px 90px;
+  float: right;
+  margin: 12px 90px;
 }
 .top-r a{
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .nav{
-    height: 130px;
-    width: 100%;
-    display: flex;
-    background: white;
+  height: 130px;
+  width: 100%;
+  display: flex;
+  background: white;
 }
 .nav .nav-img{
-    margin:30px 80px;
+  margin:30px 80px;
 }
 .nav .nav-list{
-    margin-top: 60px;
-    flex: 2;
-    margin-left: -50px;
-    /*min-width: 500px;*/
+  margin-top: 60px;
+  flex: 2;
+  margin-left: -70px;
 }
 .nav-list a{
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    height: 30px;
-    margin: 0 17px;
-    font-size: 18px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  height: 30px;
+  margin: 0 17px;
+  font-size: 18px;
 }
 .nav-list a:hover{
-    color: red;
-    border-bottom: 2px solid red;
+  color: red;
+  border-bottom: 2px solid red;
 }
 .nav .nav-search{
-    margin-top: 50px;
-    width: 580px;
-    position: relative;
-    min-width: 500px;
-    overflow: hidden;
+  margin-top: 50px;
+  width: 580px;
+  position: relative;
 }
 .nav-search input{
-    width: 270px;
-    height: 35px;
-    padding-left: 10px;
-    font-size: 12px;
-    line-height: 35px;
-    outline: none;
-    border: 1px solid lightgray;
-    border-radius: 13px;
-    box-sizing: border-box;
+  width: 270px;
+  height: 35px;
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 35px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 13px;
+  box-sizing: border-box;
 }
 .nav-search .search-key{
-    position: absolute;
-    left: 55px;
-    top: 8px;
-    font-size: 14px;
+  position: absolute;
+  left: 55px;
+  top: 10px;
+  font-size: 14px;
 }
 .search-key a{
-    padding: 0 10px;
-    color: gray;
-    text-decoration: none;
-    background: #F5F5F5;
-    border: none;
-    border-radius: 10px;
+  padding: 0 10px;
+  color: gray;
+  text-decoration: none;
+  background: #F5F5F5;
+  border: none;
+  border-radius: 10px;
 }
 .search-key a:hover{
-    background: dimgray;
-    color: white;
+  background: dimgray;
+  color: white;
 }
 .search-key i{
-    position: absolute;
-    left: 200px;
+  position: absolute;
+  top: 1px;
+  left: 195px;
 }
 .nav-search .shopping{
-    height: 30px;
-    line-height: 30px;
-    display: inline-block;
-    width: 65px;
-    padding: 0 8px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    text-decoration: none;
-    font-size: 13px;
-    color: black;
-    margin-left: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  width: 65px;
+  padding: 0 8px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  margin-left: 30px;
 }
 .nav-search .shopping:hover{
-    color: red;
-    border:1px solid red ;
+  color: red;
+  border:1px solid red ;
 }
 .nav-search .login{
-    height: 30px;
-    line-height: 30px;
-    display: inline-block;
-    width: 75px;
-    font-size: 14px;
-    text-align: center;
-    padding: 0 8px;
-    border: none;
-    border-radius: 13px;
-    text-decoration: none;
-    margin-left: 20px;
-    color: #F13232;
-    background: #f6c243;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  width: 75px;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 8px;
+  border: none;
+  border-radius: 13px;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #F13232;
+  background: #f6c243;
 }
 .nav-search .login:hover{
-    border-shadow: #f6c243 3px;
+  border-shadow: #f6c243 3px;
 }
 
 .banner {
-    height: 400px;
-    width: 100%;
-    position: relative;
+  height: 400px;
+  width: 100%;
+  position: relative;
 }
 .swiper-container {
-    width: 100%;
-    height: 100%;
-    --swiper-navigation-size: 10px;/* 设置按钮大小 */
+  width: 100%;
+  height: 100%;
+  --swiper-navigation-size: 10px;/* 设置按钮大小 */
 }
 .swiper-slide{
-    width: 936px;
-    height: 382px;
-    background-position: center;
-    background-size: cover;
+  width: 936px;
+  height: 382px;
+  background-position: center;
+  background-size: cover;
 }
 .banner .banner-item{
-    position: absolute;
-    height: 50px;
-    width: 180px;
-    padding: 20px 0;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    font-size: 16px;
-    margin-left: 400px;
-    transform: translateY(-50%);
-    text-align: center;
-    background: white;
+  position: absolute;
+  height: 50px;
+  width: 180px;
+  padding: 20px 0;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  font-size: 16px;
+  margin-left: 400px;
+  transform: translateY(-50%);
+  text-align: center;
+  background: white;
 }
 .banner-item a{
-    /*font-size: 16px;*/
-    color: black;
+  /*font-size: 16px;*/
+  color: black;
 }
 .active{
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .list{
-    height: 80px;
-    width: 100%;
+  height: 80px;
+  width: 100%;
 }
 .list .type1{
-    margin-top: 40px;
-    margin-left: 70px;
-    font-size: 15px;
+  margin-top: 40px;
+  margin-left: 70px;
+  font-size: 15px;
+  position: relative;
 }
 .type1 a:last-of-type{
-    color: white;
-    background: red;
+  color: white;
+  /*background: red;*/
 }
+.type1 .item-three{
+   position: absolute;
+   left: -30px;
+   top: 80px;
+   width: 100%;
+   height: 460px;
+   border: 1px solid #dddddd;
+   z-index: 10;
+   display: none;
+   box-sizing: border-box;
+   padding: 10px;
+ }
+.item-three .course-together {
+  margin-top: -26px;
+  margin-left: -10px;
+  background: gainsboro;
+  height:850px;
+}
+.item-three .course-together .title{
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+}
+.type1 .item-one{
+  position: absolute;
+  left: -30px;
+  top: 80px;
+  width: 100%;
+  height: 460px;
+  border: 1px solid #dddddd;
+  z-index: 10;
+  display: none;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.item-one .course-together {
+  margin-top: -26px;
+  margin-left: -10px;
+  background: gainsboro;
+  height:850px;
+}
+.item-one .course-together .title{
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+}
+.type1 .item-two{
+  position: absolute;
+  left: -30px;
+  top: 80px;
+  width: 100%;
+  height: 460px;
+  border: 1px solid #dddddd;
+  z-index: 10;
+  display: none;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.item-two .course-together {
+  margin-top: -26px;
+  margin-left: -10px;
+  background: gainsboro;
+  height:850px;
+}
+.item-two .course-together .title{
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+}
+
+
+
 .list .type2{
-    margin-top: 20px;
-    margin-left: 70px;
-    font-size: 15px;
+  margin-top: 20px;
+  margin-left: 70px;
+  font-size: 15px;
 }
 .type2 a:first-of-type{
-    color: white;
-    background: red;
+  color: white;
+  background: red;
 }
 .list span{
-    color: gray;
+  color: gray;
 }
 .list a{
-    color: black;
-    font-weight: 400;
-    margin-left: 20px;
+  color: black;
+  font-weight: 400;
+  margin-left: 20px;
 }
 .list a:hover{
-    color: red;
+  color: red;
 }
 
 /*同步课*/
 .course-together {
-    padding: 40px;
-    background: gainsboro;
-    height:850px;
+  padding: 40px;
+  background: gainsboro;
+  height:850px;
 }
 .course-together .title{
-    font-size: 30px;
-    font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 .course-together .list {
-    /*设置flex布局换行*/
-    flex-wrap: wrap;
+  /*设置flex布局换行*/
+  flex-wrap: wrap;
 }
 .course-together .list-item{
-    width: 380px;
-    height: 340px;
-    background: white;
-    margin-top: 0px;
-    border: 1px solid #dddddd;
+  width: 380px;
+  height: 340px;
+  background: white;
+  margin-top: 0px;
+  border: 1px solid #dddddd;
 }
 .course-together .list-item:hover{
-    border: none;
+  border: none;
 }
 .list-item:hover{
-    position: relative;
-    bottom: 8px;
+  position: relative;
+  bottom: 8px;
 }
 .course-together .list-item0{
-    margin-top: 30px;
-    /*position:relative;*/
-    /*animation:mymove 2s infinite;*/
-    /*animation-timing-function:linear;*/
+  margin-top: 30px;
+  /*position:relative;*/
+  /*animation:mymove 2s infinite;*/
+  /*animation-timing-function:linear;*/
 }
 /*@keyframes mymove{*/
 /*  from {*/
@@ -288,405 +359,405 @@
 /*  }*/
 /*}*/
 .course-together .list-item1{
-    margin-top: -340px;
-    margin-left: 410px;
+  margin-top: -340px;
+  margin-left: 410px;
 }
 .course-together .list-item2{
-    margin-top: -340px;
-    margin-left: 820px;
+  margin-top: -340px;
+  margin-left: 820px;
 }
 .course-together .list-item3{
-    margin-top: 40px;
+  margin-top: 40px;
 }
 .course-together .list-item4{
-    margin-top: -340px;
-    margin-left: 410px;
+  margin-top: -340px;
+  margin-left: 410px;
 }
 .course-together .list-item5{
-    margin-top: -340px;
-    margin-left: 820px;
+  margin-top: -340px;
+  margin-left: 820px;
 }
 .course-together .item span{
-    color: red;
-    border: 1px solid red;
-    font-size: 15px;
+  color: red;
+  border: 1px solid red;
+  font-size: 15px;
 }
 .course-together .item p{
-    margin-top: 50px;
-    margin-left: 30px;
-    font-size: 16px;
-    height: 16px;
-    line-height: 16px;
-    color: gray;
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 16px;
+  height: 16px;
+  line-height: 16px;
+  color: gray;
 }
 .course-together .item p:first-of-type{
-    font-size: 20px;
-    color: black;
-    margin-left: 30px;
-    margin-top: 20px;
+  font-size: 20px;
+  color: black;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 .course-together .item p:last-of-type{
-    font-size: 15px;
-    color: red;
-    margin-left: 220px;
-    margin-top: 0px;
+  font-size: 15px;
+  color: red;
+  margin-left: 220px;
+  margin-top: 0px;
 }
 .course-together .item p:last-of-type span:last-of-type{
-    font-size: 30px;
-    border:none;
-    height: 110px;
-    line-height: 110px;
+  font-size: 30px;
+  border:none;
+  height: 110px;
+  line-height: 110px;
 }
 .course-together .item-img{
-    margin-top: 50px;
-    border-bottom: 1px solid #dddddd;
-    display: inline-block;
-    height: 80px;
-    width: 100%;
-    line-height: 80px;
+  margin-top: 50px;
+  border-bottom: 1px solid #dddddd;
+  display: inline-block;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
 }
 .course-together .item-img img{
-    margin-left: 30px;
-    border-bottom: 1px solid #dddddd;
-    border-radius: 50px;
+  margin-left: 30px;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 50px;
 }
 /*专题课*/
 .special-course {
-    background: gainsboro;
-    height: 860px;
+  background: gainsboro;
+  height: 860px;
 }
 .special-course .title{
-    font-size: 30px;
-    font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 .title a{
-    margin-left: 980px;
-    font-size: 20px;
-    font-weight: 300;
-    color: gray;
+  margin-left: 980px;
+  font-size: 20px;
+  font-weight: 300;
+  color: gray;
 }
 .special-course .list-item{
-    width: 380px;
-    height: 340px;
-    background: white;
-    border: 1px solid #dddddd;
+  width: 380px;
+  height: 340px;
+  background: white;
+  border: 1px solid #dddddd;
 }
 .special-course .list-item0{
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .special-course .list-item1{
-    margin-top: -340px;
-    margin-left: 410px;
+  margin-top: -340px;
+  margin-left: 410px;
 }
 .special-course .list-item2{
-    margin-top: -340px;
-    margin-left: 820px;
+  margin-top: -340px;
+  margin-left: 820px;
 }
 .special-course .list-item3{
-    margin-top: 40px;
+  margin-top: 40px;
 }
 .special-course .list-item4{
-    margin-top: -340px;
-    margin-left: 410px;
+  margin-top: -340px;
+  margin-left: 410px;
 }
 .special-course .list-item5{
-    margin-top: -340px;
-    margin-left: 820px;
+  margin-top: -340px;
+  margin-left: 820px;
 }
 .special-course.list-item:hover{
-    border-top: 1px solid red;
-    position: relative;
-    bottom: 8px;
+  border-top: 1px solid red;
+  position: relative;
+  bottom: 8px;
 }
 .special-course .item .pp{
-    margin-left: 30px;
+  margin-left: 30px;
 }
 .special-course .item .pp:hover{
-    margin-left: 30px;
-    color: black;
+  margin-left: 30px;
+  color: black;
 }
 .special-course .item span{
-    color: red;
-    border: 1px solid red;
-    font-size: 15px;
+  color: red;
+  border: 1px solid red;
+  font-size: 15px;
 }
 .special-course .item p{
-    margin-top: 50px;
-    margin-left: 30px;
-    font-size: 16px;
-    height: 26px;
-    line-height: 26px;
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 16px;
+  height: 26px;
+  line-height: 26px;
 }
 .special-course .item p:first-of-type{
-    font-size: 20px;
-    color: black;
-    margin-left: 30px;
-    margin-top: 20px;
+  font-size: 20px;
+  color: black;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 .special-course .item p:last-of-type{
-    font-size: 15px;
-    color: gray;
-    margin-left: 30px;
-    margin-top: -15px;
+  font-size: 15px;
+  color: gray;
+  margin-left: 30px;
+  margin-top: -15px;
 }
 .special-course .item p:last-of-type span:first-of-type{
-    font-size: 15px;
-    border:none;
-    text-decoration: line-through;
-    color: gray;
+  font-size: 15px;
+  border:none;
+  text-decoration: line-through;
+  color: gray;
 }
 .special-course .item p:last-of-type span:last-of-type{
-    font-size: 30px;
-    border:none;
-    height: 110px;
-    line-height: 110px;
+  font-size: 30px;
+  border:none;
+  height: 110px;
+  line-height: 110px;
 }
 .special-course .item-img{
-    margin-top: 50px;
-    border-bottom: 1px solid #dddddd;
-    display: inline-block;
-    margin-left: 30px;
-    color: gray;
-    height: 80px;
-    width: 100%;
-    line-height: 80px;
-    display: flex;
+  margin-top: 50px;
+  border-bottom: 1px solid #dddddd;
+  display: inline-block;
+  margin-left: 30px;
+  color: gray;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  display: flex;
 }
 .special-course .item-img img{
-    margin-left: 30px;
-    border-bottom: 1px solid #dddddd;
-    border-radius: 50px;
+  margin-left: 30px;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 50px;
 }
 
 
 
 /*十分钟素养课*/
 .courses {
-    background: gainsboro;
-    height: 860px;
+  background: gainsboro;
+  height: 860px;
 }
 .courses .title{
-    font-size: 30px;
-    font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 .title a{
-    margin-top: -20px;
-    float: right;
-    font-size: 20px;
-    font-weight: 300;
-    color: gray;
+  margin-top: -20px;
+  float: right;
+  font-size: 20px;
+  font-weight: 300;
+  color: gray;
 }
 .courses .list-item{
-    width: 380px;
-    height: 340px;
-    background: white;
-    border: 1px solid #dddddd;
+  width: 380px;
+  height: 340px;
+  background: white;
+  border: 1px solid #dddddd;
 }
 .courses .list-item0{
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .courses .list-item1{
-    margin-top: -340px;
-    margin-left: 410px;
+  margin-top: -340px;
+  margin-left: 410px;
 }
 .courses .list-item2{
-    margin-top: -340px;
-    margin-left: 820px;
+  margin-top: -340px;
+  margin-left: 820px;
 }
 .courses .list-item3{
-    margin-top: 40px;
+  margin-top: 40px;
 }
 .courses .list-item4{
-    margin-top: -340px;
-    margin-left: 410px;
+  margin-top: -340px;
+  margin-left: 410px;
 }
 .courses .list-item5{
-    margin-top: -340px;
-    margin-left: 820px;
+  margin-top: -340px;
+  margin-left: 820px;
 }
 .courses .list-item:hover{
-    border-top: none;
-    opacity: 1;
+  border-top: none;
+  opacity: 1;
 }
 .courses .item img{
-    width: 380px;
-    height: 200px;
-    margin-left: -20px;
+  width: 380px;
+  height: 200px;
+  margin-left: -20px;
 }
 .courses .item p{
-    margin-top: 25px;
-    /*margin-left: 25px;*/
-    padding: 0 25px;
-    font-size: 19px;
-    height: 26px;
-    line-height: 26px;
-    color:black;
+  margin-top: 25px;
+  /*margin-left: 25px;*/
+  padding: 0 25px;
+  font-size: 19px;
+  height: 26px;
+  line-height: 26px;
+  color:black;
 }
 .courses .item p:last-of-type{
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 40px;
-    margin-left: 260px;
-    color:red;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-left: 260px;
+  color:red;
 }
 .courses .item span{
-    color: red;
-    border: 1px solid red;
-    font-size: 15px;
+  color: red;
+  border: 1px solid red;
+  font-size: 15px;
 }
 
 /*家长课*/
 .course-parents {
-    background: gainsboro;
-    height: 860px;
+  background: gainsboro;
+  height: 860px;
 }
 .course-parents .title{
-    font-size: 30px;
-    font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 .title a{
-    margin-left: 980px;
-    font-size: 20px;
-    font-weight: 300;
-    color: gray;
+  margin-left: 980px;
+  font-size: 20px;
+  font-weight: 300;
+  color: gray;
 }
 .course-parents .list-item{
-    width: 380px;
-    height: 340px;
-    background: white;
-    border: 1px solid #dddddd;
+  width: 380px;
+  height: 340px;
+  background: white;
+  border: 1px solid #dddddd;
 }
 .course-parents .list-item0{
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .course-parents .list-item1{
-    margin-top: -340px;
-    margin-left: 410px;
+  margin-top: -340px;
+  margin-left: 410px;
 }
 .course-parents .list-item2{
-    margin-top: -340px;
-    margin-left: 820px;
+  margin-top: -340px;
+  margin-left: 820px;
 }
 .course-parents .list-item3{
-    margin-top: 40px;
+  margin-top: 40px;
 }
 .course-parents .list-item4{
-    margin-top: -340px;
-    margin-left: 410px;
+  margin-top: -340px;
+  margin-left: 410px;
 }
 .course-parents .list-item5{
-    margin-top: -340px;
-    margin-left: 820px;
+  margin-top: -340px;
+  margin-left: 820px;
 }
 .list-item:hover{
-    /*opacity: 1;*/
-    border-top: 1px solid red;
-    /*margin-top: 3px;*/
+  /*opacity: 1;*/
+  border-top: 1px solid red;
+  /*margin-top: 3px;*/
 }
 .course-parents .item .pp{
-    margin-left: 30px;
+  margin-left: 30px;
 }
 .course-parents .item .pp:hover{
-    margin-left: 30px;
-    color: black;
+  margin-left: 30px;
+  color: black;
 }
 .course-parents .item span{
-    color: red;
-    border: 1px solid red;
-    font-size: 15px;
+  color: red;
+  border: 1px solid red;
+  font-size: 15px;
 }
 .course-parents .item p{
-    margin-top: 50px;
-    margin-left: 10px;
-    font-size: 16px;
-    height: 26px;
-    line-height: 26px;
+  margin-top: 50px;
+  margin-left: 10px;
+  font-size: 16px;
+  height: 26px;
+  line-height: 26px;
 }
 .course-parents .item p:first-of-type{
-    font-size: 20px;
-    color: black;
-    margin-left: 30px;
-    margin-top: 20px;
+  font-size: 20px;
+  color: black;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 .course-parents .item p:last-of-type{
-    font-size: 15px;
-    color: gray;
-    margin-left: 20px;
-    margin-top: -20px;
+  font-size: 15px;
+  color: gray;
+  margin-left: 20px;
+  margin-top: -20px;
 }
 .course-parents .item p:last-of-type span{
-    font-size: 30px;
-    border:none;
-    height: 110px;
-    line-height: 110px;
-    margin-left: 220px;
+  font-size: 30px;
+  border:none;
+  height: 110px;
+  line-height: 110px;
+  margin-left: 220px;
 }
 .course-parents .item-img{
-    margin-top: 50px;
-    border-bottom: 1px solid #dddddd;
-    display: inline-block;
-    margin-left: 60px;
-    color: gray;
-    height: 80px;
-    width: 100%;
-    line-height: 80px;
-    display: flex;
+  margin-top: 50px;
+  border-bottom: 1px solid #dddddd;
+  display: inline-block;
+  margin-left: 60px;
+  color: gray;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  display: flex;
 }
 .item-img .teacher{
-    width: 70px;
-    font-size: 14px;
-    margin-left: 10px;
-    border: none;
-    text-align: center;
+  width: 70px;
+  font-size: 14px;
+  margin-left: 10px;
+  border: none;
+  text-align: center;
 }
 .course-parents .item-img iamge{
-    width: 60px;
-    height: 60px;
-    border-bottom: 1px solid #dddddd;
-    border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 50px;
 }
 
 
 
 .footer{
-    margin-top: 0px;
+  margin-top: 0px;
 }
 .bottom{
-    background: #333333;
-    height: 200px;
-    width: 100%;
-    position: relative;
+  background: #333333;
+  height: 200px;
+  width: 100%;
+  position: relative;
 }
 .bottom .bottom-a{
-    position: absolute;
-    top: 40px;
-    text-align: center;
-    padding: 10px 175px;
-    color: white;
-    font-size: 13px;
+  position: absolute;
+  top: 40px;
+  text-align: center;
+  padding: 10px 175px;
+  color: white;
+  font-size: 13px;
 }
 .bottom-a a{
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 .bottom .bottom-p1{
-    padding-top: 75px;
-    text-align: center;
-    font-size: 13px;
-    color: white;
+  padding-top: 75px;
+  text-align: center;
+  font-size: 13px;
+  color: white;
 }
 .bottom-p1 span{
-    color: red;
+  color: red;
 }
 .bottom .bottom-p2{
-    margin-top: 12px;
-    text-align: center;
-    font-size: 13px;
-    color: white;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 13px;
+  color: white;
 }
 .bottom .bottom-img{
-    margin-top: 12px;
-    margin-left: 520px;
+  margin-top: 12px;
+  margin-left: 520px;
 }
 
 

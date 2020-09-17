@@ -65,11 +65,11 @@
     <div class="bottom-menu  " >
         <div class="bottom-menu-list">
             <div class="swiper-container swiper-bottom-new">
-                <div class="bottom-header-menu-img">
-                    <img src="style/images/program/wfbook1.png" height="62" width="88"/>
+                <div class="bottom-header-menu-img" style="">
+                    <img src="style/images/program/wfbook1.png" height="62" width="88" />
                     <span >精选作品</span>
                     <div class="swiper-next"><img src="style/images/program/wfbtn1.png" height="30" width="30"/></div>
-                    <div class="swiper-prev"><img src="style/images/program/wfbtn2.png" height="30" width="30"/></div>
+                    <div class="swiper-prev"><img src="style/images/program/wfbtn2.png" height="30" width="30" style="margin-top: 30px" /></div>
                 </div>
                 <div class="swiper-wrapper ">
 
@@ -237,37 +237,37 @@
         spaceBetween: 30,
         slidesPerGroup: 5,
         autoplay: {
-        delay: 2000,
-        stopOnLastSlide: false,
-        disableOnInteraction: true,
-    },
-    observer:true, //修改swiper自己或子元素时，自动初始化swiper
-    observeParents:true, //修改swiper的父元素时，自动初始化swiper
-    // loopFillGroupWithBlank: true,
-    navigation: {
-        nextEl: '.swiper-prev',
-        prevEl: '.swiper-next',
-    },
-});
+            delay: 2000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+        observer:true, //修改swiper自己或子元素时，自动初始化swiper
+        observeParents:true, //修改swiper的父元素时，自动初始化swiper
+        // loopFillGroupWithBlank: true,
+        navigation: {
+            nextEl: '.swiper-prev',
+            prevEl: '.swiper-next',
+        },
+    });
 </script>
 <script>
     var swiper = new Swiper('.swiper-bottom-C ', {
         slidesPerView:5,
         spaceBetween: 35,
         slidesPerGroup: 5,
-    autoplay: {
-        delay: 2000,
-        stopOnLastSlide: false,
-        disableOnInteraction: true,
-    },
-    observer:true, //修改swiper自己或子元素时，自动初始化swiper
-    observeParents:true, //修改swiper的父元素时，自动初始化swiper
-    // loopFillGroupWithBlank: true,
-    navigation: {
-        nextEl: '.swiper-prev',
-        prevEl: '.swiper-next',
-    },
-});
+        autoplay: {
+            delay: 2000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+        observer:true, //修改swiper自己或子元素时，自动初始化swiper
+        observeParents:true, //修改swiper的父元素时，自动初始化swiper
+        // loopFillGroupWithBlank: true,
+        navigation: {
+            nextEl: '.swiper-prev',
+            prevEl: '.swiper-next',
+        },
+    });
 </script>
 <script>
     var data1={
@@ -818,22 +818,22 @@
 </script>
 <script>
     $('.bottom-header-slide1').click(function () {
-                $('.bottom-header').css("background","url('style/images/program/wfmid1.png')")
-                $('.two-list').hide()
-                $('.one-list').show()
-                $('.three-list').hide()
+        $('.bottom-header').css("background","url('style/images/program/wfmid1.png')")
+        $('.two-list').hide()
+        $('.one-list').show()
+        $('.three-list').hide()
     })
     $('.bottom-header-slide2').click(function () {
-                $('.bottom-header').css("background","url('style/images/program/wfmid2.png')")
-                $('.two-list').show()
-                $('.one-list').hide()
-                $('.three-list').hide()
+        $('.bottom-header').css("background","url('style/images/program/wfmid2.png')")
+        $('.two-list').show()
+        $('.one-list').hide()
+        $('.three-list').hide()
     })
     $('.bottom-header-slide3').click(function () {
-                $('.bottom-header').css("background","url('style/images/program/wfmid3.png')")
-                $('.two-list').hide()
-                $('.one-list').hide()
-                $('.three-list').show()
+        $('.bottom-header').css("background","url('style/images/program/wfmid3.png')")
+        $('.two-list').hide()
+        $('.one-list').hide()
+        $('.three-list').show()
     })
 </script>
 </body>
