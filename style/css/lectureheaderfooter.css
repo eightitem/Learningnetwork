@@ -55,9 +55,13 @@
     font-size: 16px;
 
 }
+.nav-list .this{
+    color: red;
+    border-bottom: 4px solid red;
+}
 .nav-list a:hover{
     color: red;
-    border-bottom: 2px solid red;
+
 }
 .nav .nav-search{
     margin-top: 40px;
