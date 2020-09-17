@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>修改手机号 梁彩凤</title>
+    <link href="../assets/image_StudyCenter/1599900392-d302bf703a81444d3064adc2b1e3cc39.ico" rel="shortcut icon" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="../layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../style/css/install.css">
     <link rel="stylesheet" href="../style/css/slider.css">
+
     <script src="../style/js/jquery-3.4.1.js"></script>
     <style>
         .disabled {
@@ -22,12 +24,53 @@
     </style>
 </head>
 <body>
+<div class="hear" style="height: 90px">
+    <div class="top" style="height: 30px;background-color: #333">
+        <div style="width: 1200px;margin: 0 auto">
+            <div class="conn">
+                 <span class="layui-breadcrumb" lay-separator="|">
+                    <a href="../index.html">网校首页</a>
+                    <a href="../teacher">教师资格证公示</a>
+                    <a href="../xiazai.html">客户端下载</a>
+                    <a href="install-order.html">我的订单</a>
+                    <a href="install.html">设置</a>
+                    <a href="install.html">用户</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="nev" style="height: 60px;background-color: #f13232">
+        <div style="width: 1200px;margin: 0 auto">
+            <a href="../index.html" class="logo"><img src="../style/images/logo.svg" style="vertical-align: middle;"/></a>
 
-</body>
-<iframe src="nav.html" frameborder="no" border="0" width="100%" scrolling="no" height="180px" style="z-index: 10"></iframe>
+            <ul class="layui-nav" style="background-color: #f13232;margin-left: 132px;margin-top: -61px;">
+                <li class="layui-nav-item  layui-this" style="width: 112px">
+                    <a href="../kecheng.html">学习中心</a>
+                </li>
+                <li class="layui-nav-item" style="width: 133px">
+                    <a href="javascript:;">我的试题</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="../cuotiben.html">错题本</a></dd>
+                        <dd><a href="../shijuan.html">试卷集</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item" style="width: 112px">
+                    <a href="../jiangzuo.html">我的讲座</a>
+                </li>
+                <li class="layui-nav-item" style="width: 133px">
+                    <a href="javascript:;">我的应用</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="../goldmall.html">金币商城</a></dd>
+                    </dl>
+                </li>
+            </ul>
 
-<div class="con">
-    <div class="pull_left">
+        </div>
+    </div>
+</div>
+
+<div class="con" style="height: 667px;">
+    <div class="pull_left" style="height: 673px;">
         <ul class="nav">
             <li class="title">账户中心</li>
             <li class="">
@@ -69,9 +112,12 @@
             <li class="">
                 <a href="#">学习卡</a>
             </li>
+            <li class="">
+                <a href="#">礼品卡</a>
+            </li>
         </ul>
     </div>
-    <div class="pull_right_a">
+    <div class="pull_right_a" style="height: 673px;">
         <div class="pwd-top">
             <h3>修改手机号</h3>
         </div>
@@ -131,7 +177,7 @@
 <script src="../layui/layui.js"></script>
 <script>
 
-    layui.use(['form', 'layer'], function () {
+    layui.use(['form', 'layer','element'], function () {
         $ = layui.jquery;
         var form = layui.form
             , layer = layui.layer
@@ -191,4 +237,5 @@
 <script type="text/javascript">
     $('#drag').drag();
 </script>
+</body>
 </html>
