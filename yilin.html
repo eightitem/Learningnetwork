@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>我的订单</title>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+    <script src="//res11.xesimg.com/x5home_2.0/common/js/updateTip.js?1594295167"></script>
+    <link href="//res11.xesimg.com/public/favicon.ico" rel="shortcut icon">
+    <link rel=stylesheet href="./css/xumeng.css">
+    <link rel=stylesheet href="./css/xumeng.css">
+    <script src="//lib01.xesimg.com/lib/jQuery/1.11.1/jquery.min.js"></script>
+    <script src="//lib02.xesimg.com/lib/webLog/xes.md5.min.js"></script>
+    <link href="//res12.xesimg.com/ocenter/order/static/css/app.css?v=1600268650" rel="stylesheet">
+</head>
+
+<body class = "ocenter">
+<div id = "app"> </div>
+<script src="//lib04.xesimg.com/lib/webLog/xes.weblog.event.min.js"></script>
+<script src="//www.sobot.com/chat/frame/js/entrance.js?sysNum=4a1c52959a974dd497260f4e0d50f1c9&channelFlag=7" id=zhichiScript data-args="manual=true"
+        class=zhiCustomBtn></script>
+<script type="text/javascript">
+    var zhiManager = (getzhiSDKInstance());
+    zhiManager.on("load", function (ret) {
+        zhiManager.initBtnDOM();
+    });
+    //
+    zhiManager.set('title', '售后咨询');
+    zhiManager.set('location', 1);
+    //对接用户身份、预留字段、自定义字段
+    zhiManager.set('userinfo', {
+        partnerId: '57858327',
+    });
+    zhiManager.set('customBtn', 'true');
+    //开启浏览轨迹
+    zhiManager.set('manTrance', 'true');
+    //上一页信息
+    zhiManager.set('preVisitArgs', {
+        'preVisitUrl': 'https://ocenter.xueersi.com/Ocenter/invoice/',
+    });
+    //当前页信息
+    zhiManager.set('curVisitArgs', {
+        'curAbstract': '',
+        'curVisitUrl': 'ocenter.xueersi.com/MyOrders/show/',
+        'curVisitTitle': '',
+    });
+    zhiManager.set('powered', false);
+</script>
+<script type=text/javascript src="//res12.xesimg.com/ocenter/order/static/js/manifest.js?v=1600268650"></script>
+<script type=text/javascript src="//res12.xesimg.com/ocenter/order/static/js/vendor.js?v=1600268650"></script>
+<script type=text/javascript src="//res12.xesimg.com/ocenter/order/static/js/app.js?v=1600268650"></script>
+</body>
+
+</html>
