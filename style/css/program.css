@@ -260,20 +260,20 @@ div:after{
     margin-top: 20px;
 }
 .swiper-next{
-    /*position: absolute;*/
+    position: relative;
     width: 50px;
     z-index: 10;
     height: 50px;
-    margin-left: 590px;
-    margin-top: -40px;
+   right: -49%;
+    top: -45%;
 }
 .swiper-prev{
-    /*position: absolute;*/
+    position: relative;
     width: 50px;
     z-index: 10;
     height: 50px;
-    margin-left: 635px;
-    margin-top: -50px;
+    right: -53%;
+    top: -125%;
 }
 .bottom{
     position: relative;
@@ -283,25 +283,31 @@ div:after{
    width: 100%;
     height:380px;
 }
-.bottom .swiper-wrapper{
-    width: 95%;
+.swiper-bottom-new  .swiper-wrapper{
+    width: 100%;
     box-sizing: border-box;
     /*position: relative;*/
     /*border: 1px solid red;*/
-    margin-left: 30px;
 }
 .bottom-menu-list .swiper-container {
     width:100%;
-    height:100%;
+    /*border: 1px solid red;*/
+    /*margin: 0 15px;*/
+    /*height:100%;*/
+}
+.bottom .swiper-slide:nth-of-type(1){
+    margin-left: 30px;
 }
 .bottom-menu-list .swiper-slide {
+    width: 17.2% !important;
     height: 260px;
     background: #fff;
     font-size: 15px;
     margin-top:20px;
-    width: 18%;
-    margin-right: 6px;
-    /*position: relative;*/
+    /*border: 1px solid red;*/
+    display: block;
+    margin-right: 26px;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -316,6 +322,9 @@ div:after{
     align-items: center;
 
 }
+.bottom-menu-list .swiper-slide:nth-of-type(6){
+    margin-left:50px !important;
+}
 .bottom-swiper-slide{
 
     position: absolute;
@@ -323,13 +332,11 @@ div:after{
     height: 166px;
     /*margin-right: 30px;*/
     margin-top: -90px;
-    /*border: 1px solid orangered;*/
 }
 .bottom-swiper-slide img{
+    width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-
-    /*margin-left: 15px;*/
 }
 .bottom-swiper-title{
     position: absolute;
@@ -419,7 +426,7 @@ div:after{
 }
 .bottom-menu-liste-menu .menu{
     margin-left: 31px;
-    width: 17%;
+    width: 17.3%;
     height: 260px;
     /*margin-right: 10px;*/
     float: left;
@@ -430,6 +437,7 @@ div:after{
 
 }
 .bottom-menu-liste-menu .menu img{
+    width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
